@@ -1,0 +1,15 @@
+.container {
+  margin-top: 150px;
+  padding: 0 60px;
+}
+
+.text {
+  color: #fff;
+
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+}

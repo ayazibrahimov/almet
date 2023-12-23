@@ -1,0 +1,43 @@
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* .disabled{
+  animation:opacityBlock ease-in .5s;
+}
+
+
+@keyframes opacityBlock {
+
+  from{
+    opacity: 1;
+  }to{
+    opacity: 0;
+    display: none;
+  }
+  
+} */
+
+
+.list li {
+  display: flex;
+  color: #9c9c9c;
+  padding: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  text-transform: uppercase;
+}
+
+.list li:hover{
+  color: #4F4F4F;
+}

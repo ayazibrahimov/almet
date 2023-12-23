@@ -1,0 +1,55 @@
+  {
+    "page": 1,
+    "results1": [
+     
+      {
+         "id":1,
+        "duration": 2.600,
+        "title": "for tunnels"
+      },
+      {
+        "id":2,
+        "duration": 2.800,
+        "title": "bridges"
+      },
+      {
+        "id":3,
+        "duration": 3,
+        "title": "highways"
+      },
+      {
+        "id":4,
+        "duration": 3.2,
+        "title": "widely used in construction reinforcement"
+      },
+      {
+
+        "id":5,
+        "duration": 3.4,
+        "title": "in subway and tunnel construction"
+
+      },
+      {
+
+        "id":6,
+        "duration": 3.6,
+        "title": "in water structures; dams, canals, and more"
+
+      }
+    ],
+     "results2":[
+
+      {
+
+        "id":1,
+        "duration": 1.6,
+        "title": " Almet Trading Baku takes great pride in its position as a leading supplier of a wide range of iron products in the country, being prominent as an importer of galvanized sheets, I-beams, wire rods, rebars, metal laths, and various other iron products."
+
+      }
+
+     ],
+
+    "total_pages": 36052,
+    "total_results": 721023
+  }
+  

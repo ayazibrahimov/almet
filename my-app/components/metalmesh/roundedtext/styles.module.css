@@ -1,0 +1,19 @@
+.roundedTextContainer{
+    position: absolute;
+    z-index: 111;
+    right: 5%;
+    bottom: -24%;
+    animation: rotate infinite 20s linear;
+}
+ 
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

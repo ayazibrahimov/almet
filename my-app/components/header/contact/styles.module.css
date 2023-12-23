@@ -1,0 +1,46 @@
+.contactContainer {
+  color: #9c9c9c;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contactContainer div a:hover {
+  color: #4f4f4f;
+}
+
+.firstLng {
+  position: relative;
+}
+.secondLng {
+  position: relative;
+}
+
+.firstLng::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  background-color: #808080;
+  height: 1px;
+  width: 28px;
+  display: block; /* Add this property to make the pseudo-element a block element */
+}
+
+.firstLng::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -62px;
+  background-color: #808080;
+  height: 1px;
+  width: 28px;
+  display: block; /* Add this property to make the pseudo-element a block element */
+}
+
+/* .dataSpan:hover .dataSpan svg path{
+    fill: red !important;
+} */

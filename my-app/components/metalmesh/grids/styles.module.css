@@ -1,0 +1,64 @@
+.container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.para {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 222;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  right: 10%;
+}
+
+.heading {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  right: 40px;
+  margin: 0 auto;
+  z-index: 222;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px; /* 107.143% */
+  text-transform: uppercase;
+  font-size: 74px; /* Set your desired font size */
+  color: transparent; /* Yazı rengini şeffaf yapın */
+  -webkit-text-stroke: 1px white; /* Beyaz kenarlık ekleyin */
+  margin: 0;
+  transition: all 1s;
+  }
+
+.dropfilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 111;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Add transition property for smooth effect */
+}
+
+.container:hover .dropfilter {
+  opacity: 0.5; /* On hover, set opacity to 0 */
+}
+.container:hover .heading {
+  color: white; 
+  font-size: 80px;
+  /* On hover, set opacity to 0 */
+}
+
+.productImage {
+  transition: transform 0.5s ease;
+}
+
+.container:hover .productImage {
+  transform: scale(1.1); /* On hover, scale the image */
+}

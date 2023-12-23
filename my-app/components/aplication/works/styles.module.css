@@ -1,0 +1,78 @@
+.container {
+  margin-top: 60px;
+  position: relative;
+}
+
+.list {
+  padding: 40px 27px;
+  padding-right: 100px;
+}
+
+.list li {
+  color: #1a1a1a;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 118.182% */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.list li span{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    /* animation-duration: 1s; */
+    animation: linear infinite colorChange;
+}
+
+
+.metal{
+  position: absolute;
+  right: 10px;
+  animation:rotateMetal infinite 10s linear;
+}
+
+
+
+@keyframes rotateMetal{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes colorChange{
+    0%{
+        background-color: #1A1A1A;
+    }
+
+    25%{
+        background-color: rgb(110, 108, 108);
+    }
+    50%{
+        background-color: white;
+    }
+    75%{
+       background-color: rgb(180, 180, 125);
+    }
+
+    100%{
+        background-color: #DAA520;
+    }
+}
+
+
+

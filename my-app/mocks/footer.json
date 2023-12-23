@@ -1,0 +1,56 @@
+{
+    "page": 1,
+    "results": [
+     
+      {
+        "id":1,
+        "title": "About the Company",
+        "items":[
+            {"text":"Leading in the iron sector","href":""},
+            {"text":"Innovative technologies", "href":""},
+            {"text":"Industry expert", "href":""}
+        ]
+      },
+      {
+        "id":2,
+        "title": "Our Products",
+        "items":[
+            {"text":"High-quality iron", "href":""},
+            {"text":"Wide range of products", "href":""},
+            {"text":"Eco-friendly standards", "href":""}
+        ]
+      },
+      {
+        "id":3,
+        "title": "Our Services",
+        "items":[
+            {"text":"Customized production", "href":""},
+            {"text":"Fast delivery", "href":""},
+            {"text":"Technical support", "href":""}
+        ]
+      },
+      {
+        "id":4,
+        "title": "Contact",
+        "items":[
+            {"text":"+994 51 270 75 75","href":""},
+            {"text":"info@almettradingbaku.com", "href":""},
+            {"text":"Bakı, Ələsgər Qayıbov 10Q", "href":""}
+        ]
+      },
+      {
+        "id":5,
+        "title": "Info",
+        "items":[
+            {"href":""},
+            {"href":""},
+            {"href":""}
+        ]
+      }
+
+    ],
+
+    "total_pages": 36052,
+    "total_results": 721023
+  }
+  
