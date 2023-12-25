@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeContainer from '@/containers/home'
+import HomeContainer from '@/pages/home/index'
 
 function HomePage() {
   return (

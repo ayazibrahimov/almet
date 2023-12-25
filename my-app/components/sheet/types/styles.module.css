@@ -1,0 +1,13 @@
+.container {
+  color: #fff;
+  font-size: 26px;
+}
+
+.title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 116.667% */
+  text-transform: uppercase;
+  margin: 40px 0;
+}
