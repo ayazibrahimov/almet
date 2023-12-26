@@ -1,93 +1,94 @@
-.container{
-    position: absolute;
-    z-index: 111;
-    color: #fff;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.container {
+  position: absolute;
+  z-index: 111;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
 }
 
-.info{
-    color: #FFF;
-    font-family: Open Sans;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
-    text-transform: uppercase;
-    width: 100%;
-    text-align: center;
+.info {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 
 .line1 {
-    /* width: 100%;
+  /* width: 100%;
     height: 100%; */
-    border-radius: 50%;
-    position: absolute;
-    width: 330px;
-    height: 327px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-48%,-50%);
-    border-radius: 50%;
-    z-index: 111;
-  }
-  
+  border-radius: 50%;
+  position: absolute;
+  width: 330px;
+  height: 327px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-46%, -50%);
+  border-radius: 50%;
+  z-index: 111;
+}
+
 .line2 {
-    border-radius: 50%;
-    position: absolute;
-    width: 330px;
-    height: 327px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    z-index: 111;
-  }
+  border-radius: 50%;
+  position: absolute;
+  width: 330px;
+  height: 327px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 111;
+}
 .line3 {
-    position: absolute;
-    width: 330px;
-    height: 327px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    z-index: 111;
-}
-  
-
-.image1{
-   animation: 20s round1 .7s infinite linear;
+  position: absolute;
+  width: 330px;
+  height: 327px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-54%, -50%);
+  border-radius: 50%;
+  z-index: 111;
 }
 
-
-.image2{
-   animation: 18s round1  .8s infinite ;
+.image1 {
+  animation: 32s round1 1s infinite linear;
 }
 
-.image3{
-   animation: 16s round1 .9s infinite ;
+.image2 {
+  animation: 30s round1 0.8s infinite;
 }
 
-
-@keyframes round1{
-    0% {
-        rotate: 0deg;
-    }
-    50%{
-        rotate: 170deg;
-    }
-    100%{
-        rotate: 0deg;
-    }
+.image3 {
+  animation: 28s round1 0.9s infinite;
 }
 
+@keyframes round1 {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 170deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
 
-
-
-
-
-
-
-
-
+.textMiddle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);  
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+  text-transform: uppercase;
+}

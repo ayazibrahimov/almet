@@ -1,0 +1,28 @@
+.piece{
+    color: #9C9C9C;
+display: inline-block;
+text-align: center;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+position: relative;
+}
+
+
+.piece::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 15px;
+    background-color: #fff; /* Set the color of the white line */
+    position: absolute;
+    top: 50%;
+    transform: translateX(-135%);
+}
+
+.piece:first-child::before {
+    display: none;
+}
+

@@ -1,0 +1,49 @@
+.container{
+ margin-top: 40px 0;
+}
+
+
+.major{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+.title{
+    color: #DAA520;
+    text-align: center;
+}
+
+
+
+.text{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+}
+
+
+
+.text::before {
+    content: url('../../../public/archive.svg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    display: inline-block;
+    position: absolute;
+    top: -40px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    z-index: 111;
+}
+
+
+
+
+
+
+

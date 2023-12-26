@@ -15,7 +15,6 @@ const Item = ({ tables }) => {
               position: "relative",
               width: "100%",
               minHeight: "600px",
-              height: '1180px',
             }}
           >
             <Image src={table.src} alt={table.alt} cover />

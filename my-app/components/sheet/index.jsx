@@ -8,6 +8,7 @@ import Ironmensh from './ironmensh'
 
 
 
+
 const Sheet = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const Sheet = () => {
                src={SheetImg} 
                alt="products-sheet"
                fill />
-             <Ironmensh />  
+             <Ironmensh /> 
         </div>
     </div>
   )

@@ -1,0 +1,9 @@
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 80px; /* 108.108% */
+  text-transform: uppercase;
+  margin: 100px 0;
+}
