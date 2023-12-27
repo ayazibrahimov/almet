@@ -15,13 +15,24 @@ const Swiper = ( {materials, leftData,rightData} ) => {
          
          {
           materials.map((data,i)=>(
-            <div className={styles.swiperDatas} style={{position:'absolute', transform: `translateX(${((data.id-1)*190 - rightData)}px)`}}>
+            <div className={styles.swiperDatas} 
+              style={{
+                position: 'absolute',
+                transition: 'transform 0.5s',
+
+                transform: `translateX(${((data.id - 1) * 190 - rightData)}px)`,
+                }}
+               
+               >
              <div style={{ position: "relative", width: "160px", height: "270px" }}>
               <Image
                 src={data.src}
                 alt={data.alt}
-                layout="fill" // Use layout="fill" to make the Image component fill its container
-                objectFit="cover" // Use objectFit="cover" to handle overflow within the container
+                fill
+                style={{
+                  transform: `scale(${((data.id - 1) * 190 - rightData) !== 0 ? .9 : 1})`,
+                  transition: 'transform 0.5s',
+                }}
               />
              </div>
            </div>

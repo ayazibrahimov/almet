@@ -21,10 +21,9 @@ const MajorSlider = () => {
   return (
     <div  style={{position:'relative', width: "100%",height: "600px"}} >
          
-         {index}
-          
        <div style={{position:'relative',width:'100%', height:'100%'}}>
             <Image 
+                className='fade-in'
                src={sliderDatas[index]?.src} 
                fill
                alt="salam alekum" 

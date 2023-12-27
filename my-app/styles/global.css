@@ -45,3 +45,25 @@ body {
   top: -100px;
   transition: all 200ms  cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+
+
+
+
+
+/* 
+
+.fade-in {
+  opacity: 1;
+  transition: newAn 0.9s ease-in-out;
+}
+
+@keyframes newAn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+} */
+
