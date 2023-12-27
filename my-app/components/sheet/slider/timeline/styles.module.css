@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.box {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #666774;;
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* .timeLineActive{
+    scale: 1.4;
+    background-color: #DAA520;
+    font-size: 16px;
+} */
+
+.box:not(:last-child)::after{
+   content: '';
+   position: absolute;
+   bottom: -35px;
+   left: 9px;
+   width: 2px;
+   height: 35px;
+   color: #DAA520;
+   opacity: .4;
+   background-color: #DAA520;
+}
+
+
+
+
+
+
+
