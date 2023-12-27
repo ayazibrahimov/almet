@@ -1,12 +1,35 @@
-import React from "react";
+'use clinet'
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import materials1 from "@/public/materials1.jpg";
 import Image from "next/image";
 
-const Swiper = () => {
+const Swiper = ( {materials, leftData,rightData} ) => {
+
+  const [statusSlider, setStatus] = useState(true)
+ 
+
+
   return (
     <div className={styles.container}>
-      <div className={styles.swiperDatas} style={{position:'absolute', transform: 'translateX(0px)'}}>
+         
+         {
+          materials.map((data,i)=>(
+            <div className={styles.swiperDatas} style={{position:'absolute', transform: `translateX(${((data.id-1)*190 - rightData)}px)`}}>
+             <div style={{ position: "relative", width: "160px", height: "270px" }}>
+              <Image
+                src={data.src}
+                alt={data.alt}
+                layout="fill" // Use layout="fill" to make the Image component fill its container
+                objectFit="cover" // Use objectFit="cover" to handle overflow within the container
+              />
+             </div>
+           </div>
+          ))
+         }
+
+
+      {/* <div className={styles.swiperDatas} style={{position:'absolute', transform: 'translateX(0px)'}}>
         <div style={{ position: "relative", width: "160px", height: "270px" }}>
           <Image
             src={materials1}
@@ -55,7 +78,7 @@ const Swiper = () => {
             objectFit="cover" // Use objectFit="cover" to handle overflow within the container
           />
         </div>
-      </div>
+      </div> */}
       
     </div>
   );
