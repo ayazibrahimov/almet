@@ -44,8 +44,8 @@ function index({statusInfo}) {
               shown && <ul className={ `${styles.list}` } >
               <li><Link href='/' onClick={handleLinkClick}>Home</Link></li>
               <li> <Link href='/products' onClick={handleLinkClick}>Products</Link></li>
-              <li> <Link href='/' onClick={handleLinkClick}>Service</Link> </li>
-              <li> <Link href='/' onClick={handleLinkClick}>About</Link> </li>
+              <li> <Link href='/service' onClick={handleLinkClick}>Service</Link> </li>
+              <li> <Link href='/about' onClick={handleLinkClick}>About</Link> </li>
               <li> <Link href='/' onClick={handleLinkClick}>Contact</Link> </li>
             </ul>
             }

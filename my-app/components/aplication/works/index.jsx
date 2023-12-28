@@ -7,7 +7,7 @@ import circlemetal from '@/public/circlemetal.svg'
 
 
 
-const Works = ({application,positionData}) => {
+const Works = ({application,positionData,spinner=true}) => {
 
 
 const elementStyle = positionData === 'firstElement' 
@@ -31,13 +31,15 @@ const elementStyle = positionData === 'firstElement'
 
 
   
-           <div className={styles.metal} style={elementStyle}  >
-           <Image 
-             src={circlemetal}
-             alt={'circlemetal'}
-             />
-            </div>
-        
+           {
+            spinner && <div className={styles.metal} style={elementStyle}  >
+            <Image 
+              src={circlemetal}
+              alt={'circlemetal'}
+              />
+             </div>
+          
+           }
 
 
     </div>

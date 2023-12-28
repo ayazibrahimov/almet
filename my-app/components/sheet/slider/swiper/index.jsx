@@ -24,7 +24,7 @@ const Swiper = ( {materials, leftData,rightData} ) => {
                 }}
                
                >
-             <div style={{ position: "relative", width: "160px", height: "270px" }}>
+             <div style={{ position: "relative", width: "180px", height: "270px" }}>
               <Image
                 src={data.src}
                 alt={data.alt}
