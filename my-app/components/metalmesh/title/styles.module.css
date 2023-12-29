@@ -23,7 +23,7 @@ height: 140px;
 /* width: 100%; */
 left: 0;
 top: -150px;
-overflow: hidden;
+/* overflow: hidden; */
 animation-delay: 1s;
 animation: openclose1 1s ease-in-out ;
 }
@@ -44,7 +44,7 @@ animation: openclose1 1s ease-in-out ;
 .container h1:nth-child(2)::after{
   content: '';
   position: absolute;
-  width: 100%;
+  width: 80%;
   background-color: white;
   height: 1px;
   bottom: 10px;
@@ -79,7 +79,7 @@ animation: openclose1 1s ease-in-out ;
   right: -80px;
 }
 
-
+/* 
 
 @keyframes openclose3{
   0%{
@@ -110,9 +110,9 @@ animation: openclose1 1s ease-in-out ;
   100%{
     height: 140px;
   }
-}
+} */
 
-
+/* 
 @keyframes openclose2 {
   0% {
     width: 0;
@@ -148,6 +148,10 @@ animation: openclose1 1s ease-in-out ;
     width: 100%;
   }
   
-} 
+}  */
 
+.backg{
+  display: block;
+  background-color: white;
+}
 
