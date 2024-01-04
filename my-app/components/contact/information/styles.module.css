@@ -1,0 +1,125 @@
+.titleInfoMail {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  text-transform: uppercase;
+}
+
+.infoAdresses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 48px 0;
+}
+
+.infoAdresses > li {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.infoAdresses > li > span {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.infoAdresses > li > a {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.keepInTouch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 111;
+  color: #1a1a1a;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  text-transform: uppercase;
+  animation: colorChange 5s infinite;
+}
+
+.rombs {
+  animation: circleMove 20s infinite 5s linear;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #1a1a1a;
+  }
+  50% {
+    color: #daa520;
+  }
+  100% {
+    color: #1a1a1a;
+  }
+}
+
+@keyframes circleMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.turnIdea {
+  color: #1a1a1a;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 26px; /* 130% */
+  text-transform: uppercase;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.message > h4 {
+  color: #1a1a1a;
+  text-align: start;
+  font-size: 49.306px;
+  font-style: normal;
+  line-height: 56.702px;
+}
+
+.message > h4:nth-child(1) {
+  padding-left: 48px;
+}
+
+.sendBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #1a1a1a;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}

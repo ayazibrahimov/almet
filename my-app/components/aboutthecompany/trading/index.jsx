@@ -5,10 +5,9 @@ import ImageText from '../imagetext'
 import img1 from '@/public/Rectangle 53.png';
 import img2 from '@/public/Rectangle 42.png';
 import img3 from '@/public/Rectangle 43.png';
-import setting1 from '@/public/setting1.svg'
 import application from '@/mocks/application.json'
 import {motion} from 'framer-motion'
-import Image from 'next/image'
+import SettingCircle from '@/components/settingCircle'
 
 import { Roboto } from 'next/font/google'
 
@@ -71,16 +70,7 @@ const index = () => {
             <div className="grid grid-cols-2 gap-4">
                  <div className={styles.leftImage}>
                     <p>To achieve an ideal iron product, you need an experienced and knowledgeable team.</p>
-                       <span 
-                         className={styles.setting1}>
-                        <Image 
-                          src={setting1} />
-                       </span>
-                       <span 
-                         className={styles.setting2}>
-                        <Image 
-                          src={setting1} />
-                       </span>
+                     <SettingCircle /> 
                  </div>
                  <div className='flex justify-end'><ImageText  imgData={img3}   size={size2}/></div>
             </div>

@@ -1,15 +1,15 @@
 import React from 'react'
-import Products from '@/pages/products/products'
+import ContactUs from '@/pages/contact-us'
 
 export const metadata = {
-  title:'Products'
+  title:'Contact'
 }
 
 
 const page = () => {
   return (
     <div>
-        <Products />
+        <ContactUs />
     </div>
   )
 }

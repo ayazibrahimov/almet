@@ -8,6 +8,14 @@ import '../styles/tailwind.css'
 
 const opensans = Open_Sans({ subsets: ['latin'] })
 
+export const metadata = {
+  title:{
+    default:'Home',
+    template:'%s | My title'
+  },
+  description: 'My site description...'
+}
+
 
 export default function RootLayout({ children }) {
 

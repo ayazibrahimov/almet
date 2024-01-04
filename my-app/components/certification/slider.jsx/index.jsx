@@ -10,7 +10,7 @@ import  Image  from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import '@/styles/slider.css';
+// import '@/styles/slider.css';
 
 // import required module
 import styles from './styles.module.css';
@@ -23,7 +23,6 @@ const index = () => {
     <div className={ `${styles.component}` }>
      <Swiper
         slidesPerView={1}
-        spaceBetween={10}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -39,7 +38,7 @@ const index = () => {
           },
         }}
         autoplay={{
-            delay: 2500,
+            delay: 5000,
           }}
         loop={true}  
         modules={[Autoplay]}
@@ -50,7 +49,7 @@ const index = () => {
             Infos.map((data,index)=>(
              <SwiperSlide key={index}>
                 <div className={styles.sliderBox}>
-                     <div style={{position:'relative', width:'100%', height:"480px",}}>
+                     <div style={{position:'relative', width:'100%', height:"480px"}}>
                         <Image 
                           src={data.src}
                           style={{borderRadius:'10px'}}
@@ -58,8 +57,10 @@ const index = () => {
                           fill
                         />
                      </div>
-                     <div className='mt-4'><p className={styles.title}>{data.title}</p></div>
-                     <div> <span className={styles.squared}></span><p className={styles.text}>{data.text}</p></div>
+                    <div style={{background:'transparent'}}>
+                      <div className='mt-4 mb-2'><p className={styles.title}>{data.title}</p></div>
+                      <div> <span className={styles.squared}></span><p className={styles.text}>{data.text}</p></div>
+                    </div>
                 </div>
            </SwiperSlide>
             ))

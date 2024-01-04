@@ -14,10 +14,10 @@ const Item = ({ tables }) => {
             style={{
               position: "relative",
               width: "100%",
-              minHeight: "600px",
+              minHeight: "1000px",
             }}
           >
-            <Image src={table.src} alt={table.alt} cover />
+            <Image src={table.src} alt={table.alt} fill />
           </div>
         </div>
       ))

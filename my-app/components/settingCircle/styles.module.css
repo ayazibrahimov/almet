@@ -1,0 +1,31 @@
+
+.setting1 {
+    position: absolute;
+    bottom: 20%;
+    right: 6%;
+    animation: rotation2 10s infinite;
+  }
+  
+  .setting2 {
+    position: absolute;
+    bottom: 26%;
+    right: 1%;
+    animation: rotation1 10s infinite; /* Specify animation name, duration, and infinite repeat */
+  }
+  
+  @keyframes rotation1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotation2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

@@ -4,11 +4,13 @@
 
 }
 
+.coloredDark{
+  background-color: #1A1A1A;
+}
+
 .sliderBox {
   height: 560px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background-color: #1A1A1A;
 }
 
 .title {
@@ -22,7 +24,6 @@
 .titleItalic {
   /*Will be added*/
   color: #fff;
-  font-family: Open Sans;
   font-size: 32px;
   font-style: italic;
   font-weight: 300;
@@ -36,7 +37,6 @@
   font-weight: 300;
   line-height: 24px;
   display: inline-block;
-  margin-left: 10px;
 }
 
 .squared{
@@ -44,5 +44,6 @@
     width: 14px;
     height: 14px;
     border-radius: 4px;
-background: #FFF;
+    background: #FFF;
+    margin-right: 10px;
 }
