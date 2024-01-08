@@ -25,3 +25,33 @@ text-transform: uppercase;
 }
 
 
+@media screen and (max-width: 992px){
+    .sliderContainerSlider{
+        top: 125px;
+        right: 60px;
+    }
+}
+
+
+@media screen and (max-width: 769px){
+    .sliderContainerSlider{
+        right: 20px;
+    }
+
+    .sliderContainer{
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .sliderContainerSlider{
+        width: 90%;
+        top: 90px;
+    }
+
+    .upperParagraph{
+       font-size: 17px;
+    }
+
+
+}
+

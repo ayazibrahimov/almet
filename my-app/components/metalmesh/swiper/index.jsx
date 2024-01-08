@@ -41,7 +41,7 @@ function Sliding() {
         {
           SliderImages.map((image,index)=>(
             <SwiperSlide key={index}>
-             <div className={styles.imageContainerSize} style={{position:'relative', width:'100%', height:'600px', }}>
+             <div className={styles.imageContainerSize} style={{position:'relative', width:'100%'}}>
                <DropFilter />
                <Image
                 src={image.src}

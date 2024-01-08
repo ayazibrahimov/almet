@@ -1,3 +1,16 @@
-/* .imageContainerSize{
-    height: 480px;
-} */
+.imageContainerSize{
+    height: 600px;
+}
+
+@media screen and (max-width: 1200px){
+     .imageContainerSize{
+         height: 500px;
+      }
+}
+
+
+@media screen and (max-width: 769px){
+    .imageContainerSize{
+        height: 400px;
+     }
+}

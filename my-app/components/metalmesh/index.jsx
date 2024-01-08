@@ -8,7 +8,7 @@ function MetalMesh() {
   return (
     <section>
       <div className={styles.container}>
-        <div className="sm:container sm:mx-auto px-8">
+        <div className="lg:container lg:mx-auto lg:px-8 px-3">
           <Slider />
           <InfoText />
           <Features />

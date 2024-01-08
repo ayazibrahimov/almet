@@ -15,9 +15,12 @@
   text-transform: uppercase;
 }
 
+
+
+
 .container h1:nth-child(1){
-display: inline-block;
-position: absolute;
+  display: inline-block;
+  position: absolute;
 z-index: 111;
 height: 140px;
 /* width: 100%; */
@@ -78,6 +81,104 @@ animation: openclose1 1s ease-in-out ;
   top: 21px;
   right: -80px;
 }
+
+
+
+
+
+@media screen and (max-width: 1275px) {
+  .container h1{
+    font-size: 81px;
+  }
+
+
+  .container h1:nth-child(2)::after{
+    width: 68%;
+    /* animation: openclose2 1.5s ease-in-out; */
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 1100px){
+  .container h1{
+    font-size: 70px;
+  }
+
+  .container h1:nth-child(2)::after{
+    width: 60%;
+    bottom: 34px;
+    /* animation: openclose2 1.5s ease-in-out; */
+  }
+
+
+}
+@media screen and (max-width: 992px){
+  
+  .container{
+     left: 70px;
+  }
+
+}
+
+@media screen and (max-width: 769px){
+  
+  .container{
+    left: 0px;
+ }
+
+ .container h1{
+  font-size: 60px;
+}
+
+.container h1:nth-child(2){
+  top: -73px;
+}
+
+.container h1:nth-child(2)::after{
+  width: 60%;
+  bottom: 50px;
+  /* animation: openclose2 1.5s ease-in-out; */
+}
+
+.container h4{
+  bottom: -310px;
+}
+
+
+}
+
+@media screen and (max-width: 577px){
+   
+  .container h1{
+    font-size: 46px;
+  }
+
+  .container h1:nth-child(2)::after{
+    width: 40%;
+    /* animation: openclose2 1.5s ease-in-out; */
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 

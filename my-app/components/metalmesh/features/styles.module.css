@@ -33,4 +33,25 @@
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 769px){
+  
+    .container h2{
+        font-size: 56px;
+    }
+  
+  }
+@media screen and (max-width: 577px){
+  
+    .container h2{
+        font-size: 38px;
+    }
+  
+
+    .container h4{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+  }
+
 

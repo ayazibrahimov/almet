@@ -1,6 +1,7 @@
 body {
   background-color: #fff;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .container:hover .dropfilter {

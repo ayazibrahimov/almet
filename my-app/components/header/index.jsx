@@ -3,11 +3,25 @@ import { useEffect, useState } from 'react';
 import React from "react";
 import Logo from "./logo/index";
 import NavMenu from "./navmenu/index";
+import MobileNav from '../mobileNav' 
 
 function index() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [statusInfo, setStatusInfo] = useState(false)
+  const [isScreenSmall, setIsScreenSmall] = useState(false);
+
+  const handleScreenResize = () => {
+    // Get the current screen width
+    const screenWidth = window.innerWidth;
+
+    // Update the state based on the screen width
+    setIsScreenSmall(screenWidth <= 991);
+  };
+
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +45,18 @@ function index() {
   }, []);
   
 
+  useEffect(() => {
+    handleScreenResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleScreenResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleScreenResize);
+    };
+  }, []);
+
   const headerStyle = {
     position: scrollPosition > 1400 ? 'fixed' : 'static',
     top: 0,
@@ -48,16 +74,19 @@ function index() {
 
   
 
-
-
-
   return (
     <div style={headerStyle}>
-      <div className={`sm:container sm:mx-auto ${ statusInfo ? 'py-1' : 'py-4' } `}>
-        <nav className="grid grid-cols-3 gap-40">
-          <Logo statusInfo={statusInfo} />
-          <NavMenu  statusInfo={statusInfo} />
-        </nav>
+      <div className={`lg:container lg:mx-auto ${ statusInfo ? 'py-1' : 'py-4' } `}>
+        {
+          isScreenSmall ? (
+              <MobileNav />
+          ) : (
+            <nav className="grid grid-cols-3 gap-40">
+            <Logo statusInfo={statusInfo} />
+            <NavMenu  statusInfo={statusInfo} />
+           </nav>
+          )
+        }
       </div>
     </div>
   );
