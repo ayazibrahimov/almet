@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from './items'
 import Datas from '@/mocks/footer.json'
-import CircleLogo from '@/public/CircleLogo.png'
+import FooterLogo from '@/public/footerLogo.jpg'
 import Link  from 'next/link'
 import Image  from 'next/image'
 
@@ -10,17 +10,19 @@ import Image  from 'next/image'
 
 const Above = () => {
   return (
-       <div className='sm:container sm:mx-auto py-26 px-10 text-center'>
-           <div className='grid grid-cols-5'>
+       <div className='lg:container lg:mx-auto py-26 lg:px-10 px-4 text-center'>
+           <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2  md:gap-4 sm:gap-2'>
 
              <Item datas={Datas} />
-       
-             <div className='col-span-6'>
+            
+           </div>    
+
+            <div className='w-full'>
                      
                     <div className='flex flex-col items-center mt-16'>
-                      <div style={{width:'100px', height:'100px', borderRadius:'50%', position:'relative'}}> 
+                      <div style={{width:'100px', height:'100px', borderRadius:'50%', background:'white', overflow:'hidden', position:'relative'}}> 
                         <Link href='/'>
-                          <Image src={CircleLogo} fill />
+                          <Image src={FooterLogo} fill />
                         </Link> 
                       </div>
                       
@@ -35,9 +37,7 @@ const Above = () => {
 
                     </div>
                      
-             </div>
-            
-           </div>          
+             </div>      
        </div>
   )
 }

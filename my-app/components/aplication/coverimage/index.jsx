@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Cover = () => {
   return (
-    <div style={{position:'relative', width: '100%', height: '700px'}}>
+    <div  style={{position:'relative', width: '100%', height: '700px'}}>
         <Image 
           src={Bridge} 
           alt="Bridge"  

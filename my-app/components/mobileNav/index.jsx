@@ -1,5 +1,7 @@
 import React from 'react'
 import Navigation from './navigation'
+import Logo from '@/public/almetMobileLogo.png'
+import Image from 'next/image'
 //mui
 
 
@@ -9,11 +11,17 @@ import Navigation from './navigation'
 
 const index = () => {
   return (
-    <div className='px-6'>
+    <div className='px-6 py-2'>
  
       <div className='flex justify-between items-center'>
 
-          <p>Logog</p>
+          <div  style={{position:'relative', width:'150px', height:'70px'}} >
+            <Image 
+              
+              src={Logo}
+              fill
+            />
+          </div>
 
           <Navigation />
 

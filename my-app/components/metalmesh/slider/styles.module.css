@@ -51,7 +51,12 @@ text-transform: uppercase;
     .upperParagraph{
        font-size: 17px;
     }
-
-
 }
 
+
+
+@media screen and (max-width: 577px){
+    .upperParagraph{
+        font-size: 14px;
+     }
+}

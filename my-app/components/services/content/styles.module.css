@@ -65,3 +65,63 @@
     background-color: #173a56;
     color: #fff;
 }
+
+
+
+@media screen and (max-width:769px){
+ 
+  .content h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  
+  .content h3 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 20px;
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+
+
+} 
+
+
+
+
+@media screen and (max-width:577px){
+  .content h2 {
+    font-size: 23px;
+  }
+
+  .content h3 {
+    font-size: 23px;
+    line-height: 20px;
+  }
+
+
+  .content p {
+    font-size: 15px;
+  }
+  
+
+
+  .buttonData {
+    width: 120px;
+    text-align: center;
+    line-height: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  
+
+
+}
+
+

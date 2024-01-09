@@ -23,7 +23,7 @@ function Grid({gridImage,myName=false}) {
            {
             gridImage.map((data,index)=>(
                <div key={index}>
-                 <div className={`${styles.container}  ${data.status ? 'shadowed' : '' } `}  style={ !myName ? {position:'relative', width: '100%', height: '240px'}: {position:'relative', width: '100%', height: '350px'}}>
+                 <div className={`  ${!myName ? styles.box1 : styles.box2} ${styles.container}  ${data.status ? 'shadowed' : '' } `}  style={ !myName ? {position:'relative', width: '100%'}: {position:'relative', width: '100%'}}>
                    {!myName && <p className={`roboto ${styles.para}`}>{data.header}</p>}
                     {data.status === false &&  <div className={styles.dropfilter}></div>}  
                     {myName &&  <h4 className={`roboto ${styles.heading}`}>{data.header}</h4> }

@@ -14,4 +14,10 @@
   }
 
   
+@media screen and (max-width:577px){
+  .item {
+    font-size: 14px;
+  }
+}
+
   

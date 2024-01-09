@@ -32,8 +32,8 @@ const elementStyle = positionData === 'firstElement'
 
   
            {
-            spinner && <div className={styles.metal} style={elementStyle}  >
-            <Image 
+            spinner && <div className={`${styles.metal} hidden sm:block`} style={elementStyle}  >
+            <Image  
               src={circlemetal}
               alt={'circlemetal'}
               />

@@ -10,7 +10,7 @@ import Grid from '../metalmesh/grids'
 const Products = () => {
   return (
     <section>
-      <div className='sm:container sm:mx-auto py-16 px-8'> 
+      <div className='lg:container lg:mx-auto sm:py-16 sm:px-8 py-8 px-4'> 
         <Title title='Services' />
         <TitleAbove text='Get acquainted with our extensive product range' />
         <Grid gridImage={gridImage2} myName={true} />

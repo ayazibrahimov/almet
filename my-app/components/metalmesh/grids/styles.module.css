@@ -32,7 +32,7 @@
   -webkit-text-stroke: 1px white; /* Beyaz kenarlık ekleyin */
   margin: 0;
   transition: all 1s;
-  }
+}
 
 .dropfilter {
   position: absolute;
@@ -50,7 +50,7 @@
   opacity: 0.5; /* On hover, set opacity to 0 */
 }
 .container:hover .heading {
-  color: white; 
+  color: white;
   font-size: 80px;
   /* On hover, set opacity to 0 */
 }
@@ -61,4 +61,54 @@
 
 .container:hover .productImage {
   transform: scale(1.1); /* On hover, scale the image */
+}
+
+.box1 {
+  height: 240px;
+}
+
+.box2 {
+  height: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .box2 {
+    height: 290px;
+  }
+
+  .heading {
+    font-size: 56px;
+    line-height: 74px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .heading {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .box1 {
+    height: 180px;
+  }
+
+  .para {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .container:hover .heading {
+    font-size: 56px;
+    /* On hover, set opacity to 0 */
+  }
+  
+
+ 
 }

@@ -19,7 +19,7 @@ const Item = ({ datas }) => {
       {datas.results.map(
         (data, index) =>
           data.id < 5 && (
-            <div key={index} className={styles.container}>
+            <div key={index} className={`${styles.container} md:mt-2 mt-10`}>
               <p className={`${title.className} ${styles.title}`}>
                 {data.title}
               </p>
@@ -28,8 +28,8 @@ const Item = ({ datas }) => {
           )
       )}
 
-      <div className={styles.social}>
-        <ul className="flex gap-4 ps-2">
+      <div className={ `${styles.social} flex sm:justify-start justify-center sm:col-span-1 col-span-2 mt-4` }>
+        <ul className="flex gap-4 ps-2 pb-4">
           <li><Link href='/'> <FaTwitter className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
           <li><Link href='/'> <FaLinkedin className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
           <li><Link href='/'> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>

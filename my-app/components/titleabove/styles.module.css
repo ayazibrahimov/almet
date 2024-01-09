@@ -16,3 +16,10 @@ font-style: italic;
 font-weight: 300;
 line-height: 26px;
 }
+
+@media screen and (max-width: 769px){
+    .left{
+        font-size: 20px;
+    }
+  }
+
