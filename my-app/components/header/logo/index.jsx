@@ -12,9 +12,11 @@ function index({statusInfo}) {
          <div className='gap-2' style={ statusInfo ? {position:'relative', width: '200px', height: '80px'} : {position:'relative', width:'250px', height:'100px'}}>
          <Link href='/'>
           <Image
+           priority 
            src={HeaderLogo}
            alt="Logo"
            fill
+        
           // className='auto'
           // width={500} //automatically provided
           // height={500} //automatically provided

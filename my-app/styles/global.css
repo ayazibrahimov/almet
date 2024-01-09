@@ -22,29 +22,25 @@ body {
   }
 }
 
-
-
-
-
 .shadowed::after{
-  background: white;
+  position: absolute;
+  overflow: hidden;
+    top: 0;
+    left: 63%;
+    z-index: 2;
+    display: block;
     content: '';
-    height: 266px;
-    left: 86%;
-    opacity: 0.2;
-    position: absolute;
-    top: 46px;
-    transform: rotate(35deg);
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    width: 100px;
-    z-index: 30;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(-25deg);
+    transition: all 400ms;
 }
 
 
 .shadowed:hover.shadowed::after{
-  left: -10%;
-  top: -100px;
-  transition: all 200ms  cubic-bezier(0.19, 1, 0.22, 1);
+  left: -63%;
+  transition: all 400ms;
 }
 
 

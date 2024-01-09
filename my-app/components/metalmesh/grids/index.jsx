@@ -12,10 +12,6 @@ const roboto = Roboto({
 
 function Grid({gridImage,myName=false}) {
     
-
-
-
-
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 
@@ -38,11 +34,6 @@ function Grid({gridImage,myName=false}) {
                </div>
             ))
            }
-
-            
-
-
-  
 
     </div>
   )
