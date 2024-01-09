@@ -24,17 +24,16 @@ body {
 
 .shadowed::after{
   position: absolute;
-  overflow: hidden;
     top: 0;
     left: 63%;
-    z-index: 2;
+    z-index: 555;
     display: block;
     content: '';
     width: 50%;
     height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
     transform: skewX(-25deg);
-    transition: all 400ms;
+    transition: all 300ms;
 }
 
 
