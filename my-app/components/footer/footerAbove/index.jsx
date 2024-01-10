@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from './items'
 import Datas from '@/mocks/footer.json'
-import FooterLogo from '@/public/footerLogo.jpg'
+import FooterLogo from '@/public/Frame 239.jpg'
 import Link  from 'next/link'
 import Image  from 'next/image'
 

@@ -7,9 +7,9 @@ import Contact from '../contact'
 import { usePathname } from 'next/navigation'
 
 
-function index({statusInfo}) {
+function index({statusInfo,shown,setShown}) {
 
-  const [shown,setShown] = useState(true)
+  // const [shown,setShown] = useState(true)
   const pathname = usePathname()
 
   
@@ -33,25 +33,25 @@ function index({statusInfo}) {
   // };
 
 
-
+  // className={ `${shown ? styles.indexData1 : styles.indexData2}
 
 
   return (
-    <div className='col-span-2 flex-col pe-4' onClick={handleOutsideFilter}>
+    <div className='col-span-2 flex-col pe-4' >
 
-       { !statusInfo && <div className='flex justify-end'>
+       { !statusInfo && <div  className='flex justify-end '>
            <Contact />
        </div>}
-       <div className={`${statusInfo ? 'mt-3' :'mt-5'} ${styles.listContainer} `}>
-            {
-              shown && <ul className={ `${styles.list}` } >
+       <div  onClick={handleOutsideFilter} className={`${statusInfo ? 'mt-3' :'mt-5'} ${styles.listContainer}`}>
+            
+             <ul className={ `${styles.list} ${shown ? styles.indexData1 : styles.indexData2}` } >
               <li><Link  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'>Home</Link></li>
               <li> <Link  className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'>Products</Link></li>
               <li> <Link  className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'>Service</Link> </li>
               <li> <Link  className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'>About</Link> </li>
               <li> <Link  className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'>Contact</Link> </li>
             </ul>
-            }
+          
           <div>
             <Search  shown={shown}  setShown={setShown} />
           </div>

@@ -2,10 +2,10 @@ import first from '@/public/Rectangle 5.png'
 import second from '@/public/Rectangle 6.png'
 import third from '@/public/Frame 232.png'
 import fourth from '@/public/Frame 233.png'
-import fifth from '@/public/imagegrid1.png'
-import sixth from '@/public/imagegrid2.png'
-import sevnth from '@/public/imagegrid2.png'
-import eigth from '@/public/imagegrid4.png'
+import fifth from '@/public/Feature1.jpg'
+import sixth from '@/public/Feature2.jpg'
+import sevnth from '@/public/Feature3.jpg'
+import eigth from '@/public/Feature4.jpg'
 
 
 

@@ -8,6 +8,7 @@ import MobileNav from '../mobileNav'
 function index() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [shown,setShown] = useState(true)
   const [statusInfo, setStatusInfo] = useState(false)
   const [isScreenSmall, setIsScreenSmall] = useState(false);
 
@@ -72,10 +73,18 @@ function index() {
   };
 
 
+  const handleShown = () =>{
+    
+    if(!shown){
+      setShown(true);
+    }
+    
+  }
+
   
 
   return (
-    <div style={headerStyle}>
+    <div style={headerStyle} onClick={handleShown}>
       <div className={`lg:container lg:mx-auto ${ statusInfo ? 'py-1' : 'py-4' } `}>
         {
           isScreenSmall ? (
@@ -83,7 +92,7 @@ function index() {
           ) : (
             <nav className="grid grid-cols-3 gap-40">
             <Logo statusInfo={statusInfo} />
-            <NavMenu  statusInfo={statusInfo} />
+            <NavMenu shown={shown} setShown={setShown} statusInfo={statusInfo} />
            </nav>
           )
         }

@@ -5,9 +5,46 @@
 }
 
 .list {
-  display: flex;
-  gap: 20px;
+
 }
+
+
+.indexData1{
+  animation: opacityData1 0.8s forwards;
+}
+
+
+.indexData2{
+  animation: opacityData2 0.8s forwards;
+} 
+
+
+@keyframes opacityData1{
+  from{
+    opacity: 0;
+    display: none;
+    gap: 20px;
+  }
+  to{
+    opacity: 1;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@keyframes opacityData2{
+  from{
+    opacity: 1;
+    display: flex;
+    gap: 20px;
+  }
+  to{
+    opacity: 0;
+    display: none;
+    gap: 20px;
+  }
+}
+
 
 
 /* .disabled{

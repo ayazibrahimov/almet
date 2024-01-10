@@ -20,17 +20,16 @@ const elementStyle = positionData === 'firstElement'
   return (
     
     <div className={styles.container}>
+
+         <Image />   
+
         <ul className={styles.list}>
             {
               application.map((data,index)=>(
                 <li> <span style={{animationDuration:`${0+data.duration}s` }}></span> {data.title}</li>
               ))
             }
-        </ul>
-
-
-
-  
+        </ul> 
            {
             spinner && <div className={`${styles.metal} hidden sm:block`} style={elementStyle}  >
             <Image  

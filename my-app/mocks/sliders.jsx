@@ -1,9 +1,10 @@
-import first from '@/public/Frame 99.png'
-import second from '@/public/Frame 100.png'
-import third from '@/public/Frame 101.png'
-import fourth from '@/public/Frame 102.png'
-import fifth from '@/public/Frame 130.png'
-import sixth from '@/public/Frame 134.png'
+import first from '@/public/FirstSliderImage1.jpg'
+import second from '@/public/FirstSliderImage2.jpg'
+import third from '@/public/FirstSliderImage3.jpg'
+import fourth from '@/public/FirstSliderImage4.jpg'
+import fifth from '@/public/FirstSliderImage5.jpg'
+import sixth from '@/public/Frame 130.png'
+import sevnth from '@/public/Frame 134.png'
 
 
 
@@ -12,12 +13,13 @@ export const SliderImages = [
     {src:first, alt: 'First'},
     {src:second, alt: 'Second'},
     {src:third, alt: 'Third'},
-    {src:fourth, alt: 'Fourth'}
+    {src:fourth, alt: 'Fourth'},
+    {src:fifth, alt: 'fifth'},
 ]
 
 
 export const SliderMetal = [
-    {src:fifth, alt: 'First',heading: 'Certificates and sefety standarts', title:'High standarts', text:"All products offered by us comply with international standards and safety requirements. We assure our customers that each of our products is of high quality and safe."},
-    {src:sixth, alt: 'Second', heading: 'Custom review & testimonials', title:'The words of our customers', text:"All products offered by us comply with international standards and safety requirements. We assure our customers that each of our products is of high quality and safe."},
+    {src:sixth, alt: 'First',heading: 'Certificates and sefety standarts', title:'High standarts', text:"All products offered by us comply with international standards and safety requirements. We assure our customers that each of our products is of high quality and safe."},
+    {src:sevnth, alt: 'Second', heading: 'Custom review & testimonials', title:'The words of our customers', text:"All products offered by us comply with international standards and safety requirements. We assure our customers that each of our products is of high quality and safe."},
 
 ]

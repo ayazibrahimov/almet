@@ -11,13 +11,16 @@ function Contact() {
     const [ icon, setIcon] = useState(null)
 
 
+
+
+
   return (
     <div className={`flex gap-9 ${styles.contactContainer} `}>
         <div>
             
         </div>
       <div>
-        <Link href="/">+994 55 478 87 54</Link>
+        <Link href="tel:+994554788754">+994 55 478 87 54</Link>
       </div>
 
       <div className="flex gap-2">  

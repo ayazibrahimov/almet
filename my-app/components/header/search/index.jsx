@@ -13,7 +13,10 @@ function Search({setShown, shown}) {
   }
 
   const handleClose = () =>{
-     setShown(true)
+     if(!shown){
+       setShown(true)
+     }
+  
   }
 
 
@@ -24,7 +27,7 @@ function Search({setShown, shown}) {
 
 
   return (
-    <div className={styles.searchContainer} style={{ width: shown ? '' : '490px'}} >
+    <div className={ `${styles.searchContainer} ${shown ? styles.contractFilter : styles.filterLength } ` }  >
         <span className={styles.searchIconContainer}><SearchIcon style={{ color: '#4F4F4F' }} /></span>
        <input 
          type="text" 
