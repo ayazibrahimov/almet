@@ -83,7 +83,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);  
+  transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
   font-size: 24px;
@@ -92,3 +92,95 @@
   line-height: 30px; /* 125% */
   text-transform: uppercase;
 }
+
+.styleRectangleSize {
+  position: relative;
+  width: 504px;
+  height: 504px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .info {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .styleRectangleSize {
+    width: 450px;
+    height: 450px;
+  }
+
+  .line1 {
+    width: 303px;
+    height: 300px;
+  }
+  .line2 {
+    width: 303px;
+    height: 300px;
+  }
+  .line3 {
+    width: 303px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 577px) {
+
+  .info {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+
+  .styleRectangleSize {
+    width: 350px;
+    height: 350px;
+  }
+
+  .line1 {
+    width: 233px;
+    height: 230px;
+  }
+  .line2 {
+    width: 233px;
+    height: 230px;
+  }
+  .line3 {
+    width: 233px;
+    height: 230px;
+  }
+
+
+  .textMiddle{
+    font-size: 22px;
+  }
+
+
+}
+
+
+@media screen and (max-width:400px){
+  
+  .styleRectangleSize {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .line1 {
+    width: 203px;
+    height: 200px;
+  }
+  .line2 {
+    width: 203px;
+    height: 200px;
+  }
+  .line3 {
+    width: 203px;
+    height: 200px;
+  }
+
+
+}
+

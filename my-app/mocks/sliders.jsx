@@ -3,8 +3,8 @@ import second from '@/public/FirstSliderImage2.jpg'
 import third from '@/public/FirstSliderImage3.jpg'
 import fourth from '@/public/FirstSliderImage4.jpg'
 import fifth from '@/public/FirstSliderImage5.jpg'
-import sixth from '@/public/Frame 130.png'
-import sevnth from '@/public/Frame 134.png'
+import sixth from '@/public/sliderSettingImage1.jpg'
+import sevnth from '@/public/sliderSettingImage2.jpg'
 
 
 

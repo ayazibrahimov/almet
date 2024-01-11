@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 
 const ProductItems = () => {
   return (
-    <div className='flex justify-center items-center flex-wrap gap-7 my-2'>
+    <div className='flex justify-center items-center flex-wrap gap-7 md:my-8 my-4'>
         <span className={styles.piece}>Wire sheet</span>
         <span className={styles.piece}>Steel Rebar</span>
         <span className={styles.piece}>I-Beams</span>

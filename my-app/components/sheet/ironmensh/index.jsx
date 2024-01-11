@@ -7,11 +7,11 @@ import circle2 from "@/public/circle2.png";
 import circle3 from "@/public/circle3.png";
 
 const Ironmensh = () => {
-  const styleDestop = {
-    position: "relative",
-    width: "504px",
-    height: "504px",
-  };
+  // const styleRectangleSize = {
+  //   position: "relative",
+  //   width: "504px",
+  //   height: "504px",
+  // };
 
   return (
     <div className={styles.container}>
@@ -21,8 +21,8 @@ const Ironmensh = () => {
           Production with <br />
           <span style={{ borderBottom: "1px solid #fff" }}>Automation</span>
         </h2>
-        <div className="text-center mt-8">
-          <div style={styleDestop}>
+        <div className="text-center mt-8 px-8">
+          <div className={styles.styleRectangleSize}>
             <Image src={ImageRectangle} alt="rectangle" fill />
 
             <h3 className={styles.textMiddle}>Wire Sheet</h3>

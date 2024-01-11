@@ -11,3 +11,18 @@
   text-transform: uppercase;
   margin: 40px 0;
 }
+
+
+@media screen and (max-width:992px){
+  .title{
+     font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width:577px){
+  .title{
+    font-size: 22px;
+    line-height: 36px;
+ }
+}

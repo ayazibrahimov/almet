@@ -22,7 +22,8 @@
 @keyframes opacityData1{
   from{
     opacity: 0;
-    display: none;
+    /* display: none; */
+    display: flex;
     gap: 20px;
   }
   to{
@@ -40,7 +41,8 @@
   }
   to{
     opacity: 0;
-    display: none;
+    /* display: none; */
+    display: flex;
     gap: 20px;
   }
 }

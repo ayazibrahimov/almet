@@ -22,8 +22,8 @@ const TitleAbove = ({text}) => {
 
   
   return (
-    <div className='flex justify-between align-middle my-4 gap-6'>
-        <h4 className={`${styles.left} robot1 mt-2.5`}>{text}</h4>
+    <div className='flex justify-between align-middle my-4 sm:gap-6'>
+        <h4 className={`${styles.left} robot1 mt-2.5 w-3/5`}>{text}</h4>
         <ToProducts info='All products' />
     </div>
   )

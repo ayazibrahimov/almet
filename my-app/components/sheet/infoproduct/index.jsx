@@ -5,7 +5,7 @@ import AllProducts from '../allproduct'
 
 const Products = () => {
   return (
-    <div className='sm:container sm:mx-auto py-6 px-14'>
+    <div className='lg:container lg:mx-auto lg:px-14 px-8 py-6'>
         <h2 className={styles.title}>“products”</h2>
         <AllProducts />
     </div>

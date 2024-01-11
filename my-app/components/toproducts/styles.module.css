@@ -42,4 +42,9 @@
     bottom: 0px;
     left: 0%;
   }
+
+  .text {
+    font-size: 22px;
+    gap: 0 !important;
+  }
 }

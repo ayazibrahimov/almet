@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 const ToProducts = ({info}) => {
   return (
-    <div className='w-52 flex justify-end  hover:opacity-50'>
+    <div className='flex justify-end  hover:opacity-50 w-2/5'>
         <Link href='/' className='flex'>
          <span className={styles.imageArrow} style={{marginTop:'-24px',marginLeft:'-30px'}}><Image src={Arrow} alt='Arrow'></Image></span>
           <div className='flex justify-end'>     

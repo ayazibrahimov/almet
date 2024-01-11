@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import materials1 from "@/public/materials1.jpg";
 import Image from "next/image";
 
-const Swiper = ( {materials, leftData,rightData} ) => {
+const Swiper = ( {index,materials, leftData,rightData} ) => {
 
   const [statusSlider, setStatus] = useState(true)
  
@@ -20,7 +20,7 @@ const Swiper = ( {materials, leftData,rightData} ) => {
                 position: 'absolute',
                 transition: 'transform 0.5s',
 
-                transform: `translateX(${((data.id - 1) * 190 - rightData)}px)`,
+                transform: `translateX(${(((data.id - 1) * 190 )) - (190 * index) }px)`,
                 }}
                
                >
@@ -30,7 +30,7 @@ const Swiper = ( {materials, leftData,rightData} ) => {
                 alt={data.alt}
                 fill
                 style={{
-                  transform: `scale(${((data.id - 1) * 190 - rightData) !== 0 ? .9 : 1})`,
+                  transform: `scale(${(((data.id - 1) * 190 )) - (190 * index) !== 0 ? .9 : 1})`,
                   transition: 'transform 0.5s',
                 }}
               />

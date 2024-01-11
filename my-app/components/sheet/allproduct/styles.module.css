@@ -34,8 +34,8 @@
     content: url('../../../public/archive.svg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
     display: inline-block;
     position: absolute;
-    top: -40px;
-    left: -100px;
+    top: -34px;
+    left: -85px;
     width: 100px;
     height: 100px;
     z-index: 111;

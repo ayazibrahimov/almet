@@ -5,7 +5,7 @@ import {Tables} from '@/mocks/table'
 
 const Types = () => {
   return (
-     <div className='sm:container sm:mx-auto py-6 px-14'>
+     <div className='lg:container lg:mx-auto lg:px-14 px-8 py-6'>
         <div className={styles.container}>
             <h3 className={styles.title}>“Almet Trading Baku” company produces two types of metal mesh:</h3>
             <Item tables={Tables} />

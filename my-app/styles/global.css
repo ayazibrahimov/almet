@@ -49,12 +49,11 @@ body {
 
 
 
-/* 
 
 .fade-in {
-  opacity: 1;
-  transition: newAn 0.9s ease-in-out;
+  animation: newAn .6s forwards;
 }
+
 
 @keyframes newAn{
   from{
@@ -63,5 +62,5 @@ body {
   to{
     opacity: 1;
   }
-} */
+}
 

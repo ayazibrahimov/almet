@@ -1,8 +1,13 @@
 import React from 'react'
 import styles from './styles.module.css'
+import useStore from '@/zustand/store'
 
 const Timeline = ({index, sliderDatas}) => {
-   
+  
+  
+  const { changeIndex } = useStore()
+
+
   const active = {
     transform: 'scale(1.4)',
     backgroundColor: '#DAA520',
@@ -10,12 +15,13 @@ const Timeline = ({index, sliderDatas}) => {
   }
 
 
+
   return (
     <div className={styles.container}>
 
         {
         sliderDatas.map((data,i)=>(
-          <span 
+          <span onClick={()=>changeIndex(data.id - 1)}
              style={(index+1 === Number(data.id)) ? active : {}}
              className={styles.box}
              >{data.id}</span>

@@ -10,14 +10,16 @@ const Item = ({ tables }) => {
       tables.map((table, id) => (
         <div key={id}>
           <h2 className={styles.title}>{table.title}</h2>
-          <div
+          <div className={styles.typeContainer}
             style={{
               position: "relative",
               width: "100%",
-              minHeight: "1000px",
             }}
           >
-            <Image src={table.src} alt={table.alt} fill />
+            <Image 
+             src={table.src} 
+             alt={table.alt} 
+             fill />
           </div>
         </div>
       ))

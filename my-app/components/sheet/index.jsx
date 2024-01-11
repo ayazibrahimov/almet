@@ -12,7 +12,7 @@ import Ironmensh from './ironmensh'
 const Sheet = () => {
   return (
     <div>
-        <div style={{position:"relative",width:"100%",height:'800px' }}>
+        <div className={styles.container} style={{position:"relative",width:"100%"}}>
              <DropFilter />
              <Image 
                src={SheetImg} 
