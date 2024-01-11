@@ -19,13 +19,11 @@ const MajorSlider = () => {
   
 
   return (
-    <div  style={{position:'relative', width: "100%",height: "600px"}} >
+    <div  style={{position:'relative', width: "100%", height: sliderDatas.length > 8 ? `${(sliderDatas.length-9) * 100 + 600}px` :'600px' }  } >
          
-       <div 
-       
-       style={{position:'relative',width:'100%', height:'100%'}}>
+       <div style={{position:'relative',width:'100%', height:'100%'}}>
             <Image 
-               className='fade-in'
+                className='fade-in'
                src={sliderDatas[index]?.src} 
                fill
                alt="Slider cover images" 
