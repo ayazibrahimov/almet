@@ -43,12 +43,12 @@ const index = () => {
         // Adjust the height dynamically based on screen size
         setSize1((prevSize) => ({
           ...prevSize,
-          height: (window.innerWidth <= 769 && window.innerWidth >= 578) ? '400px' : (window.innerWidth <= 577) ? '305px' : '440px',
+          height: (window.innerWidth <= 769 && window.innerWidth >= 578) ? '400px' : (window.innerWidth <= 577) ? '280px' : '440px',
         }));
         setSize2((prevSize) => ({
           ...prevSize,
           width: window.innerWidth <= 1024 ? '100%' :'480px',
-          height: (window.innerWidth <= 1024 && window.innerWidth >= 769) ? '567px' : (window.innerWidth < 769) ? '305px' : '360px',
+          height: (window.innerWidth <= 1024 && window.innerWidth >= 769) ? '567px' : (window.innerWidth < 769) ? '270px' : '360px',
         }));
       };
   

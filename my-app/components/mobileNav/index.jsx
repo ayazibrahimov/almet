@@ -15,7 +15,7 @@ const index = () => {
  
       <div className='flex justify-between items-center'>
 
-          <div  style={{position:'relative', width:'150px', height:'70px'}} >
+          <div  style={{position:'relative', width:'132px', height:'58px'}} >
             <Image 
               
               src={Logo}

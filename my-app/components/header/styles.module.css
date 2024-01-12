@@ -2,7 +2,28 @@
     background: #173A56;
 }
 
-
 .white{
     background-color: white;
 }
+
+
+.mobileNavBar{
+    display: none;
+}
+
+.desktopNavBar{
+    display: block;
+}
+
+
+
+@media screen and (max-width:992px){
+    .mobileNavBar{
+        display: block;
+    }
+    
+    .desktopNavBar{
+        display: none;
+    }
+}
+

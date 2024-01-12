@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "./logo/index";
 import NavMenu from "./navmenu/index";
 import MobileNav from '../mobileNav' 
+import styles from './styles.module.css' 
 
 function index() {
 
@@ -86,16 +87,13 @@ function index() {
   return (
     <div style={headerStyle} onClick={handleShown}>
       <div className={`lg:container lg:mx-auto ${ statusInfo ? 'py-1' : 'py-4' } `}>
-        {
-          isScreenSmall ? (
-              <MobileNav />
-          ) : (
+          <div className={styles.mobileNavBar}><MobileNav /></div>
+          <div className={styles.desktopNavBar}>
             <nav className="grid grid-cols-3 gap-40">
-            <Logo statusInfo={statusInfo} />
-            <NavMenu shown={shown} setShown={setShown} statusInfo={statusInfo} />
-           </nav>
-          )
-        }
+              <Logo statusInfo={statusInfo} />
+              <NavMenu shown={shown} setShown={setShown} statusInfo={statusInfo} />
+            </nav>
+          </div>
       </div>
     </div>
   );

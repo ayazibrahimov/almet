@@ -40,10 +40,11 @@ function Sliding() {
 
         {
           SliderImages.map((image,index)=>(
-            <SwiperSlide key={index}>
-             <div className={styles.imageContainerSize} style={{position:'relative', width:'100%'}}>
+            <SwiperSlide style={{borderRadius:'10px'}} key={index}>
+             <div className={styles.imageContainerSize} style={{position:'relative', width:'100%', borderRadius:'10px'}}>
                <DropFilter />
                <Image
+                 style={{borderRadius:'5px'}}
                 src={image.src}
                 alt={image.alt}
                 full

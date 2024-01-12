@@ -48,3 +48,9 @@
     width: 23px;
     height: 23px;
   }
+
+
+  .swiper-pagination-bullet:active,
+  .swiper-pagination-bullet:target{
+     background-color: transparent;
+  }

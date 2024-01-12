@@ -52,7 +52,7 @@ const index = () => {
                      <div style={{position:'relative', width:'100%', height:"480px"}}>
                         <Image 
                           src={data.src}
-                          style={{borderRadius:'10px'}}
+                          style={{borderRadius:'5px'}}
                           alt={data.alt}
                           fill
                         />

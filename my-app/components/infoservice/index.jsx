@@ -30,7 +30,7 @@ const index = () => {
      </div>
 
 
-     <div className='sm:container sm:mx-auto pb-4'>
+     <div className='sm:container sm:mx-auto px-2 pb-4'>
         <Works spinner={false} positionData='secondElement' application={application.results3} /> 
      </div>
     

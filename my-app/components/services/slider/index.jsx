@@ -45,6 +45,7 @@ const index = () => {
                       <Content  metal={metal}/>  
                       <DropFilter />
                       <Image
+                       style={{borderRadius:'5px'}}
                        src={metal.src}
                        alt={metal.alt}
                        fill

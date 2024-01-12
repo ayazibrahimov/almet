@@ -7,7 +7,11 @@ const ImageText = ({size,imgData}) => {
     <>
       
       <div style={size}>
-        <Image src={imgData} alt='image' fill />
+        <Image
+          style={{borderRadius:'5px'}}
+          src={imgData} 
+          alt='image' 
+          fill />
       </div>
     </>
   );

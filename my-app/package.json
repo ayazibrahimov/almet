@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postbuild": "mkdir out && cp -r .next/* out/",
     "lint": "next lint"
   },
   "dependencies": {
