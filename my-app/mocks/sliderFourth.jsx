@@ -17,9 +17,9 @@ import materials6 from "@/public/materials6.jpg";
 import materials7 from "@/public/materials7.jpg";
 import materials8 from "@/public/materials8.jpg";
 import materials9 from "@/public/materials9.jpg";
-import infoImage1 from '@/public/Rectangle 44.png'
-import infoImage2 from '@/public/Rectangle 45.png'
-import infoImage3 from '@/public/Rectangle 46.png'
+import infoImage1 from '@/public/Rectangle 44.jpg'
+import infoImage2 from '@/public/Rectangle 45.jpg'
+import infoImage3 from '@/public/Rectangle 46.jpg'
 import certificact1 from '@/public/certififact1.png'
 import certificact2 from '@/public/certififact2.png'
 
@@ -53,9 +53,6 @@ export const Materials = [
 
 
 export const Infos = [
-    {id:1,src:infoImage1,alt:'info1',title:'Experienced Team',text:'We have been in the sector for many years'},
-    {id:2,src:infoImage2,alt:'info2',title:'World Standards', text:'Compliance with international standards'},
-    {id:3,src:infoImage3,alt:'info3',title:'Loyalty / Partnership',text:'We are your success partner'},
     {id:1,src:infoImage1,alt:'info1',title:'Experienced Team',text:'We have been in the sector for many years'},
     {id:2,src:infoImage2,alt:'info2',title:'World Standards', text:'Compliance with international standards'},
     {id:3,src:infoImage3,alt:'info3',title:'Loyalty / Partnership',text:'We are your success partner'},

@@ -10,7 +10,7 @@ const index = () => {
 
 
   return (
-    <div className='sm:container sm:mx-auto py-16 px-14 relative' >
+    <div className='lg:container lg:mx-auto lg:px-14 px-8 py-16 relative' >
         <Trading />
     </div>
   )

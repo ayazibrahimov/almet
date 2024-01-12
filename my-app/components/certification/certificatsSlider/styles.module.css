@@ -15,3 +15,39 @@
 .sliderBox{
     height: 820px;
 }
+
+
+@media screen and (max-width: 992px){
+    .title{
+        font-size: 65px;
+        line-height: 66px;
+    }   
+
+    .sliderBox{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 769px){
+    .title{
+        font-size: 56px;
+        line-height: 40px;
+    }   
+
+    .sliderBox{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 577px){
+    .title{
+        font-size: 46px;
+        line-height: 30px;
+    }   
+}
+
+
+@media screen and (max-width: 455px){
+    .title{
+        font-size: 32px;
+    }   
+}
+

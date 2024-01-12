@@ -45,6 +45,7 @@
   
   .leftImage {
     position: relative;
+    display: flex;
     color: #1a1a1a;
     font-size: 58px;
     font-style: normal;
@@ -121,19 +122,184 @@
 
 
 
+@media screen and (max-width:1200px){
+  
+  .title{
+    font-size: 66px;
+  }
+   
+  .mainTitleElement{
+    font-size: 66px;
+  }
+
+  .mainTitleElement2{
+    font-size: 66px;
+  }
+
+  .textTred{
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .leftImage{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 49px;
+  }
+
+}
+
+@media screen and (max-width:1025px){
+  .leftImage{
+    font-size: 36px;
+    line-height: 45px;
+    width: 95%;
+  }
+}
+
+
+@media screen and (max-width:992px){
+  
+  .title{
+    font-size: 50px;
+  }
+   
+  
+  .mainTitleElement{
+    font-size: 50px;
+  }
+  
+  
+  .mainTitleElement2{
+    font-size: 50px;
+  }
+
+
+  .mainTitleElementSecond{
+    padding: 0 10px 10px 0px;
+    height: 80px !important;
+  }
+
+
+  .textTred{
+    font-size: 50px;
+  }
+
+  .textTitle{
+    font-size: 22;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+
+  .leftImage{
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+}
+
+@media screen and (max-width:800px){
+  .leftImage {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width:769px){
+  .title{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  
+  .mainTitleElement{
+    font-size: 40px;
+  }
+  
+  
+  .mainTitleElement2{
+    font-size: 40px;
+  }
+
+  /* .infoText {
+    font-size: 20px;
+    margin-top: 0;
+  } */
+
+  .mainTitleElementSecond{
+    /* background-color: transparent; */
+    /* padding:0px; */
+  }
+
+  .textTred{
+    font-size: 40px;
+  }
+
+  .leftImage {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+
+  .infoText{
+    font-size: 20px;
+  }
+
+
+}
+
+
+@media screen and (max-width:577px){
+  .title{
+    font-size: 26px;
+    line-height: 40px;
+  }
+  
+  
+  .mainTitleElement{
+    font-size: 26px;
+  }
+  
+  
+  .mainTitleElement2{
+    font-size: 26px;
+  }
+
+
+  .text{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .mainTitle{
+    top: 212px;
+    left: 66px;
+  }
+  
+
+  .textTred{
+    font-size: 28px;
+  }
 
 
 
+  .textTitle {
+    font-size: 17px;
+    margin-top: 36px;
+  }
 
 
 
+}
 
+@media screen and (max-width:600px){
+  .leftImage{
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
+  }
 
-
-
-
-
-
+}
 
 
 

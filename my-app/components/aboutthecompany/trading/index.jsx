@@ -1,10 +1,10 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css'
 import ImageText from '../imagetext'
-import img1 from '@/public/Rectangle 53.png';
-import img2 from '@/public/Rectangle 42.png';
-import img3 from '@/public/Rectangle 43.png';
+import img1 from '@/public/Rectangle 53.jpg';
+import img2 from '@/public/Rectangle 42.jpg';
+import img3 from '@/public/Rectangle 43.jpg';
 import application from '@/mocks/application.json'
 import {motion} from 'framer-motion'
 import SettingCircle from '@/components/settingCircle'
@@ -17,17 +17,55 @@ const roboto = Roboto({
 
 const index = () => {
 
-    const size1 = {
-        position: 'relative',
-        width: '840px', // Corrected the typo in 'with' to 'width'
-        height: '440px',
-    }
-
-    const size2 = {
+  const [size1, setSize1] = useState({
+    position: 'relative',
+    width: '840px',
+    height: '440px',
+  });
+  const [size2, setSize2] = useState({
         position: 'relative',
         width: '480px', // Corrected the typo in 'with' to 'width'
         height: '360px',
-    }
+  });
+
+
+
+    // const size2 = {
+    //     position: 'relative',
+    //     width: '480px', // Corrected the typo in 'with' to 'width'
+    //     height: '360px',
+    // }
+
+
+
+    useEffect(() => {
+      const handleResize = () => {
+        // Adjust the height dynamically based on screen size
+        setSize1((prevSize) => ({
+          ...prevSize,
+          height: (window.innerWidth <= 769 && window.innerWidth >= 578) ? '400px' : (window.innerWidth <= 577) ? '305px' : '440px',
+        }));
+        setSize2((prevSize) => ({
+          ...prevSize,
+          width: window.innerWidth <= 1024 ? '100%' :'480px',
+          height: (window.innerWidth <= 1024 && window.innerWidth >= 769) ? '567px' : (window.innerWidth < 769) ? '305px' : '360px',
+        }));
+      };
+  
+      // Initial size adjustment
+      handleResize();
+  
+      // Attach event listener for window resize
+      window.addEventListener('resize', handleResize);
+  
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+ 
+
 
 
 
@@ -39,7 +77,7 @@ const index = () => {
            <motion.h2
              initial={{ opacity:0 ,y:-1 }}
              animate={{ opacity:1 , y:1 }} 
-             transition={{ delay: 1, duration:.8 }}
+             transition={{ delay: 1, duration:.4 }}
             className={`${styles.mainTitleElement}`}
             >We have the top of</motion.h2>
            <motion.h3
@@ -49,7 +87,7 @@ const index = () => {
             className={`mainTitle ${styles.mainTitleElement2} ${styles.mainTitleElementSecond}`}>
               production</motion.h3>
         </div>
-        <div className='flex justify-end mt-48 mb-40'>
+        <div className='flex justify-end mt-48 sm:mb-40 mb-20'>
             <ImageText imgData={img1}  size={size1}/>
         </div>
 
@@ -66,26 +104,27 @@ const index = () => {
         </div>
 
 
-        <div className='mt-10'>
-            <div className="grid grid-cols-2 gap-4">
+        <div className='lg:mt-10 mt-20'>
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                  <div className={styles.leftImage}>
-                    <p>To achieve an ideal iron product, you need an experienced and knowledgeable team.</p>
+                    <p>To achieve an ideal iron product, you need an experienced and knowledgeable team.  
+                    </p>
                      <SettingCircle /> 
                  </div>
-                 <div className='flex justify-end'><ImageText  imgData={img3}   size={size2}/></div>
+                 <div className='flex justify-end lg:mt-0 mt-12'><ImageText  imgData={img3}   size={size2}/></div>
             </div>
         </div>
 
 
 
-        <div className='mt-32 mb-52'>
-               <div className='flex gap-10'>
+        <div className='lg:mt-32 mt-16 mb-52'>
+               <div className='lg:flex gap-10'>
                      {/* <div className='w-5/12'></div>
                      <div className="w-7/12">Sagol</div> */}
 
                        {
                         application.info.map((obj,index)=>(
-                          <div  className={`${obj.id === 1 ? 'w-5/12' : 'w-7/12 pe-10' }  ${styles.infoText}` } key={index}>
+                          <div  className={`${obj.id === 1 ? 'lg:w-5/12 w-full' : 'lg:w-7/12 w-full lg:pe-10' }  ${styles.infoText}` } key={index}>
                             <p className={roboto.className}>{obj.text}</p>
                            </div>
                         ))

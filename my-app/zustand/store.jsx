@@ -5,7 +5,7 @@ import {sliderDatas,Materials} from '@/mocks/sliderFourth'
 
 
 const useStore = create((set) => ({
-    index: 4,
+    index: 0,
     leftData : 0,
     rightData : 0,
     sliderDatas,

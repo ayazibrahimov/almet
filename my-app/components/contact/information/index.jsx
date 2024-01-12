@@ -23,8 +23,8 @@ const roboto3 = Roboto({
 
 const index = () => {
   return (
-    <div className="grid grid-cols-12 gap-4 my-20">
-      <div className="col-span-4">
+    <div className="grid grid-cols-12 gap-4 lg:my-20 my-10">
+      <div className="lg:col-span-4 sm:col-span-6 col-span-12">
         <div>
           <h4 className={styles.titleInfoMail}>
             <Link href="https://almetbaku.com/">almetbakutrading.com </Link>{" "}
@@ -53,7 +53,7 @@ const index = () => {
           </ul>
         </div>
 
-        <div className="my-4">
+        <div className="my-4 flex sm:justify-start justify-center">
           <div
             style={{ position: "relative", width: "220px", height: "220px" }}
           >
@@ -73,7 +73,7 @@ const index = () => {
           </h4>
         </div>
       </div>
-      <div className="col-span-8">
+      <div className="lg:col-span-8 sm:col-span-6 col-span-12">
         <div>
           <div className={styles.message}>
             <h4 className={roboto3.className}>Ready to start your project?</h4>
@@ -146,7 +146,7 @@ const index = () => {
         </div>
 
         <div>
-        <Stack spacing={2} sx={{ height: '150px' }}>
+            <Stack spacing={2} sx={{ height: '150px' }}>
               <Input
                 placeholder="PROJECT İNFORMATİON*"
                 variant="soft"

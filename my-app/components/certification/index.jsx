@@ -7,7 +7,7 @@ const Certification = () => {
   return (
     <div className={styles.component}>
         
-        <div className='sm:container sm:mx-auto py-16 px-14'>
+        <div className='lg:container lg:mx-auto lg:px-14 px-8 py-16'>
            
            <Slider />
            <Certificat />

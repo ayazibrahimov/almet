@@ -29,3 +29,42 @@
       transform: rotate(0deg);
     }
   }
+
+
+  @media screen and (max-width:1200px){
+     .setting1{
+        right: 67%;
+        bottom: 18%;
+     }
+     .setting2{
+       right: 62%;
+       bottom: 25%;
+     }
+  }
+  @media screen and (max-width:1025px){
+    .setting1{
+      right: 0%;
+      bottom: 4%;
+   }
+   .setting2{
+     right: -3%;
+     bottom: 19%;
+   }
+  }
+
+
+  @media screen and (max-width:800px){
+    .setting1{
+      right: 1%;
+      bottom: -5%;
+   }
+   /* .setting2{
+     right: -3%;
+     bottom: 19%;
+   } */
+  }
+  @media screen and (max-width:600px){
+    .box{
+      display: none;
+    }
+  }

@@ -11,7 +11,7 @@ const roboto = Roboto({
 const Certificat = () => {
   return (
     <div className='mt-10 mb-6'>
-        <h3 className={`${styles.title} ${roboto.className} w-9/12`}>Permanent values are built <br /> with Almet Trading Baku</h3>
+        <h3 className={`${styles.title} ${roboto.className} lg:w-9/12 w-full`}>Permanent values are built <br /> with Almet Trading Baku</h3>
         <CertificatsSlider />
     </div>
   )

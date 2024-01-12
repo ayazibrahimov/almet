@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const index = () => {
   return (
-    <div>
+    <div className={styles.box}>
       <span className={styles.setting1}>
         <Image src={setting1} />
       </span>

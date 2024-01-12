@@ -1,7 +1,6 @@
 .container {
   position: absolute;
-  right: 55%;
-  bottom: 10%;
+  bottom: 1%;
   display: flex;
   gap: 10px;
 

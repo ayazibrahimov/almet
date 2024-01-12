@@ -42,17 +42,12 @@ const MajorSlider = () => {
            </div>
            <div className="w-8/12">
               <Swiper materials={Materials} rightData={rightData} leftData={leftData} index={index} sliderDatas={sliderDatas} />
+              <Buttons index={index} sliderDatas={sliderDatas} increment={increment} decrement={decrement} />
            </div>
 
          </div>
 
-
-  
-
        </div>
-
-      <Buttons index={index} sliderDatas={sliderDatas} increment={increment} decrement={decrement} />
-       
 
 
     </div>

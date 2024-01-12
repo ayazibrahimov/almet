@@ -12,6 +12,9 @@ const Timeline = ({index, sliderDatas}) => {
     transform: 'scale(1.4)',
     backgroundColor: '#DAA520',
     fontSize: '16px',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center'
   }
 
 

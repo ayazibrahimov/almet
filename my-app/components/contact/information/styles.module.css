@@ -122,4 +122,62 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:992px){
+  .message > h4 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .titleInfoMail{
+    font-size: 17px;
+    line-height: 13px;
+  }
+  .infoAdresses {
+    margin: 40px 0;
+  }
+  
+  .message > h4:nth-child(1) {
+    padding-left: 0px;
+  }
+
+}
+
+@media screen and (max-width:642px){
+  .titleInfoMail{
+    text-align: center;
+  }
+  .infoAdresses > li {
+    text-align: center;
+  }
+  .turnIdea{
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .turnIdea::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 1%;
+    right: 1%;
+    bottom: -52%;
+    /* color:red; */
+    background-color: rgb(170, 168, 168);
+  }
+}
+
+
+@media screen and (max-width:577px){
+  .message > h4 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .sendBtn{
+    padding: 6px 20px;
+    font-size: 16px;
+  }
 }

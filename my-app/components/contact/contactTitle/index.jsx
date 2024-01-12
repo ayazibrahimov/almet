@@ -14,21 +14,23 @@ const index = () => {
         animate={{opacity:1, height:100 }} 
         transition={{ delay:1, duration:.2 }}
         className={styles.title}>
-        Let's start new projects <br />
+        Let's start new projects 
+
+        <div>
         <span className={styles.titleSpecial}> together</span>
         
         <motion.div 
            animate={{opacity:1 }} 
            transition={{ delay:1.5, duration:.2 }}
          className={styles.settings}>
-         <span style={{display:'inline-block', position:'relative',width:'40px',height:'40px'}} className={styles.setting1}>
+         <span className={styles.setting1}>
            <Image 
             src={setting1}
             alt="setting1"
             fill  
            />
          </span>
-         <span style={{display:'inline-block', position:'relative',width:'40px',height:'40px'}} className={styles.setting2}>
+         <span className={styles.setting2}>
            <Image  
              src={setting1}
              alt='setting1'
@@ -36,6 +38,8 @@ const index = () => {
              />
          </span>
       </motion.div>
+
+      </div>
       </motion.h2>
     </div>
   );
