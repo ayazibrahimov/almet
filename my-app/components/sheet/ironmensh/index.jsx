@@ -25,7 +25,7 @@ const Ironmensh = () => {
           <div className={styles.styleRectangleSize}>
             <Image src={ImageRectangle} alt="rectangle" fill />
 
-            <h3 className={styles.textMiddle}>Wire Sheet</h3>
+            <h3 className={styles.textMiddle}>Mesh production</h3>
 
             <span className={styles.line1}>
               <Image className={styles.image1} src={circle1} fill />

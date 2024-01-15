@@ -1,21 +1,21 @@
-/* .container {
-    text-align: start;
+.footerImageLogo{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+
 }
 
-.container .title {
-  color: #e1e8ee;
 
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
+
+
+
+@media screen and (max-width:577px){
+  .footerImageLogo{
+    width: 85px;
+    height: 85px;
+  }
+  
 }
-
-.container .item {
-  color: #e1e8ee;
-  margin-top: 6px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-} */

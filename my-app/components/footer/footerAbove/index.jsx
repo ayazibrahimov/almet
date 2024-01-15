@@ -4,6 +4,7 @@ import Datas from '@/mocks/footer.json'
 import FooterLogo from '@/public/Frame 239.jpg'
 import Link  from 'next/link'
 import Image  from 'next/image'
+import styles from './styles.module.css'
 
 
 
@@ -20,18 +21,18 @@ const Above = () => {
             <div className='w-full'>
                      
                     <div className='flex flex-col items-center mt-16'>
-                      <div style={{width:'100px', height:'100px', borderRadius:'50%', background:'white', overflow:'hidden', position:'relative'}}> 
+                      <div className={styles.footerImageLogo}> 
                         <Link href='/'>
-                          <Image src={FooterLogo} fill />
+                          <Image src={FooterLogo} loading='eager' fill />
                         </Link> 
                       </div>
                       
                       <p className='mt-6'>All Rights Reserved.Almet Trading Baku   - 2023</p>
                        <p className='mt-2 flex gap-3'>
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>FAQ</Link>
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Career</Link> 
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Privacy</Link> 
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Policy</Link> 
+                        <Link href='/faq' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>FAQ</Link>
+                        <Link href='/career' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Career</Link> 
+                        <Link href='/privacy' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Privacy</Link> 
+                        <Link href='/policy' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Policy</Link> 
                       </p>
                          
 

@@ -58,6 +58,7 @@ const index = () => {
                     src={data.src}
                     style={{ borderRadius: "10px" }}
                     alt={data.alt}
+                    loading="eager"
                     fill
                   />
                 </div>

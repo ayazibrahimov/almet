@@ -42,7 +42,12 @@
 }
 
 
-
+@media screen and (max-width:577px){
+    .text::before {
+        top: -40px;
+        left: -66px;
+    }
+}
 
 
 

@@ -28,13 +28,11 @@ const Item = ({ datas }) => {
           )
       )}
 
-      <div className={ `${styles.social} flex sm:justify-start justify-center sm:col-span-1 col-span-2 mt-4` }>
-        <ul className="flex gap-4 ps-2 pb-4">
-          <li><Link href='/'> <FaTwitter className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
-          <li><Link href='/'> <FaLinkedin className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
-          <li><Link href='/'> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
-          <li><Link href='/'> <FaYoutube className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
-          <li><Link href='/'> <FaInstagram className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }}/></Link></li>
+      <div className={ `${styles.social} flex sm:justify-start justify-center sm:col-span-1 col-span-2 md:mt-4 mt-20` }>
+         <ul className="flex gap-4 ps-2 pb-4">
+        <li><Link target="_blank" href='https://www.linkedin.com/in/almet-baku-trading/'> <FaLinkedin className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '20px' }} /></Link></li>
+          <li><Link target="_blank" href='https://www.instagram.com/almet.baku/'> <FaInstagram className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '20px' }}/></Link></li>
+          <li><Link target="_blank" href='https://www.facebook.com/almetbakuaz'> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '20px' }} /></Link></li>
         </ul>
       </div>
     </>

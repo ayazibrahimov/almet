@@ -15,6 +15,11 @@ import Typography from '@mui/joy/Typography';
 import ModalClose from '@mui/joy/ModalClose';
 import Menu from '@mui/icons-material/Menu';
 import Search from '@mui/icons-material/Search';
+import {
+  FaLinkedin,
+  FaFacebookF,
+  FaInstagram,
+} from "react-icons/fa6";
 
 
 
@@ -40,7 +45,7 @@ const index = () => {
       <Box
         sx={{
           display: 'flex',
-          alignItems: 'center',
+          justifyContent:'space-between',
           gap: 0.5,
           ml: 'auto',
           mt: 1,
@@ -107,6 +112,28 @@ const index = () => {
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'><ListItemButton>About</ListItemButton></Link>
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'><ListItemButton>Contact</ListItemButton></Link>
       </List>
+
+      <Box
+        sx={{
+          height:'100%',
+          display: 'flex',
+          flexDirection:'column',
+          justifyContent:'flex-end',
+          alignItems:'center',
+          gap: 0.5,
+          mt: 1,
+          mr: 2,
+        }}
+      >
+        
+        <ul className="flex gap-4 ps-2 pb-4">
+          <li><Link href='/'> <FaLinkedin className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
+          <li><Link href='/'> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }} /></Link></li>
+          <li><Link href='/'> <FaInstagram className='transition-colors duration-400 ease-in-out hover:text-[#828282]' style={{ fontSize: '22px' }}/></Link></li>
+        </ul>
+        
+      </Box>
+
     </Drawer>
   </React.Fragment>
   )

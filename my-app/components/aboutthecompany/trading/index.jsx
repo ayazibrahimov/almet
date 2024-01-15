@@ -92,7 +92,7 @@ const index = () => {
         </div>
 
         <div className='text-center'>
-            <h3 className={styles.textTred}>#almettradingbaku</h3>
+            <h3 className={styles.textTred}>#almetbaku</h3>
             <span className={styles.textTitle}>**Our methods make a difference in metal fabrication.</span>
         </div>
 

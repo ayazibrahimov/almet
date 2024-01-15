@@ -27,6 +27,7 @@ function Grid({gridImage,myName=false}) {
                         className={styles.productImage}         
                         src={data.src}
                         alt={data.alt}
+                        loading='eager'
                         fill
                      ></Image>
 

@@ -8,6 +8,10 @@
   width: 300px;
 }
 
+.mobileContainer{
+  display: none;
+}
+
 .title {
   color: #fff;
   font-family: Open Sans;
@@ -27,4 +31,50 @@
   font-weight: 700;
   line-height: 18px;
   width: 100%;
+}
+
+
+
+@media screen and (max-width:769px){
+  .container {
+    width: 400px;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width:577px){
+  .container {
+    width: 350px;
+  }
+}
+
+
+@media screen and (max-width:485px){
+  .container {
+    width: 300px;
+  }
+
+  .paragraph {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+
+}
+
+
+@media screen and (max-width:485px){
+  .container {
+    width: 250px;
+  }
+
 }

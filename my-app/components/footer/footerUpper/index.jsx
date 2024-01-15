@@ -13,9 +13,9 @@ const Upper = () => {
         </div>
 
         <div>
-          <Link className={styles.link} href="/">
-            almetbakutrading.com
-          </Link>
+          <span className={styles.link} href="/">
+            almetbaku
+          </span>
         </div>
       </div>
 

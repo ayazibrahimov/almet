@@ -1,0 +1,14 @@
+.infoTextMobile{
+    position: absolute;
+    left: 90px;
+    top: -70px;
+}
+
+
+
+@media screen and (max-width:640px){
+    .infoTextMobile{
+        left: 57px;
+    }
+    
+}

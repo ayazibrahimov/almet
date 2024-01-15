@@ -11,6 +11,7 @@ const ImageText = ({size,imgData}) => {
           style={{borderRadius:'5px'}}
           src={imgData} 
           alt='image' 
+          loading='eager'
           fill />
       </div>
     </>

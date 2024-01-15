@@ -2,6 +2,13 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa6";
 
 
 
@@ -23,81 +30,30 @@ function Contact() {
         <Link href="tel:+994554788754">+994 55 478 87 54</Link>
       </div>
 
-      <div className="flex gap-2">  
-        <Link href="/"> 
+      <div className="flex gap-6">  
+        <button> 
            <span className={styles.firstLng}>
              AZ
             </span>
-        </Link> 
-        <Link href="/"> 
-            <span className="secondLng">
+        </button> 
+        <button> 
+            <span className= {`${styles.secondLng} active`} >
               EN
             </span> 
-        </Link>
+        </button>
+        <button> 
+            <span className={styles.thirdLng}>
+              RU
+            </span> 
+        </button>
       </div>
 
       <div className="flex gap-2 socialIconsNavMenu">
-        <Link href="/">
-         <span
-           onMouseEnter={()=>setIcon('icondata1')}
-           onMouseLeave={()=>setIcon(null)}
-         >
-           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            >
-            <path
-              d="M13.8335 4.85C13.2638 4.19969 12.9499 3.36453 12.9501 2.5H10.3751V12.8333C10.3553 13.3925 10.1192 13.9222 9.7166 14.3108C9.31401 14.6994 8.77634 14.9166 8.2168 14.9167C7.03346 14.9167 6.05013 13.95 6.05013 12.75C6.05013 11.3167 7.43346 10.2417 8.85846 10.6833V8.05C5.98346 7.66667 3.4668 9.9 3.4668 12.75C3.4668 15.525 5.7668 17.5 8.20846 17.5C10.8251 17.5 12.9501 15.375 12.9501 12.75V7.50833C13.9943 8.25821 15.2479 8.66054 16.5335 8.65833V6.08333C16.5335 6.08333 14.9668 6.15833 13.8335 4.85Z"
-            //   fill= '#9C9C9C'
-              fill= {icon==='icondata1' ? '#4F4F4F' : '#9C9C9C'}
-            /> 
-           </svg>
-         </span>
-        </Link>
-        <Link href="/">
-         <span
-           onMouseEnter={()=>setIcon('icondata2')}
-           onMouseLeave={()=>setIcon(null)}
-         >
-           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-          >
-            <path
-              d="M18.3327 10.0013C18.3327 5.4013 14.5993 1.66797 9.99935 1.66797C5.39935 1.66797 1.66602 5.4013 1.66602 10.0013C1.66602 14.0346 4.53268 17.393 8.33268 18.168V12.5013H6.66602V10.0013H8.33268V7.91797C8.33268 6.30964 9.64102 5.0013 11.2493 5.0013H13.3327V7.5013H11.666C11.2077 7.5013 10.8327 7.8763 10.8327 8.33464V10.0013H13.3327V12.5013H10.8327V18.293C15.041 17.8763 18.3327 14.3263 18.3327 10.0013Z"
-            //   fill='#9C9C9C'
-             fill= {icon==='icondata2' ? '#4F4F4F' : '#9C9C9C'}
-            />
-            </svg>
-         </span>
-        </Link>
-        <Link href="/">
-         <span
-           onMouseEnter={()=>setIcon('icondata3')}
-           onMouseLeave={()=>setIcon(null)}
-          >
-           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-          >
-            <path
-              d="M6.49935 1.66797H13.4994C16.166 1.66797 18.3327 3.83464 18.3327 6.5013V13.5013C18.3327 14.7832 17.8235 16.0126 16.917 16.919C16.0106 17.8254 14.7812 18.3346 13.4994 18.3346H6.49935C3.83268 18.3346 1.66602 16.168 1.66602 13.5013V6.5013C1.66602 5.21942 2.17524 3.99005 3.08167 3.08362C3.98809 2.17719 5.21747 1.66797 6.49935 1.66797ZM6.33268 3.33464C5.53703 3.33464 4.77397 3.65071 4.21136 4.21332C3.64875 4.77592 3.33268 5.53899 3.33268 6.33464V13.668C3.33268 15.3263 4.67435 16.668 6.33268 16.668H13.666C14.4617 16.668 15.2247 16.3519 15.7873 15.7893C16.3499 15.2267 16.666 14.4636 16.666 13.668V6.33464C16.666 4.6763 15.3243 3.33464 13.666 3.33464H6.33268ZM14.3743 4.58464C14.6506 4.58464 14.9156 4.69438 15.1109 4.88973C15.3063 5.08508 15.416 5.35004 15.416 5.6263C15.416 5.90257 15.3063 6.16752 15.1109 6.36287C14.9156 6.55822 14.6506 6.66797 14.3743 6.66797C14.0981 6.66797 13.8331 6.55822 13.6378 6.36287C13.4424 6.16752 13.3327 5.90257 13.3327 5.6263C13.3327 5.35004 13.4424 5.08508 13.6378 4.88973C13.8331 4.69438 14.0981 4.58464 14.3743 4.58464ZM9.99935 5.83464C11.1044 5.83464 12.1642 6.27362 12.9456 7.05502C13.727 7.83643 14.166 8.89623 14.166 10.0013C14.166 11.1064 13.727 12.1662 12.9456 12.9476C12.1642 13.729 11.1044 14.168 9.99935 14.168C8.89428 14.168 7.83447 13.729 7.05307 12.9476C6.27167 12.1662 5.83268 11.1064 5.83268 10.0013C5.83268 8.89623 6.27167 7.83643 7.05307 7.05502C7.83447 6.27362 8.89428 5.83464 9.99935 5.83464ZM9.99935 7.5013C9.33631 7.5013 8.70042 7.76469 8.23158 8.23354C7.76274 8.70238 7.49935 9.33826 7.49935 10.0013C7.49935 10.6643 7.76274 11.3002 8.23158 11.7691C8.70042 12.2379 9.33631 12.5013 9.99935 12.5013C10.6624 12.5013 11.2983 12.2379 11.7671 11.7691C12.236 11.3002 12.4993 10.6643 12.4993 10.0013C12.4993 9.33826 12.236 8.70238 11.7671 8.23354C11.2983 7.76469 10.6624 7.5013 9.99935 7.5013Z"
-             // fill='#9C9C9C'
-             fill= {icon==='icondata3' ? '#4F4F4F' : '#9C9C9C'}
-            />
-          </svg>
-         </span>
-        </Link>
-       
+      <ul className="flex gap-4 ps-2">
+          <li><Link target="_blank" href='https://www.linkedin.com/in/almet-baku-trading/'> <FaLinkedin className=' transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }} /></Link></li>
+          <li><Link target="_blank" href='https://www.instagram.com/almet.baku/'> <FaInstagram className='transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }}/></Link></li>
+          <li><Link target="_blank" href='https://www.facebook.com/almetbakuaz'> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }} /></Link></li>
+        </ul>
       </div>
     </div>
   );

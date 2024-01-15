@@ -18,28 +18,68 @@
 .secondLng {
   position: relative;
 }
+.thirdLng {
+  position: relative;
+}
+
+.firstLng .secondLng .thirdLng{
+  color: #808080;
+}
+
+.firstLng:hover,
+.secondLng:hover,
+.thirdLng:hover{
+  color: #4f4f4f;
+}
+
 
 .firstLng::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -32px;
+  top: 9px;
+  left: -30px;
   background-color: #808080;
   height: 1px;
-  width: 28px;
+  width: 24px;
   display: block; /* Add this property to make the pseudo-element a block element */
 }
 
-.firstLng::after {
+
+.secondLng::after{
   content: "";
   position: absolute;
-  top: 8px;
-  right: -62px;
+  top: 9px;
+  right: -19px;
   background-color: #808080;
   height: 1px;
-  width: 28px;
+  width: 16px;
+  display: block; 
+}
+
+
+.secondLng::before{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -19px;
+  background-color: #808080;
+  height: 1px;
+  width: 16px;
+  display: block; 
+}
+
+
+.thirdLng::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: -30px;
+  background-color: #808080;
+  height: 1px;
+  width: 24px;
   display: block; /* Add this property to make the pseudo-element a block element */
 }
+
 
 /* .dataSpan:hover .dataSpan svg path{
     fill: red !important;

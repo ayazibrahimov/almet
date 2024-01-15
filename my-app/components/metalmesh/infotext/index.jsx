@@ -5,7 +5,7 @@ function InfoText() {
   return (
     <div className={styles.container}>
       <p className={styles.text}>
-       We produce the most modern, automated, networked
+       We use the most modern, automated, networked
        welding equipment for economical and continuous seam welds. 
        The line and cross wires are always aligned and welded for 
        maximum intersection strength.Earthquake situations have become 

@@ -31,24 +31,27 @@ const index = () => {
           </h4>
 
           <ul className={styles.infoAdresses}>
-            {" "}
+           
             {/*font-family: Roboto;*/}
             <li>
-              {" "}
+             
               <Link href="tel:+994512707575">
-                <span className={roboto.className} >T.</span> +994 51 270 75 75
+                {/* <span className={roboto.className} >T.</span>  */}
+                +994 51 270 75 75
               </Link>
             </li>
             <li>
-              {" "}
+             
               <Link href="mailto:info@almettradingbaku.com">
-                {" "}
-                <span className={roboto.className}>E.</span> info@almettradingbaku.com{" "}
-              </Link>{" "}
+               
+                {/* <span className={roboto.className}>E.</span> */}
+                 info@almettradingbaku.com
+              </Link>
             </li>
             <li>
-              {" "}
-              <span className={roboto.className}>Ü.</span> Bakı, Ələsgər Qayıbov 10Q
+             
+              {/* <span className={roboto.className}>Ü.</span> */}
+               Azerbaijan, Baku, Alaskar Gayibov 10 q
             </li>
           </ul>
         </div>

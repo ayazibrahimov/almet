@@ -17,6 +17,7 @@ const Sheet = () => {
              <Image 
                src={SheetImg} 
                alt="products-sheet"
+               loading='eager'
                fill />
              <Ironmensh /> 
         </div>

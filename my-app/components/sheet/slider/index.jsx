@@ -7,6 +7,7 @@ import Timeline from "./timeline";
 import Info from './info'
 import Swiper from "./swiper";
 import Buttons from "./btns";
+import styles from './styles.module.css'
 
 
 
@@ -32,15 +33,20 @@ const MajorSlider = () => {
 
        <div style={{position:'absolute',top:"40%",top:'15%',left:'5%'}}>
 
-         <div className="flex gap-5">
 
-           <div className="w-1/12">
+         <div className= {`md:hidden block  ${styles.infoTextMobile}`} >
+            <Info index={index} sliderDatas={sliderDatas} />
+         </div>
+
+         <div className="flex md:gap-5 gap-2">
+
+           <div className="sm:w-1/12 w-12">
               <Timeline index={index} sliderDatas={sliderDatas}/>
            </div>
-           <div className="w-3/12">
+           <div className="md:w-3/12 md:block hidden">
               <Info index={index} sliderDatas={sliderDatas} />
            </div>
-           <div className="w-8/12">
+           <div className="md:w-8/12 sm:w-11/12 w-fit">
               <Swiper materials={Materials} rightData={rightData} leftData={leftData} index={index} sliderDatas={sliderDatas} />
               <Buttons index={index} sliderDatas={sliderDatas} increment={increment} decrement={decrement} />
            </div>

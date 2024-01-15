@@ -19,6 +19,7 @@ const Item = ({ tables }) => {
             <Image 
              src={table.src} 
              alt={table.alt} 
+             loading="eager"
              fill />
           </div>
         </div>

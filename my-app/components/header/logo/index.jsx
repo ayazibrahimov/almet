@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import HeaderLogo from '@/public/almet-logo-png.png'
-// import HeaderLogoText from '@/public/Group 3.png'
+// import HeaderLogo from '@/public/almetMajorLogo.png'
+import HeaderLogoText from '@/public/Group 3.png'
 import React from 'react'
 
 
@@ -15,6 +16,7 @@ function index({statusInfo}) {
            priority 
            src={HeaderLogo}
            alt="Logo"
+           loading='eager'
            fill
         
           // className='auto'

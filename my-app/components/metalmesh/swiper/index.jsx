@@ -48,8 +48,8 @@ function Sliding() {
                 src={image.src}
                 alt={image.alt}
                 full
-                quality={10}
-                priority
+                loading='eager'
+                priority={true}
                ></Image>
              </div>
             </SwiperSlide>  
