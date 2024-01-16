@@ -1,9 +1,7 @@
 import React from 'react'
-import styles from './styles.module.css'
 import Image from 'next/image'
 import Title from '../title'
 import Works from './works'
-// import Bridge from './coverimage'
 import application from '@/mocks/application.json'
 import bridgeImage  from '../../public/bridgeCover.jpg'
 

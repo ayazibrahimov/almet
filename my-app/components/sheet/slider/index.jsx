@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import useStore from '@/zustand/store'
-import Image from 'next/image'
-import mainSlider1 from "@/public/mainSlider2.jpg";
+import Image from 'next/image';
 import Timeline from "./timeline";
-import Info from './info'
+import Info from './info';
 import Swiper from "./swiper";
 import Buttons from "./btns";
 import styles from './styles.module.css'

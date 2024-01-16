@@ -1,7 +1,6 @@
 "use clinet";
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
-import materials1 from "@/public/materials1.jpg";
 import Image from "next/image";
 
 const Swiper = ({ index, materials, leftData, rightData }) => {
