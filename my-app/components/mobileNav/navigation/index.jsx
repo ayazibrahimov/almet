@@ -107,7 +107,7 @@ const index = () => {
         }}
       >
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick}  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'> <ListItemButton>Home</ListItemButton> </Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'><ListItemButton>Products</ListItemButton></Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/info' ? 'active' : ''}`}  href='/info'><ListItemButton>Products</ListItemButton></Link>
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>Service</ListItemButton></Link> 
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'><ListItemButton>About</ListItemButton></Link>
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'><ListItemButton>Contact</ListItemButton></Link>
