@@ -1,5 +1,5 @@
 import React from 'react'
-import Bridge from '@/public/bridge.png'
+import Bridge from '../../public/bridge.png'
 import Image from 'next/image'
 
 const Cover = () => {

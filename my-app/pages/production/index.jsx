@@ -6,7 +6,7 @@ import MajorSlider from '@/components/sheet/slider'
 
 
 
-const Products = () => {
+const index = () => {
   return (
     <div>
       <div className='bg-[#1A1A1A]'>
@@ -22,4 +22,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default index;

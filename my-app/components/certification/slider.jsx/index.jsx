@@ -60,7 +60,7 @@ const index = () => {
                      </div>
                     <div style={{background:'transparent'}}>
                       <div className='mt-4 mb-2'><p className={styles.title}>{data.title}</p></div>
-                      <div> <span className={styles.squared}></span><p className={styles.text}>{data.text}</p></div>
+                      <div className='text-left'> <span className={styles.squared}></span><p className={styles.text}>{data.text}</p></div>
                     </div>
                 </div>
            </SwiperSlide>
