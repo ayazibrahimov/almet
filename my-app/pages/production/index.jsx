@@ -1,4 +1,3 @@
-import React from 'react'
 import Sheet from '@/components/sheet'
 import Types from '@/components/sheet/types'
 import ProductsInfo from '@/components/sheet/infoproduct'
