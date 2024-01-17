@@ -1,8 +1,8 @@
 import React from 'react'
-import Production from '../../pages/production'
+import Production from '@/pages/ourproduct'
 
 export const metadata = {
-  title:'Product'
+  title:'Products'
 }
 
 
