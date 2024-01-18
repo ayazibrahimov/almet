@@ -1,0 +1,82 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "faq": {
+        "id": 1,
+        "header": "privacy policy",
+        "title": "Protecting your privacy and personal data is important to us",
+        "heading": "privacy policy",
+        "info": "AlmetBaku is committed to ensuring the privacy of its users. This Privacy Policy outlines how we collect, use, and protect your personal information.",
+        "items": [
+          {
+            "id": 1,
+            "head": "Information We Collect:",
+            "text": "We collect basic user information, such as names and email addresses, to provide a personalized experience. Additionally, we may collect non-personal information, such as browser type and IP address, to enhance our website's functionality."
+          },
+          {
+            "id": 2,
+            "head": "How We Use Your Information:",
+            "text": "We collect basic user information, such as names and email addresses, to provide a personalized experience. Additionally, we may collect non-personal information, such as browser type and IP address, to enhance our website's functionality."
+          },
+          {
+            "id": 3,
+            "head": "Security:",
+            "text": "We prioritize the security of your information and employ industry-standard measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information."
+          },
+          {
+            "id": 4,
+            "head": "Cookies: ",
+            "text": "AlmetBaku may use cookies to enhance user experience. You can choose to disable cookies through your browser settings, but this may affect the functionality of certain parts of our website."
+          },
+          {
+            "id": 5,
+            "head": "Changes to the Privacy Policy:",
+            "text": "We reserve the right to update our Privacy Policy to reflect changes in our practices. Users will be notified of any significant changes via email or a prominent notice on our website."
+          }
+        ],
+        "companyTitle1": "By using AlmetBaku, you agree to the terms outlined in this Privacy Policy.",
+        "companyTitle2": "Last updated: January 2024"
+      },
+      "privacypolicy": {
+        "id": 2,
+        "header": "how can we help you find",
+        "title": "Welcome to ALMET BAKU Help Center",
+        "heading": "Frequently Asked Questions (FAQ) for AlmetBaku",
+        "info": "",
+        "items": [
+          {
+            "id": 1,
+            "head": "What is AlmetBaku?",
+            "text": "AlmetBaku is an innovative platform dedicated to providing high-quality metal products. We specialize in manufacturing and delivering a wide range of metal goods tailored to our customers' needs."
+          },
+          {
+            "id": 2,
+            "head": "How Can I Place an Order?",
+            "text": " Ordering from AlmetBaku is easy! Simply navigate to our Products page, select the items you want, and proceed to checkout. Follow the prompts to complete your order, and you'll receive a confirmation email once it's processed "
+          },
+          {
+            "id": 3,
+            "head": "Is My Personal Information Secure?:",
+            "text": " Absolutely. We prioritize the security of your personal information. Our website employs industry-standard encryption and security measures to protect your data. "
+          },
+          {
+            "id": 4,
+            "head": "What Payment Methods Do You Accept? ",
+            "text": "We accept various payment methods, including credit cards and online payment gateways. You can view the complete list of accepted payment methods during the checkout process."
+          },
+          {
+            "id": 5,
+            "head": "Can I Modify or Cancel My Order?",
+            "text": "Once an order is confirmed, modifications or cancellations may not be possible. Please double-check your order before finalizing the purchase. If you encounter any issues, contact our customer support team for assistance. "
+          },
+          {
+            "id": 6,
+            "head": "How Do I Contact Customer Support?",
+            "text": " Our dedicated customer support team is ready to assist you. Visit the Contact Us page on our website to find our contact information. You can reach us via email or phone during our business hours. "
+          }
+        ]
+      }
+    }
+  ]
+}

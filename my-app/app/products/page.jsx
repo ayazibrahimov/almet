@@ -1,15 +1,15 @@
 import React from 'react'
-import Production from '@/pages/ourproduct'
+import OurProducts from '@/pages/our-products'
+
 
 export const metadata = {
-  title:'Products'
+    title:'Products'
 }
-
 
 const page = () => {
   return (
     <div>
-        <Production />
+        <OurProducts />
     </div>
   )
 }

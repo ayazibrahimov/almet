@@ -29,11 +29,11 @@ const Above = () => {
                       
                       <p className='mt-6'>All Rights Reserved.Almet Trading Baku   - 2023</p>
                        <p className='mt-2 flex gap-3'>
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>FAQ</Link>
+                        <Link href='/faq' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>FAQ</Link>
                         <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Career</Link> 
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Privacy</Link> 
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Policy</Link> 
-                      </p>
+                        <Link href='/privacypolicy' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Privacy & Policy</Link> 
+                        {/* <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Policy</Link>  */}
+                       </p>
                          
 
                     </div>
