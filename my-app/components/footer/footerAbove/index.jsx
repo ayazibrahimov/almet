@@ -20,7 +20,7 @@ const Above = () => {
 
             <div className='w-full'>
                      
-                    <div className='flex flex-col items-center mt-16'>
+                    <div className='flex flex-col items-center mt-16 py-6'>
                       <div className={styles.footerImageLogo}> 
                         <Link href='/'>
                           <Image src={FooterLogo} loading='eager' fill />
