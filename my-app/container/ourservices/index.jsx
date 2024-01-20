@@ -1,12 +1,11 @@
 import React from 'react'
 import InfoService from '@/components/infoservice'
 
-const index = () => {
+export default async function Services(){
   return (
-    <div>
+    <>
        <InfoService />
-    </div>
+    </>
   )
 }
 
-export default index

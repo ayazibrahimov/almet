@@ -1,5 +1,5 @@
 import React from 'react'
-import OurService from '@/pages/ourservices/index'
+import Services from '@/container/ourservices'
 
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-       <OurService />
+       <Services />
     </div>
   )
 }

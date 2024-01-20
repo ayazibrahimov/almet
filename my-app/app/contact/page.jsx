@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactUs from '@/pages/contact-us'
+import ContactUs from '@/container/contact-us'
 
 export const metadata = {
   title:'Contact'

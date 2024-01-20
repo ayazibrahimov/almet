@@ -3,13 +3,12 @@ import Aboutthecompany from '@/components/aboutthecompany'
 import Certification from '@/components/certification'
 
 
-const index = () => {
+export default async function About(){
   return (
-    <div>
+    <>
         <Aboutthecompany />
         <Certification />
-    </div>
+    </>
   )
 }
 
-export default index

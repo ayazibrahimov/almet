@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import useStore from '@/zustand/store'
 import Image from 'next/image';
 import Timeline from "./timeline";

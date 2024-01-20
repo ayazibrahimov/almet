@@ -7,7 +7,7 @@ import Services from '@/components/services'
 
 
 
-function index() {
+export default async function Home() {
   return (
     <>
       <MetalMesh />
@@ -17,5 +17,3 @@ function index() {
     </>
   )
 }
-
-export default index

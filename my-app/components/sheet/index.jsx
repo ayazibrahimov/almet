@@ -1,7 +1,6 @@
 import React from 'react'
 import SheetImg from '@/public/metalsheet.png'
 import Image from 'next/image'
-import DropFiler from '@/components/dropfilter'
 import styles from './styles.module.css'
 import DropFilter from '../dropfilter'
 import Ironmensh from './ironmensh'

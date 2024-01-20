@@ -1,5 +1,5 @@
 import React from 'react'
-import CompanyInfo from '@/pages/company-info' 
+import Company from '@/container/company-info' 
 
 const Slug = ({params}) => {
   
@@ -7,7 +7,7 @@ const Slug = ({params}) => {
   
     return (
     <div>
-         <CompanyInfo slug={slug} />
+         <Company slug={slug} />
     </div>
   )
 }

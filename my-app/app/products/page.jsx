@@ -1,5 +1,5 @@
 import React from 'react'
-import OurProducts from '@/pages/our-products'
+import OurProducts from '@/container/our-products'
 
 
 export const metadata = {

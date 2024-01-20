@@ -37,3 +37,47 @@
   text-align: center;
   line-height: 30px;
 }
+
+
+@media screen and (max-width: 992px){
+  .imageBox{
+    display: none;
+  }
+
+  .container h2 {
+    font-size: 50px;
+    line-height: 60px; /* 125% */
+  }
+  
+}
+
+
+
+@media screen and (max-width: 769px){
+  .container h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+
+@media screen and (max-width: 577px){
+  .container h2 {
+    font-size: 35px;
+  }
+  .container span {
+    font-size: 20px;
+  }
+  .infoData p {
+    font-size: 17px;
+  }
+}
+
+
+
+
+
+
+
+
+

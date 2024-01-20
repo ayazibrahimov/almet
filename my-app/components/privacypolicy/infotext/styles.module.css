@@ -1,17 +1,43 @@
-.title{
-    text-align: center;
-    color: #DAA520;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 47px; /* 117.5% */
-text-transform: uppercase;
+.title {
+  text-align: center;
+  color: #daa520;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px; /* 117.5% */
+  text-transform: uppercase;
 }
 
-.paragraph{
-margin-top: 20px;
-font-size: 24px;
-font-style: normal;
-
-line-height: 30px;
+.paragraph {
+  margin-top: 20px;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
 }
+
+@media screen and (max-width: 769px) {
+  .title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  
+  .paragraph {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 577px){
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+

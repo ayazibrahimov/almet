@@ -25,26 +25,24 @@ const index = ({slug}) => {
 
   return (
     <div className={styles.container}>
-         
-         <div className='lg:container lg:mx-auto lg:px-8 px-3 py-36'>
-                <div className='w-2/3'>
+
+         <div className='lg:container lg:mx-auto lg:px-8 px-3 sm:py-36 py-28'>
+                <div className='lg:w-2/3 w-full'>
                    <h2>{datas.header}</h2>
                    <span className={roboto.className}>
-               {datas.title}
-            </span>
+                    {datas.title}
+                   </span>
                 </div>
-
             
                  <div 
                    className={styles.imageBox} 
-                   style={{position:'absolute', width:'250px', height:'350px'}}>
+                   style={{position:'absolute', width:'250px', height:'397px'}}>
                    <Image 
                      src={Qfil1}
                      fill
                    />
                  </div>
           
-
                <InfoText datas={datas} />
 
              {

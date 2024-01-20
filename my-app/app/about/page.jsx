@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from '@/pages/about-us'
+import About from '@/container/about-us'
 
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-        <AboutUs />
+        <About />
     </div>
   )
 }

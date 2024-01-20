@@ -5,9 +5,9 @@ import MajorSlider from '@/components/sheet/slider'
 
 
 
-const index = () => {
+export default async function OurProducts(){
   return (
-    <div>
+    <>
       <div className='bg-[#1A1A1A]'>
         <div className='py-20'>
              <Sheet />
@@ -17,10 +17,7 @@ const index = () => {
       </div>
 
       <MajorSlider />
-    </div>
+    </>
   )
 }
 
-
-
-export default index;

@@ -1,12 +1,10 @@
 import React from 'react'
 import Privacy from '@/components/privacypolicy'
 
-const index = ({slug}) => {
+export default async function Company({slug}){
   return (
-    <div>
+    <>
         <Privacy slug={slug} />
-    </div>
+    </>
   )
 }
-
-export default index

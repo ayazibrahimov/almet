@@ -1,22 +1,53 @@
-.item{
-   margin-top: 60px;  
+.item {
+  margin-top: 60px;
 }
 
-.item h4{
+.item h4 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
 
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 40px;
+.item span {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
 }
 
 
-.item span{
-    color: #FFF;
+@media screen and (max-width:769px){
+    .item h4 {
+        font-size: 26px;
+        line-height: 30px;    
+    }
 
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; 
+    .item span{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
 }
+
+
+@media screen and (max-width:769px){
+    .item h4 {
+        font-size: 22px;
+        line-height: 26px;  
+    }
+
+    .item span{
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,12 +1,10 @@
 import React from 'react'
 import Contact from '../../components/contact'
 
-const index = () => {
+export default async function ContactUs(){
   return (
-    <div>
+    <>
         <Contact />
-    </div>
+    </>
   )
 }
-
-export default index

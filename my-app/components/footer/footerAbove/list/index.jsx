@@ -12,7 +12,7 @@ const List = ({infos}) => {
           <ul className="mt-3">
             {
                 infos.map((data,index)=>(
-                    <li className={`${text.className} ${styles.item}`}>
+                    <li key={index} className={`${text.className} ${styles.item}`}>
                        {data.text}
                     </li>
                 ))

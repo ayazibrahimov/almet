@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from './styles.module.css'
 import Arrow from '@/public/bend-arrow.svg'
 import Image from 'next/image'
-// import Arrow from '@/public/bend-arrow.svg'
+
 
 
 

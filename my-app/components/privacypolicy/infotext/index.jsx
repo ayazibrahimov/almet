@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 const index = ({ datas }) => {
   return (
-    <div className="mt-52">
+    <div className="lg:mt-52 mt-32">
       <h3 className={styles.title}>{datas.heading}</h3>
       {datas.info && (
         <p className={`${roboto.className} ${styles.paragraph}`}>

@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import setting1 from "@/public/setting1.svg";
 import Image from "next/image";
 import {motion} from 'framer-motion'
-import SettingCircle from "@/components/settingCircle";
+
 
 const index = () => {
   return (
