@@ -8,7 +8,7 @@ import MajorSlider from '@/components/sheet/slider'
 export default async function OurProducts(){
   return (
     <>
-      <div className='bg-[#1A1A1A]'>
+      <div style={{background:'#1A1A1A'}}>
         <div className='py-20'>
              <Sheet />
              <Types />
