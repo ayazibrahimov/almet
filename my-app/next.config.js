@@ -6,7 +6,8 @@ const nextConfig = {
       onDemandEntries: {
         maxInactiveAge: 1000 * 60 * 60,
         pagesBufferLength: 5,
-      }
+      },
+      output: "standalone"	
 }
 
 
