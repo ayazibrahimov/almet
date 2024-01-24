@@ -2,10 +2,18 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import useStore from "@/zustand/store";
 
 const Swiper = ({ index, materials, leftData, rightData }) => {
   const [statusSlider, setStatus] = useState(true);
   const [translateData, setTranslateData] = useState(0); // Initialize with 0
+  const [touchStartStart, setTouchStartStart] = useState(null); //touch slider
+  const [touchStartEnd, setTouchStartEnd] = useState(null); //touch slider
+  const [startStatus, setStartStatus] = useState(false)
+  const [endStatus, setEndtStatus] = useState(false)
+  const [startPoint, setStartPoint] = useState(0) 
+
+  const { swiperIndexPlus } = useStore();
 
   useEffect(() => {
     // Function to get initial translateData
@@ -30,8 +38,48 @@ const Swiper = ({ index, materials, leftData, rightData }) => {
     };
   }, []); // Empty dependency array ensures this effect runs only on mount and unmount
 
+  function handleTouchStart(e){ 
+         setTouchStartStart(e.touches[0].clientX)
+         setStartPoint(e.touches[0].clientX)
+        console.log( e.touches[0].clientX);
+
+  };
+
+  function handleTouchEnd(e) {
+      const lastTouch = e.changedTouches[0];
+      const lastTouchX = lastTouch.clientX;
+      setTouchStartEnd(lastTouchX);
+
+      // console.log(e.changedTouches[0].clientX);
+      // console.log('br');
+      // console.log(`${startPoint} - startPoint`);
+
+      let deltaX  = touchStartStart - touchStartEnd;
+
+      if ((deltaX > 0 || startPoint > 250) &&  index + 1 < materials.length) {
+        swiperIndexPlus(1);
+        // console.log('Isledi-1');
+        // console.log(`delta-${deltaX}`);
+  
+      }
+       else if((deltaX < 0 || startPoint < 250) && index !== 0) {
+        swiperIndexPlus(-1);
+        console.log('Isledi-2');
+      }
+
+  
+
+  };
+
+
+
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+
       {materials.map((data, i) => (
         <div
           key={i}
@@ -39,9 +87,19 @@ const Swiper = ({ index, materials, leftData, rightData }) => {
           style={{
             position: "absolute",
             transition: "transform 0.5s",
-            width: `${(data.id - 1) * translateData - translateData * index !== 0 ? 176 : ""}`,
-            height: `${(data.id - 1) * translateData - translateData * index !== 0 ? 295 : ""}`,
-            transform: `translateX(${(data.id - 1) * translateData - translateData * index}px)`,
+            width: `${
+              (data.id - 1) * translateData - translateData * index !== 0
+                ? 176
+                : ""
+            }`,
+            height: `${
+              (data.id - 1) * translateData - translateData * index !== 0
+                ? 295
+                : ""
+            }`,
+            transform: `translateX(${
+              (data.id - 1) * translateData - translateData * index
+            }px)`,
           }}
         >
           <div className={styles.boxModel} style={{ position: "relative" }}>

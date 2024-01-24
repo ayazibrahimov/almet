@@ -12,7 +12,8 @@ const useStore = create((set) => ({
     Materials,
     increment: () => set((state) => ({ index: state.index + 1, rightData:state.rightData + 190})),
     decrement: () => set((state) => ({ index: state.index - 1, rightData:state.rightData - 190})),
-    changeIndex:(data) =>set((state)=>({index:data})  )
+    changeIndex:(data) =>set((state)=>({index:data})  ),
+    swiperIndexPlus:(num) =>set((state)=>({index: state.index + num })),
   }))
   
 

@@ -6,7 +6,9 @@ import Timeline from "./timeline";
 import Info from './info';
 import Swiper from "./swiper";
 import Buttons from "./btns";
+import DropFilter from '@/components/dropfilter'
 import styles from './styles.module.css'
+
 
 
 
@@ -22,15 +24,16 @@ const MajorSlider = () => {
     <div  style={{position:'relative', width: "100%", height: sliderDatas.length > 8 ? `${(sliderDatas.length-9) * 100 + 600}px` :'600px' }  } >
          
        <div style={{position:'relative',width:'100%', height:'100%'}}>
+            <DropFilter />
             <Image 
-                className='fade-in'
                src={sliderDatas[index]?.src} 
-               fill
                alt="Slider cover images" 
+               layout="fill" 
+               objectFit="cover"
               />          
        </div>
 
-       <div style={{position:'absolute',top:"40%",top:'15%',left:'5%'}}>
+       <div style={{position:'absolute',top:"40%",top:'15%',left:'5%',zIndex:222}}>
 
 
          <div className= {`md:hidden block  ${styles.infoTextMobile}`} >

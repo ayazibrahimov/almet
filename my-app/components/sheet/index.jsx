@@ -1,5 +1,5 @@
 import React from 'react'
-import SheetImg from '@/public/metalsheet.png'
+import SheetImg from '@/public/metalsheet.jpg'
 import Image from 'next/image'
 import styles from './styles.module.css'
 import DropFilter from '../dropfilter'
@@ -16,8 +16,9 @@ const Sheet = () => {
              <Image 
                src={SheetImg} 
                alt="products-sheet"
-               loading='eager'
-               fill />
+               layout="fill" 
+               objectFit="cover"
+                />
              <Ironmensh /> 
         </div>
     </div>
