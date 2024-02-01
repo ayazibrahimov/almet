@@ -26,9 +26,9 @@ const index = () => {
     <div className="grid grid-cols-12 gap-4 lg:my-20 my-10">
       <div className="lg:col-span-4 sm:col-span-6 col-span-12">
         <div>
-          <h4 className={styles.titleInfoMail}>
-            <Link href="https://almetbaku.com/">almetbakutrading.com </Link>{" "}
-          </h4>
+          {/* <h4 className={styles.titleInfoMail}>
+            <Link href="https://almetbaku.com/">almetbakutrading.com </Link>
+          </h4> */}
 
           <ul className={styles.infoAdresses}>
            
@@ -120,7 +120,7 @@ const index = () => {
           <div className="w-2/4">
             <Stack spacing={2}>
               <Input
-                placeholder="EMAIL*"
+                placeholder="EMAIL"
                 variant="soft"
                 sx={{
                   "--Input-radius": "0px",
@@ -151,7 +151,7 @@ const index = () => {
         <div>
             <Stack spacing={2} sx={{ height: '150px' }}>
               <Input
-                placeholder="PROJECT İNFORMATİON*"
+                placeholder="PROJECT İNFORMATİON"
                 variant="soft"
                 sx={{
                     height: '100%',

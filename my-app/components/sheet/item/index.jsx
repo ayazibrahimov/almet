@@ -1,9 +1,17 @@
 'use client'
-import React from "react";
+import React,{useState} from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Spinner from '@/components/spinner';
 
 const Item = ({ tables }) => {
+  const [loading, setLoading] = useState(true);
+
+  const onImageLoad = () => {
+    setLoading(false);
+  };
+
+
   return (
     <div>
       {
@@ -19,8 +27,11 @@ const Item = ({ tables }) => {
             <Image 
              src={table.src} 
              alt={table.alt} 
-             loading="eager"
-             fill />
+             loading='lazy'
+             onLoad={onImageLoad}
+             fill
+              />  
+             {loading ? <Spinner /> : null} 
           </div>
         </div>
       ))

@@ -15,14 +15,16 @@ const index = ({slug}) => {
 
   const matchingResult = companyDatas.results.find(result => result[slug]);
 
+  
   // if (!matchingResult) {
-  //   // Handle the case where no matching result is found
-  //   return <div>No matching result found for the slug: {slug}</div>;
-  // }
-
-  // Access the data based on the found result
-  const datas = matchingResult[slug];
-
+    //   // Handle the case where no matching result is found
+    //   return <div>No matching result found for the slug: {slug}</div>;
+    // }
+    
+    // Access the data based on the found result
+    const datas = matchingResult[slug];
+    console.log(datas);
+    
   return (
     <div className={styles.container}>
 

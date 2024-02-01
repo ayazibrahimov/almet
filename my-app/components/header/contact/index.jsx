@@ -27,7 +27,7 @@ function Contact() {
             
         </div>
       <div>
-        <Link href="tel:+994554788754">+994 55 478 87 54</Link>
+        <Link href="tel:+994554788754">+994 51 270 75 75</Link>
       </div>
 
       <div className="flex gap-6">  

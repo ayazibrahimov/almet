@@ -1,0 +1,15 @@
+.btn{
+    width: 50px;
+    height: 50px;
+    background-color: #1A1A1A;
+    /* opacity: .9; */
+    /* opacity: 2; */
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 5555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

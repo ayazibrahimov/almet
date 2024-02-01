@@ -22,7 +22,14 @@ import infoImage2 from '@/public/Rectangle 45.jpg'
 import infoImage3 from '@/public/Rectangle 46.jpg'
 import certificact1 from '@/public/certififact1.png'
 import certificact2 from '@/public/certififact2.png'
-
+import testbg1 from '@/public/testbg1.jpg'
+import testbg2 from '@/public/testbg2.jpg'
+import testbg3 from '@/public/testbg3.jpg'
+import testbg4 from '@/public/testbg4.jpg'
+import testmaterials1 from "@/public/testmaterials1.jpg";
+import testmaterials2 from "@/public/testmaterials2.jpg";
+import testmaterials3 from "@/public/testmaterials3.jpg";
+import testmaterials4 from "@/public/testmaterials4.jpg";
 
 
 
@@ -50,6 +57,35 @@ export const Materials = [
     {id:8,src:materials8,alt:'info3'},
     {id:9,src:materials9,alt:'info3'},
 ]
+
+
+
+export const sliderDatas2=[
+    {id:'1', src:testbg1, title:" Wire Rod", text:'Economical and durable, welded -of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image1', status:false },
+    {id:'2', src:testbg2, title:" fence Wire", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image2', status:false },
+    {id:'3', src:testbg3, title:" Coated Wire", text:'Economical and durable, welded w that are resistant to moisture, heat, and corrosion.' , alt:'image3', status:false },
+    {id:'4', src:testbg4, title:"Metal Wire", text:'Economical and durable, welded wire mesh is , grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image4', status:false },
+    // {id:'5', src:testbg4, title:"Metal Wire", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image4', status:false },
+    // {id:'6', src:testbg4, title:"Metal Wire", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image4', status:false },
+    // {id:'7', src:testbg4, title:"Metal Wire", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image4', status:false },
+    // {id:'8', src:testbg4, title:"Metal Wire", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image4', status:false },
+    // {id:'9', src:testbg4, title:"Metal Wire", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased. Our company is always ready to provide you with high-quality fittings that are resistant to moisture, heat, and corrosion.' , alt:'image4', status:false },
+]
+
+
+export const Materials2=[
+    {id:1,src:testmaterials1,alt:'info1'},
+    {id:2,src:testmaterials2,alt:'info1'},
+    {id:3,src:testmaterials3,alt:'info1'},
+    {id:4,src:testmaterials4,alt:'info1'},
+    // {id:5,src:testmaterials4,alt:'info1'},
+    // {id:6,src:testmaterials4,alt:'info1'},
+    // {id:7,src:testmaterials4,alt:'info1'},
+    // {id:8,src:testmaterials4,alt:'info1'},
+    // {id:8,src:testmaterials4,alt:'info1'},
+]
+
+
 
 
 export const Infos = [

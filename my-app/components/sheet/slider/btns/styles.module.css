@@ -1,9 +1,8 @@
 .container {
-  position: absolute;
-  bottom: 1%;
+
   display: flex;
   gap: 10px;
-
+  margin-top: 18px;
 }
 
 .prev,
@@ -21,6 +20,6 @@
 
 @media screen and (max-width:769px){
   .container {
-    bottom: -10%;
+    bottom: -22%;
   }
 }

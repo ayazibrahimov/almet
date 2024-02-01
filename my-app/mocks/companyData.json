@@ -3,42 +3,6 @@
   "results": [
     {
       "faq": {
-        "id": 1,
-        "header": "privacy policy",
-        "title": "Protecting your privacy and personal data is important to us",
-        "heading": "privacy policy",
-        "info": "AlmetBaku is committed to ensuring the privacy of its users. This Privacy Policy outlines how we collect, use, and protect your personal information.",
-        "items": [
-          {
-            "id": 1,
-            "head": "Information We Collect:",
-            "text": "We collect basic user information, such as names and email addresses, to provide a personalized experience. Additionally, we may collect non-personal information, such as browser type and IP address, to enhance our website's functionality."
-          },
-          {
-            "id": 2,
-            "head": "How We Use Your Information:",
-            "text": "We collect basic user information, such as names and email addresses, to provide a personalized experience. Additionally, we may collect non-personal information, such as browser type and IP address, to enhance our website's functionality."
-          },
-          {
-            "id": 3,
-            "head": "Security:",
-            "text": "We prioritize the security of your information and employ industry-standard measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information."
-          },
-          {
-            "id": 4,
-            "head": "Cookies: ",
-            "text": "AlmetBaku may use cookies to enhance user experience. You can choose to disable cookies through your browser settings, but this may affect the functionality of certain parts of our website."
-          },
-          {
-            "id": 5,
-            "head": "Changes to the Privacy Policy:",
-            "text": "We reserve the right to update our Privacy Policy to reflect changes in our practices. Users will be notified of any significant changes via email or a prominent notice on our website."
-          }
-        ],
-        "companyTitle1": "By using AlmetBaku, you agree to the terms outlined in this Privacy Policy.",
-        "companyTitle2": "Last updated: January 2024"
-      },
-      "privacypolicy": {
         "id": 2,
         "header": "how can we help you find",
         "title": "Welcome to ALMET BAKU Help Center",
@@ -74,6 +38,62 @@
             "id": 6,
             "head": "How Do I Contact Customer Support?",
             "text": " Our dedicated customer support team is ready to assist you. Visit the Contact Us page on our website to find our contact information. You can reach us via email or phone during our business hours. "
+          }
+        ],
+        "companyTitle1": "By using AlmetBaku, you agree to the terms outlined in this Privacy Policy.",
+        "companyTitle2": "Last updated: January 2024"
+      },
+      "privacypolicy": {
+        "id": 1,
+        "header": "privacy policy",
+        "title": "Protecting your privacy and personal data is important to us",
+        "heading": "General provisions",
+        "info": "These Rules are the official document of the Administration of the site where it is placed and determine the procedure for processing and protecting information about the services of the Internet site (hereinafter the Site) and the persons using its services (hereinafter the site). as users).",
+        "items": [
+          {
+            "id": 1,
+            "head": "Information We Collect:",
+            "text": "Relations related to the collection, storage, dissemination and protection of information about the users of the site are regulated by these Rules, other official documents of the Site Administration and the current legislation of the Republic of Azerbaijan."
+          },
+          {
+            "id": 2,
+            "head": "How We Use Your Information:",
+            "text": "These Rules are the official document of the Administration of the site where it is placed and determine the procedure for processing and protecting information about the services of the Internet site (hereinafter the Site) and the persons using its services (hereinafter the site). as users).The User agrees to the terms and conditions of the Rules by registering using the means of communication and forms on the Site, sending messages, applications, potential customers, other messages. If the User does not agree with the terms of the Rules, the use of the Site and its services must be terminated immediately. The user is responsible for this.The Site Administration does not verify the correctness of the information received (collected) about the Users, except in cases where such verification is necessary for the fulfillment of the obligations of the Site Administration to the User."
+          },
+          {
+            "id": 3,
+            "head": "Security:",
+            "text": "Terms and purposes of personal data processing. The Site Administration processes the user's personal data in order to fulfill its obligations between the Site Administration and the User within the scope of providing information about the activity and work of the.structural units of the Site owners. According to the current legislation, the user's separate consent for the processing of personal data is not required. The Site Administration has the right to process personal data without notifying the competent body for the protection of the rights of the subjects of personal data. The purposes of processing personal data include: receiving information, mailings, documents and materials from the User, including advertising, processing the User's orders aimed at obtaining goods and services, consulting support to the User. Procedure for entering into force and amending the Regulation"
+          },
+          {
+            "id": 4,
+            "head": "Cookies: ",
+            "text": "The Regulation comes into force from the moment it is posted on the Site and is valid for an indefinite period until it is replaced by a new Regulation. The current version of the Rules, which is a general document, is available to any Internet user. Site Administration has the right to change the Regulations. When making changes to the Regulations, it informs users about it by placing a new publication on the Site at the permanent address. In this case, the previous editions of the Regulations lose their validity."
+          },
+          {
+            "id": 5,
+            "head": "Changes to the Privacy Policy:",
+            "text": "Personal data is provided voluntarily by the User, which means consent to their processing by the Site Administration and includes the following. . Minimum necessary information provided by Users for contact: surname and first name, telephone numbers, e-mail address, company name, delivery address. Other information (including gender, age, date of birth, etc.) is voluntarily provided by the User for communication and actions related to the provision of services or delivery of goods to the User. Other information about Users processed by the Site Administration. The Site Administration also processes other information about Users, including:"
+          },
+          {
+            "id": 6,
+            "head": "Changes to the Privacy Policy:",
+            "text": "Other information about Users processed by the Site Administration. The Site Administration also processes other information about Users, including: Standard data automatically received by the server when entering the Site and subsequent actions of the User (host IP address, type of the user's operating system, pages of the Site visited by the user).. information obtained automatically when you visit the Site using bookmarks (cookies).Information obtained as a result of the User's actions on the Site.Information obtained as a result of the actions of other users on the site. Information necessary to identify the User to access the site's services."
+          },
+          {
+            "id": 7,
+            "head": "Changes to the Privacy Policy:",
+            "text": "User card information is not stored by the site.Processing of personal data is carried out on the basis of the following principles:legality of purposes and methods of personal data processing - compliance of personal data processing purposes with pre-determined and declared purposes during the collection of personal data, as well as with the powers of the Site Administration compatibility of the amount and nature of processed personal data, personal data processing methods with the purposes of personal data processing. Collection of personal information. The collection of the User's personal data is carried out on the Site when it is entered by the Site Administration in accordance with the User's settings or by the user on his own initiative when contacting the site."
+          },
+          {
+            "id": 8,
+            "head": "Changes to the Privacy Policy:",
+            "text": "Name, email address and/or phone number are provided by the User for Contact and are not required for standard work on the Site. . The rest of the personal data is additionally provided by the User on his own initiative using the appropriate sections and resources of the Site. Storage and use of personal information Users' personal data are stored only on electronic media and are processed using automated systems, except when non-automated processing of personal data is necessary in connection with the fulfillment of legal requirements. Users' personal information is not disclosed to any person, except as expressly provided in these Rules. Programs used by Users on the Site are placed and maintained by third parties (developers) who act independently of the Site. Administration and do not act on behalf of or on behalf of the Site Administration. Users are obliged to familiarize themselves with the terms of service and the personal data protection policy of such third parties (developers) before using the respective applications. . At the request of state authorities (local authorities), the provision of personal data of Users is carried out in accordance with the law. The user's personal data is destroyed based on the written request of the user. The request must contain identifying information that directly indicates that the information belongs to this User."
+          },
+          {
+            "id": 9,
+            "head": "Changes to the Privacy Policy:",
+            "text": "The Site Administration takes technical, organizational and legal measures to ensure the protection of the User's personal data from unauthorized or accidental access, destruction, modification, blocking, copying, distribution, as well as other illegal actions.These Rules do not apply to actions of third parties and Internet resources. . The Administration of the Site is not responsible for the actions of third parties who obtain information about the User as a result of using the Internet or Site Services, and for the consequences of using the information due to the Site's features. available to any internet user. The Site Administration advises Users to take responsibility for solving the issue of the amount of information transmitted about themselves from the Site."
           }
         ]
       }

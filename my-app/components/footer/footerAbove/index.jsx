@@ -27,7 +27,7 @@ const Above = () => {
                         </Link> 
                       </div>
                       
-                      <p className='mt-6'>All Rights Reserved.Almet Trading Baku   - 2023</p>
+                      <p className='mt-6'>All Rights Reserved by Almet Baku - 2024</p>
                        <p className='mt-2 flex gap-3'>
                         <Link href='/faq' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>FAQ</Link>
                         <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Career</Link> 

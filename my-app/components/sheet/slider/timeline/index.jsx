@@ -1,12 +1,10 @@
 import React from 'react'
 import styles from './styles.module.css'
-import useStore from '@/zustand/store'
 
-const Timeline = ({index, sliderDatas}) => {
+
+const Timeline = ({index, sliderDatas,changeIndex}) => {
   
   
-  const { changeIndex } = useStore()
-
 
   const active = {
     transform: 'scale(1.4)',

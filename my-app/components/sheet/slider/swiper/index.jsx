@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
-import useStore from "@/zustand/store";
 
-const Swiper = ({ index, materials, leftData, rightData }) => {
+
+const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
   const [statusSlider, setStatus] = useState(true);
   const [translateData, setTranslateData] = useState(0); // Initialize with 0
   const [touchStartStart, setTouchStartStart] = useState(null); //touch slider
@@ -13,12 +13,11 @@ const Swiper = ({ index, materials, leftData, rightData }) => {
   const [endStatus, setEndtStatus] = useState(false)
   const [startPoint, setStartPoint] = useState(0) 
 
-  const { swiperIndexPlus } = useStore();
 
   useEffect(() => {
     // Function to get initial translateData
     function getInitialTranslateData() {
-      return window.innerWidth > 769 ? 190 : 160;
+      return window.innerWidth > 769 ? 175 : 177;
     }
 
     // Set initial translateData
@@ -102,7 +101,17 @@ const Swiper = ({ index, materials, leftData, rightData }) => {
             }px)`,
           }}
         >
-          <div className={styles.boxModel} style={{ position: "relative" }}>
+          <div 
+            className={styles.boxModel} 
+            style={{ 
+              position: "relative",
+              width: `${
+                (data.id - 1) * translateData - translateData * index === 0 && 180}px`,
+              height: `${
+                (data.id - 1) * translateData - translateData * index === 0 && 280}px`,
+            }}
+        
+           >
             <Image
               src={data.src}
               alt={data.alt}
@@ -111,7 +120,7 @@ const Swiper = ({ index, materials, leftData, rightData }) => {
               style={{
                 transform: `scale(${
                   (data.id - 1) * translateData - translateData * index !== 0
-                    ? 0.85
+                    ? 0.7
                     : 1
                 })`,
                 transition: "transform 0.5s",

@@ -1,24 +1,29 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-
 import  Image  from 'next/image';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// import '@/styles/slider.css';
-
 // import required module
 import styles from './styles.module.css';
-
 import {Infos} from '@/mocks/sliderFourth'
+import Spinner from '@/components/spinner';
+
 
 
 const index = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  const onImageLoad = () => {
+    setLoading(false);
+  };
+
+
+
   return (
     <div className={ `${styles.component}` }>
      <Swiper
@@ -54,9 +59,11 @@ const index = () => {
                           src={data.src}
                           style={{borderRadius:'5px'}}
                           alt={data.alt}
-                          loading="eager"
+                          loading='lazy'
+                          onLoad={onImageLoad}
                           fill
                         />
+                        {loading ? <Spinner /> : null}
                      </div>
                     <div style={{background:'transparent'}}>
                       <div className='mt-4 mb-2'><p className={styles.title}>{data.title}</p></div>
