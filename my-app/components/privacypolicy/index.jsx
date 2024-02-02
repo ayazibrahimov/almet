@@ -23,7 +23,6 @@ const index = ({slug}) => {
     
     // Access the data based on the found result
     const datas = matchingResult[slug];
-    console.log(datas);
     
   return (
     <div className={styles.container}>

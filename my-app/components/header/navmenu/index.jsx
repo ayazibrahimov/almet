@@ -27,10 +27,10 @@ function index({statusInfo,shown,setShown}) {
 
   };
 
-  // const handleLinkClick = (e) => {
-  //   // Stop event propagation for link clicks
-  //   e.stopPropagation();
-  // };
+  const handleLinkClick = (e) => {
+    // Stop event propagation for link clicks
+    e.stopPropagation();
+  };
 
 
   // className={ `${shown ? styles.indexData1 : styles.indexData2}

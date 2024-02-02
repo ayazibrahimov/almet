@@ -11,7 +11,7 @@ export default async function OurProducts(){
 
   return (
     <>
-      <div style={{background:'#1A1A1A'}}>
+      <div style={{background:'#1A1A1A', overflowX:'hidden'}}>
         <div className='pb-20'>
              <Sheet />
              <ProductsInfo />

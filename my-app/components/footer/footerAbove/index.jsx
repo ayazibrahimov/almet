@@ -30,7 +30,7 @@ const Above = () => {
                       <p className='mt-6'>All Rights Reserved by Almet Baku - 2024</p>
                        <p className='mt-2 flex gap-3'>
                         <Link href='/faq' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>FAQ</Link>
-                        <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Career</Link> 
+                        <Link href='/contact' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Career</Link> 
                         <Link href='/privacypolicy' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Privacy & Policy</Link> 
                         {/* <Link href='/' className='transition-colors duration-400 ease-in-out hover:text-[#828282]'>Policy</Link>  */}
                        </p>

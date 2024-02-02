@@ -24,7 +24,9 @@
 
 
 .typeContainer{
-  height: 874px;
+  /* height: 874px; */
+  display: flex;
+  justify-content: center;
 }
 
 

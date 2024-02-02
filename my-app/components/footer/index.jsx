@@ -8,6 +8,9 @@ import FixedButton from '@/components/upButton'
 
 
 function index() {
+
+
+
   return (
     <footer className={styles.footer} style={{backgroundColor:'#000'}}>
        <Upper />

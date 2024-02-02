@@ -19,9 +19,9 @@ export const gridImage = [
 
 
 export const gridImage2 = [
-    {src:fifth,header:'Metal Mesh', alt: 'FirstImage', status:false},
-    {src:sixth,header:'Steel Rebar', alt: 'FirstImage', status:false},
+    {src:eigth,header:'Metal Mesh', alt: 'FirstImage', status:false},
+    {src:fifth,header:'Steel Rebar', alt: 'FirstImage', status:false},
     {src:sevnth,header:'I-Beams', alt: 'FirstImage', status:false},
-    {src:eigth,header:'Steel coil', alt: 'FirstImage', status:false}
+    {src:sixth ,header:'Steel coil', alt: 'FirstImage', status:false}
      
 ]

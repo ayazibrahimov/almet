@@ -29,7 +29,6 @@ const Item = ({ tables }) => {
              alt={table.alt} 
              loading='lazy'
              onLoad={onImageLoad}
-             fill
               />  
              {loading ? <Spinner /> : null} 
           </div>
