@@ -16,6 +16,7 @@ import materialsAdd2 from "@/public/materialsAdd2.jpg";
 import materialsAdd3 from "@/public/materialsAdd3.jpeg";
 import materialsAdd4 from "@/public/materialsAdd4.jpeg";
 import materialsAdd5 from "@/public/materialsAdd5.jpeg";
+import materialsAdd6 from "@/public/Feature2.jpg";
 import materials4 from "@/public/materials8.jpg";
 import materials5 from "@/public/materials5.jpg";
 import materials6 from "@/public/materials6.jpg";
@@ -35,7 +36,7 @@ import testmaterials1 from "@/public/testmaterials1.jpg";
 import testmaterials2 from "@/public/testmaterials2.jpg";
 import testmaterials3 from "@/public/testmaterials3.jpg";
 import testmaterials4 from "@/public/testmaterials4.jpg";
-
+import testbg5 from '@/public/testbg5.jpeg'
 
 
 export const sliderDatas =[
@@ -45,7 +46,7 @@ export const sliderDatas =[
     {id:'4', src:mainSlider4, title:"Mesh wire fence", text:'Economical and durable, welded wire mesh is manufactured on state-of-the-art, automated, grid welding equipment. Line and cross wires lay flat at each intersection and are resistance welded for maximum cross-sectional strength. Recently, earthquakes have been inevitable. For this reason, the demand for quality construction materials has increased.' , alt:'image3', status:false },
     {id:'5', src:mainSlider5, title:"PWC coated wire", text:'Garden and Park Fences: Garden fences, park fences and green area boundaries are often preferred. Agricultural Areas: Can be used to define land boundaries and protect crops in agricultural areas. Private Properties: Used to define land boundaries in houses with attached and private properties.' , alt:'image3', status:false },
     {id:'6', src:mainSlider6, title:"Metal wire", text:'Galvanized wire is a thin, long and bendable metal product with a circular cross-section and covered with a zinc layer. The service life of galvanized wires is 3 times longer than that of low-carbon wires due to the high density of the zinc coating and is more resistant to corrosion. Wires are widely used in many fields, from construction to gardening.' , alt:'image3', status:false },
-    {id:'7', src:mainSlider6, title:"Steel Wire Rope", text:'Wire rope is using for in the lifting and rigging industries, wire rope is attached to a crane or hoist and fitted with swivels, shackles or hooks to attach to a load and move it in a controlled matter. It can also be used to lift and lower elevators, or as a means of support for suspension bridges or towers.' , alt:'image3', status:false },
+    {id:'7', src:testbg5, title:"Steel Wire Rope", text:'Wire rope is using for in the lifting and rigging industries, wire rope is attached to a crane or hoist and fitted with swivels, shackles or hooks to attach to a load and move it in a controlled matter. It can also be used to lift and lower elevators, or as a means of support for suspension bridges or towers.' , alt:'image3', status:false },
 ]
 
 
@@ -79,7 +80,7 @@ export const Materials2=[
 
     {id:1,src:materials2,alt:'info2'},
     {id:2,src:materials3,alt:'info3'},
-    {id:3,src:materials4,alt:'info3'},
+    {id:3,src:materialsAdd6,alt:'info3'},
     {id:4,src:materials5,alt:'info3'},
     {id:5,src:materials6,alt:'info3'},
     {id:6,src:materials7,alt:'info3'},

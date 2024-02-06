@@ -5,12 +5,7 @@ import Above from './footerAbove'
 import FixedButton from '@/components/upButton'
 
 
-
-
 function index() {
-
-
-
   return (
     <footer className={styles.footer} style={{backgroundColor:'#000'}}>
        <Upper />
@@ -20,4 +15,5 @@ function index() {
   )
 }
 
-export default index
+
+export default index;
