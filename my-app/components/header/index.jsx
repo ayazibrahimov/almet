@@ -5,7 +5,7 @@ import Logo from "./logo/index";
 import NavMenu from "./navmenu/index";
 import MobileNav from '../mobileNav' 
 import styles from './styles.module.css' 
-import VideoPlayer from '../metalmesh/sliderVideo';
+
 
 
 function index() {
@@ -39,7 +39,6 @@ function index() {
 
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
-    console.log('Scroll event detected!', window.scrollY);
     // Check if scrollY is more than 800
     if (window.scrollY > 800) {
       // Call your custom function here

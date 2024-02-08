@@ -8,6 +8,7 @@ function RoundedText() {
   return (
     <div className={styles.roundedTextContainer}>
          <Image
+          alt="rounded"
           src={CurvedImage}
          ></Image>
     </div>
