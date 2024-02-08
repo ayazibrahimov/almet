@@ -4,7 +4,7 @@
   height: auto;
   /* display: inline-block; */
   /* position: absolute;
-  z-index: 111;
+  z-index: 555;
   top: -160px;
   left: 40px; */
 }
@@ -21,7 +21,7 @@
 .container h1:nth-child(1){
   display: inline-block;
   position: absolute;
-z-index: 111;
+z-index: 555;
 height: 140px;
 /* width: 100%; */
 left: 0;
@@ -34,7 +34,7 @@ animation: openclose1 1s ease-in-out ;
 .container h1:nth-child(2){
   display: inline-block;
   position: absolute;
-  z-index: 111;
+  z-index: 555;
   top: -33px;
   width: 610px;
   height: 140px; 

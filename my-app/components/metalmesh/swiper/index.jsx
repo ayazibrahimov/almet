@@ -19,6 +19,8 @@ import React,{useEffect, useRef} from "react";
 // import { DefaultPlayer as Video } from "react-html5video";
 // import "react-html5video/dist/styles.css";
 import AlmetVideo from "@/public/almet2.mp4";
+import DropFilter from "@/components/dropfilterVideo";
+
 
 
 function Sliding() {
@@ -35,8 +37,10 @@ function Sliding() {
 
 
   return (
-    <div>
+    <div style={{position:'relative'}}>
+      <DropFilter />
       <video 
+         preload="auto"
          ref={videoRef} 
          controls={false} 
          autoPlay 
