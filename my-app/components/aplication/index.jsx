@@ -12,7 +12,7 @@ const Areas = () => {
   return (
     <section>
         <div className='lg:container lg:mx-auto sm:py-16 sm:px-8 py-8 px-4'>
-               <Title title='Areas of Aplication'/>
+               <Title title='Areas of Application'/>
               <div style={{position: 'relative',width:'100%', height:'900px'}}>
                 <Image 
                  fill
