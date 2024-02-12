@@ -8,6 +8,7 @@ import sevnth from '@/public/Feature3.jpg'
 import eigth from '@/public/Feature4.jpg'
 import nine from '@/public/Feature6.jpg'
 import ten from '@/public/Feature10.jpg'
+import eleven from '@/public/Feature11.jpg'
 
 
 
@@ -24,7 +25,7 @@ export const gridImage2 = [
     {src:eigth,header:'Metal Mesh', alt: 'FirstImage', status:false},
     {src:nine,header:'Steel Rebar', alt: 'FirstImage', status:false},
     {src:sevnth,header:'I-Beams', alt: 'FirstImage', status:false},
-    {src:sixth ,header:'Galvanized Steel Coil', alt: 'FirstImage', status:false},
+    {src:eleven ,header:'Galvanized Steel Coil', alt: 'FirstImage', status:false},
     {src:ten,header:'Steel Wire Rod', alt: 'FirstImage', status:false},
     {src:fifth,header:'PVC Coated Wire', alt: 'FirstImage', status:false},
 ]
