@@ -25,7 +25,7 @@ const MajorSlider1 = () => {
        <div style={{position:'relative',width:'100%', height:'100%'}}>
             <DropFilter />
             <Image 
-               	priority={true}
+               priority={true}
                src={sliderDatas[index]?.src} 
                alt="Slider cover images" 
                layout="fill" 

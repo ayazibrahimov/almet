@@ -48,8 +48,8 @@ const index = () => {
                        style={{borderRadius:'5px'}}
                        src={metal.src}
                        alt={metal.alt}
-                       loading='eager'
-                       fill
+                       layout="fill" 
+                       objectFit="cover"
                       ></Image>
                     </div>
                 </SwiperSlide>
