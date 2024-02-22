@@ -18,7 +18,7 @@ import React,{useEffect, useRef} from "react";
 // import { EffectFade, Autoplay } from "swiper/modules";
 // import { DefaultPlayer as Video } from "react-html5video";
 // import "react-html5video/dist/styles.css";
-import AlmetVideo from "@/public/almet2.mp4";
+//import AlmetVideo from "@/public/almet2.mp4";
 import DropFilter from "@/components/dropfilterVideo";
 import useProductData from '@/hooks/api'
 

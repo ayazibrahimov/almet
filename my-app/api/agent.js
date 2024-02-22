@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://195.201.238.29:8000/api/',
+  baseURL: 'https://admin.almetbaku.az/api/',
   headers: { 'Accept-Language': 'az' }
 });
 
