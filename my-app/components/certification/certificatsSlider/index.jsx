@@ -83,7 +83,7 @@ const index = ({context}) => {
                   }}
                 >
                   <Image
-                    src={`http://195.201.238.29:8000/storage/${dat.image}`}
+                    src={`https://admin.almetbaku.az/storage/${dat.image}`}
                     style={{ borderRadius: "10px" }}
                     alt='sliderImage'
                     loading='lazy'

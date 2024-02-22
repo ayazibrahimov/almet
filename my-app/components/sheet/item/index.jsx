@@ -20,7 +20,7 @@ const Item = ({ dats,data }) => {
           <h2 className={styles.title}>{dat.title}</h2>
           <div className={styles.typeContainer}>            
           <Image 
-              src={`http://195.201.238.29:8000/storage/${dat.image}`}
+              src={`https://admin.almetbaku.az/storage/${dat.image}`}
               alt='image'
               loading='lazy'
               width={800}

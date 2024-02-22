@@ -73,7 +73,7 @@ const index = () => {
                 <div className={styles.sliderBox}>
                      <div style={{position:'relative', width:'100%', height:"480px"}}>
                         <Image 
-                          src={`http://195.201.238.29:8000/storage/${dat.image}`}
+                          src={`https://admin.almetbaku.az/storage/${dat.image}`}
                           style={{borderRadius:'5px'}}
                           alt='sliderImage'
                           loading='lazy'

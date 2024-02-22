@@ -25,7 +25,7 @@ const Items = ({ index, data, myName }) => {
         {/* {loading ? <div className={styles.placeholder}></div> : null} */}
           <Image
             className={styles.productImage}
-            src={`http://195.201.238.29:8000/storage/${data.background_image}`}
+            src={`https://admin.almetbaku.az/storage/${data.background_image}`}
             alt='image'
             loading='lazy'
             onLoad={onImageLoad}
