@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import Spinner from '@/components/spinner';
 
-const Item = ({ tables }) => {
+const Item = ({ dats,data }) => {
   const [loading, setLoading] = useState(true);
 
   const onImageLoad = () => {
@@ -15,20 +15,17 @@ const Item = ({ tables }) => {
   return (
     <div>
       {
-      tables.map((table, id) => (
-        <div key={id}>
-          <h2 className={styles.title}>{table.title}</h2>
-          <div className={styles.typeContainer}
-            style={{
-              position: "relative",
-              width: "100%",
-            }}
-          >
-            <Image 
-             src={table.src} 
-             alt={table.alt} 
-             loading='lazy'
-             onLoad={onImageLoad}
+      data.map((dat, index) => (
+        <div key={dat.id}>
+          <h2 className={styles.title}>{dat.title}</h2>
+          <div className={styles.typeContainer}>            
+          <Image 
+              src={`http://195.201.238.29:8000/storage/${dat.image}`}
+              alt='image'
+              loading='lazy'
+              width={800}
+              height={1000}
+              onLoad={onImageLoad}
               />  
              {loading ? <Spinner /> : null} 
           </div>

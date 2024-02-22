@@ -10,9 +10,9 @@ const roboto = Roboto({
 const Content = ({metal}) => {
   return (
     <div className={styles.content}>
-        <h2 className='roboto text-center'>{metal.heading}:</h2>
-        <h3 className='roboto text-center mt-2'>{metal.title}</h3>
-        <p className='text-center mt-4'>{metal.text}</p>
+        <h2 className='roboto text-center'>{metal.title}:</h2>
+        <h3 className='roboto text-center mt-2'>{metal.subtitle}</h3>
+        <p className='text-center mt-4'>{metal.description}</p>
          <div className='mt-4'>
          <Link href='/' className={styles.buttonData}>
             More

@@ -28,26 +28,7 @@
             {"text":"Fast delivery", "href":""},
             {"text":"Technical support", "href":""}
         ]
-      },
-      {
-        "id":4,
-        "title": "Contact",
-        "items":[
-            {"text":"+994 51 270 75 75","href":""},
-            {"text":"info@almettradingbaku.com", "href":""},
-            {"text":"Baku, Alaskar Gayibov 10 q", "href":""}
-        ]
-      },
-      {
-        "id":5,
-        "title": "Info",
-        "items":[
-            {"href":""},
-            {"href":""},
-            {"href":""}
-        ]
       }
-
     ],
 
     "total_pages": 36052,

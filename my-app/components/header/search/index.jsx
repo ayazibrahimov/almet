@@ -4,7 +4,7 @@ import styles from './styles.module.css'
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 
-function Search({setShown, shown}) {
+function Search({setShown, shown,data}) {
   const [search, setSearch] = useState("") 
 
 
@@ -33,7 +33,7 @@ function Search({setShown, shown}) {
          type="text" 
          value={search}  
          style={{ width: shown ? '' : '100%' }}
-         placeholder='SEARCH'
+         placeholder={data.header_search}
          onChange={handleChange}
          onClick={handleClick} />
          {

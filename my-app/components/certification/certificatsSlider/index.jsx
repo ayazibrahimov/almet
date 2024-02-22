@@ -12,23 +12,41 @@ import "@/styles/slider.css";
 // import required module
 import Spinner from '@/components/spinner';
 import { Certificats } from "@/mocks/sliderFourth";
+import useProductData from '@/hooks/api'
 
 
 
 
+const index = ({context}) => {
+  
+  const [loadingData, setLoadingData] = useState(true);
+ 
+    const { datas, loading, error } = useProductData("/certifications");
+  
+    if (loading) {
+      return null; // or return loading indicator, message, etc.
+    }
+  
+    if (error) {
+      return null; // or return error message, try again button, etc.
+    }
+  
+    const { data } = datas || {};
 
-const index = () => {
+    
 
-  const [loading, setLoading] = useState(true);
+
+
 
   const onImageLoad = () => {
-    setLoading(false);
+    setLoadingData(false);
   };
+ 
 
 
   return (
     <div>
-      <h3 className={styles.title}>#certification</h3>
+      <h3 className={styles.title}>{context}</h3>
       <div>
         <Swiper
           slidesPerView={1}
@@ -54,8 +72,8 @@ const index = () => {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          {Certificats.map((data, index) => (
-            <SwiperSlide key={index}>
+          {data.map((dat, index) => (
+            <SwiperSlide key={dat.key}>
               <div className={styles.sliderBox}>
                 <div
                   style={{
@@ -65,13 +83,13 @@ const index = () => {
                   }}
                 >
                   <Image
-                    src={data.src}
+                    src={`http://195.201.238.29:8000/storage/${dat.image}`}
                     style={{ borderRadius: "10px" }}
-                    alt={data.alt}
+                    alt='sliderImage'
                     loading='lazy'
                     onLoad={onImageLoad}
                     fill
-                  />{loading ? <Spinner /> : null}
+                  />{loadingData ? <Spinner /> : null}
                 </div>
               </div>
             </SwiperSlide>

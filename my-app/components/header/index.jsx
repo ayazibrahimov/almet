@@ -89,7 +89,7 @@ function index() {
       <div className={`lg:container lg:mx-auto ${ statusInfo ? 'py-1' : 'py-4' } `}>
           <div className={styles.mobileNavBar}><MobileNav /></div>
           <div className={styles.desktopNavBar}>
-            <nav className="grid grid-cols-3 gap-40">
+            <nav className="grid grid-cols-4 gap-40">
               <Logo statusInfo={statusInfo} />
               <NavMenu shown={shown} setShown={setShown} statusInfo={statusInfo} />
             </nav>

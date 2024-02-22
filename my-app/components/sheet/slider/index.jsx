@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {useStore1, useStore2} from '@/global-storage/store'
 import Image from 'next/image';
 import Timeline from "./timeline";
@@ -14,7 +14,8 @@ import styles from './styles.module.css'
 
 
 
-const MajorSlider1 = () => {
+const MajorSlider1 = ( {data} ) => {
+  
    
   const { index,sliderDatas,Materials, increment,decrement,leftData,rightData,changeIndex,swiperIndexPlus } = useStore1()
   
@@ -25,8 +26,7 @@ const MajorSlider1 = () => {
        <div style={{position:'relative',width:'100%', height:'100%'}}>
             <DropFilter />
             <Image 
-               priority={true}
-               src={sliderDatas[index]?.src} 
+               src={`http://195.201.238.29:8000/storage/${data?.[index]?.background_image ?? ''}`}
                alt="Slider cover images" 
                layout="fill" 
                objectFit="cover"
@@ -35,19 +35,19 @@ const MajorSlider1 = () => {
 
        <div style={{position:'absolute',top:"40%",top:'15%',left:'5%',zIndex:222}}>
          <div className= {`md:hidden block  ${styles.infoTextMobile}`} >
-            <Info index={index} sliderDatas={sliderDatas} />
+            <Info index={index} sliderDatas={data} />
          </div>
          <div className="flex md:gap-5 gap-2">
 
            <div className="sm:w-1/12 w-12">
-              <Timeline changeIndex={changeIndex} index={index} sliderDatas={sliderDatas}/>
+              <Timeline changeIndex={changeIndex} index={index} sliderDatas={data}/>
            </div>
            <div className="md:w-3/12 md:block hidden">
-              <Info index={index} sliderDatas={sliderDatas} />
+              <Info index={index} sliderDatas={data} />
            </div>
            <div className="md:w-8/12 sm:w-11/12 w-fit"  style={{height:'355px'}}>
-              <Swiper swiperIndexPlus={swiperIndexPlus} materials={Materials} rightData={rightData} leftData={leftData} index={index} sliderDatas={sliderDatas} />
-              <Buttons index={index} sliderDatas={sliderDatas} increment={increment} decrement={decrement} />
+              <Swiper swiperIndexPlus={swiperIndexPlus} materials={data} rightData={rightData} leftData={leftData} index={index} sliderDatas={data} />
+              <Buttons index={index} sliderDatas={data} increment={increment} decrement={decrement} />
            </div>
          </div>
        </div>
@@ -55,7 +55,7 @@ const MajorSlider1 = () => {
   );
 };
 
-const MajorSlider2 = () => {
+const MajorSlider2 = ({data}) => {
    
   const { index,sliderDatas2,Materials2, increment,decrement,leftData,rightData,changeIndex,swiperIndexPlus } = useStore2()
   
@@ -64,8 +64,7 @@ const MajorSlider2 = () => {
        <div style={{position:'relative',width:'100%', height:'100%'}}>
             <DropFilter />
             <Image 
-            	priority={true}
-               src={sliderDatas2[index]?.src} 
+               src={`http://195.201.238.29:8000/storage/${data?.[index]?.background_image ?? ''}`}
                alt="Slider cover images" 
                layout="fill" 
                objectFit="cover"
@@ -73,18 +72,18 @@ const MajorSlider2 = () => {
        </div>
        <div style={{position:'absolute',top:"40%",top:'15%',left:'5%',zIndex:222}}>
          <div className= {`md:hidden block  ${styles.infoTextMobile}`} >
-            <Info index={index} sliderDatas={sliderDatas2} />
+            <Info index={index} sliderDatas={data} />
          </div>
          <div className="flex md:gap-5 gap-2">
            <div className="sm:w-1/12 w-12">
-              <Timeline  changeIndex={changeIndex}  index={index} sliderDatas={sliderDatas2}/>
+              <Timeline  changeIndex={changeIndex}  index={index} sliderDatas={data}/>
            </div>
            <div className="md:w-3/12 md:block hidden">
-              <Info index={index} sliderDatas={sliderDatas2} />
+              <Info index={index} sliderDatas={data} />
            </div>
            <div className="md:w-8/12 sm:w-11/12 w-fit" style={{height:'355px'}}>
-              <Swiper swiperIndexPlus={swiperIndexPlus} materials={Materials2} rightData={rightData} leftData={leftData} index={index} />
-              <Buttons index={index} sliderDatas={sliderDatas2} increment={increment} decrement={decrement} />
+              <Swiper swiperIndexPlus={swiperIndexPlus} materials={data} rightData={rightData} leftData={leftData} index={index} />
+              <Buttons index={index} sliderDatas={data} increment={increment} decrement={decrement} />
            </div>
          </div>
        </div>

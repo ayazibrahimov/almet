@@ -5,6 +5,9 @@ import Spinner from '@/components/spinner';
 
 const ImageText = ({size,imgData}) => {
 
+
+  
+
   const [loading, setLoading] = useState(true);
 
   const onImageLoad = () => {
@@ -18,7 +21,7 @@ const ImageText = ({size,imgData}) => {
       <div style={size}>
         <Image
           style={{borderRadius:'5px'}}
-          src={imgData} 
+          src={`http://195.201.238.29:8000/storage/${imgData}`} 
           alt='image' 
           loading='lazy'
             onLoad={onImageLoad}

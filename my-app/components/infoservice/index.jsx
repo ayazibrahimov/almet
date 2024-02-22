@@ -1,17 +1,36 @@
-import React from 'react'
+'use client'
+import React,{useState} from 'react'
 import styles from './styles.module.css'
 import mastericon from '@/public/mastericon.svg'
 import Image from 'next/image'
-import Works from '@/components/aplication/works'
-import application from '@/mocks/application.json'
-
+import useProductData from '@/hooks/api';
+import InfoApp from './infoApps/index'
 
 const index = () => {
+
+
+   const { datas: infos, loading, error } = useProductData('/static-texts');
+  
+   if (loading) {
+     return;
+   }
+
+   if (error) {
+     return;
+   }
+   
+   const { data :data1 } = infos || {};
+  
+   
+   
+
+
+
   return (
     <>
       <div className={styles.container}>
         <h2 className={styles.title}>
-         “Our sevices”
+          {data1.services_our_service}
         </h2>
 
         <div className='flex flex-col justify-center items-center gap-2 mt-20'>
@@ -23,16 +42,14 @@ const index = () => {
           </span>
 
           <p className={styles.heading}>
-            Our top-notch services
+            {data1.services_our_top_notch}
           </p>
            
         </div>
      </div>
 
 
-     <div className='sm:container sm:mx-auto px-2 pb-4'>
-        <Works spinner={false} positionData='secondElement' application={application.results3} /> 
-     </div>
+      <InfoApp />
     
     </>
   )

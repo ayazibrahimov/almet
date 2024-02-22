@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Item from './items'
 import Datas from '@/mocks/footer.json'
@@ -5,16 +6,32 @@ import FooterLogo from '@/public/Frame 239.jpg'
 import Link  from 'next/link'
 import Image  from 'next/image'
 import styles from './styles.module.css'
-
-
+import useProductData from '@/hooks/api'
 
 
 const Above = () => {
+
+  const { datas, loading, error } = useProductData("/static-media");
+  
+    if (loading) {
+      return null; // or return loading indicator, message, etc.
+    }
+  
+    if (error) {
+      return null; // or return error message, try again button, etc.
+    }
+  
+    const { data } = datas || {};
+    
+
+
+
+
   return (
        <div className='lg:container lg:mx-auto py-26 lg:px-10 px-4 text-center'>
            <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2  md:gap-4 sm:gap-2'>
 
-             <Item datas={Datas} />
+             <Item majorInfo={Datas} />
             
            </div>    
 

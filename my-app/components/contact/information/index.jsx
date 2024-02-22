@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import styles from "./styles.module.css";
 import { Roboto } from "next/font/google";
@@ -6,6 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Input from "@mui/material/Input"; // Correct import path
 import Stack from "@mui/material/Stack"; // Correct import path
+import useProductData from '@/hooks/api'
+import ContactList from "./ContactList/index";
 
 
 const roboto = Roboto({
@@ -22,6 +25,24 @@ const roboto3 = Roboto({
 });
 
 const index = () => {
+
+  
+  
+const { datas: staticTextsData, loading: staticTextsLoading, error: staticTextsError } = useProductData("/static-texts");
+
+if (staticTextsLoading) {
+  return null; // or return loading indicator, message, etc.
+}
+
+if (staticTextsError) {
+  return null; // or return error message, try again button, etc.
+}
+
+
+
+
+
+
   return (
     <div className="grid grid-cols-12 gap-4 lg:my-20 my-10">
       <div className="lg:col-span-4 sm:col-span-6 col-span-12">
@@ -30,37 +51,15 @@ const index = () => {
             <Link href="https://almetbaku.com/">almetbakutrading.com </Link>
           </h4> */}
 
-          <ul className={styles.infoAdresses}>
-           
-            {/*font-family: Roboto;*/}
-            <li>
-             
-              <Link href="tel:+994512707575">
-                {/* <span className={roboto.className} >T.</span>  */}
-                +994 51 270 75 75
-              </Link>
-            </li>
-            <li>
-             
-              <Link href="mailto:info@almettradingbaku.com">
-               
-                {/* <span className={roboto.className}>E.</span> */}
-                 info@almettradingbaku.com
-              </Link>
-            </li>
-            <li>
-             
-              {/* <span className={roboto.className}>Ü.</span> */}
-               Azerbaijan, Baku, Alaskar Gayibov 10 q
-            </li>
-          </ul>
+          <ContactList />
+
         </div>
 
         <div className="my-4 flex sm:justify-start justify-center">
           <div
             style={{ position: "relative", width: "220px", height: "220px" }}
           >
-            <h5 className={styles.keepInTouch}>Keep in Touch</h5>
+            <h5 className={styles.keepInTouch}>{staticTextsData.data.contact_keep_in}</h5>
             <Image
               className={styles.rombs}
               src={solarLinear}
@@ -72,18 +71,18 @@ const index = () => {
 
         <div className="mt-10">
           <h4 className={`${styles.turnIdea} ${roboto2.className}`}>
-            We are ready to turn <br /> your idea into reality
+           {staticTextsData.data.contact_we_are_ready}<br /> {staticTextsData.data.contact_your_idea}
           </h4>
         </div>
       </div>
       <div className="lg:col-span-8 sm:col-span-6 col-span-12">
         <div>
           <div className={styles.message}>
-            <h4 className={roboto3.className}>Ready to start your project?</h4>
+            <h4 className={roboto3.className}>{staticTextsData.data.contact_ready_to_start}</h4>
             <h4 className={roboto3.className}>
-              Believe in our partnership success?
+              {staticTextsData.data.contact_believe_in_our}
             </h4>
-            <h4 className={roboto3.className}>Share your thoughts with us!</h4>
+            <h4 className={roboto3.className}>{staticTextsData.data.contact_share_your}</h4>
           </div>
         </div>
 
@@ -91,7 +90,7 @@ const index = () => {
           <div className="w-2/4">
             <Stack spacing={2}>
               <Input
-                placeholder="NAME"
+                placeholder={`${staticTextsData.data.contact_form_name}`}
                 variant="soft"
                 sx={{
                   "--Input-radius": "0px",
@@ -120,7 +119,7 @@ const index = () => {
           <div className="w-2/4">
             <Stack spacing={2}>
               <Input
-                placeholder="EMAIL"
+                placeholder={`${staticTextsData.data.contact_form_emmail}`}
                 variant="soft"
                 sx={{
                   "--Input-radius": "0px",
@@ -151,11 +150,12 @@ const index = () => {
         <div>
             <Stack spacing={2} sx={{ height: '150px' }}>
               <Input
-                placeholder="PROJECT İNFORMATİON"
+                placeholder={`${staticTextsData.data.contact_form_information}`}
                 variant="soft"
                 sx={{
                     height: '100%',
                   "--Input-radius": "0px",
+                  width:'100%',
                   borderBottom: "1px solid",
                   borderColor: "neutral.outlinedBorder",
                   "&:hover": {
@@ -182,7 +182,7 @@ const index = () => {
 
 
         <div className="mt-8 flex justify-end">
-            <button className={styles.sendBtn}>Send</button>
+            <button className={styles.sendBtn}>{staticTextsData.data.contact_form_send}</button>
         </div>
 
 

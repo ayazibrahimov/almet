@@ -20,34 +20,50 @@ import React,{useEffect, useRef} from "react";
 // import "react-html5video/dist/styles.css";
 import AlmetVideo from "@/public/almet2.mp4";
 import DropFilter from "@/components/dropfilterVideo";
+import useProductData from '@/hooks/api'
 
 
 
-function Sliding() {
-
+function Sliding({ myVideo }) {
   const videoRef = useRef(null);
 
-  useEffect(() => {
-    const video = videoRef.current;
+  const { datas, loading, error } = useProductData("/static-media");
 
-    // Start the video when the component mounts
-    video.play();
-  }, []);
+  if (loading) {
+    return null; // or return loading indicator, message, etc.
+  }
 
+  if (error) {
+    return null; // or return error message, try again button, etc.
+  }
+
+
+
+  // useEffect(() => {
+  //   const video = videoRef.current;
+
+  //   // Check if video is not null before calling play
+  //   if (video) {
+  //     video.play();
+  //   }
+  // }, [datas]);
 
 
   return (
-    <div style={{position:'relative'}}>
+    <div style={{ position: 'relative' }}>
       <DropFilter />
-      <video 
-         preload="auto"
-         ref={videoRef} 
-         controls={false} 
-         autoPlay 
-         loop
-         muted
-        >
-        <source src={AlmetVideo} type="video/mp4" />
+      <video
+        preload="auto"
+        ref={videoRef}
+        controls={false}
+        autoPlay
+        loop
+        muted
+      >
+        <source
+          src={`http://195.201.238.29:8000/storage/${datas.data.home_video_file.download_link}`}
+          type="video/mp4"
+        />
         {/* Add more <source> elements for other video formats if needed */}
       </video>
     </div>

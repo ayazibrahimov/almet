@@ -87,17 +87,17 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
             position: "absolute",
             transition: "transform 0.5s",
             width: `${
-              (data.id - 1) * translateData - translateData * index !== 0
+              (i+1 - 1) * translateData - translateData * index !== 0
                 ? 176
                 : ""
             }`,
             height: `${
-              (data.id - 1) * translateData - translateData * index !== 0
+              (i+1 - 1) * translateData - translateData * index !== 0
                 ? 295
                 : ""
             }`,
             transform: `translateX(${
-              (data.id - 1) * translateData - translateData * index
+              (i+1 - 1) * translateData - translateData * index
             }px)`,
           }}
         >
@@ -106,20 +106,20 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
             style={{ 
               position: "relative",
               width: `${
-                (data.id - 1) * translateData - translateData * index === 0 && 180}px`,
+                (i+1 - 1) * translateData - translateData * index === 0 && 180}px`,
               height: `${
-                (data.id - 1) * translateData - translateData * index === 0 && 280}px`,
+                (i+1 - 1) * translateData - translateData * index === 0 && 280}px`,
             }}
         
            >
             <Image
-              src={data.src}
+              src={`http://195.201.238.29:8000/storage/${data.image}`}
               alt={data.alt}
               loading="eager"
               fill
               style={{
                 transform: `scale(${
-                  (data.id - 1) * translateData - translateData * index !== 0
+                  (i + 1 - 1) * translateData - translateData * index !== 0
                     ? 0.7
                     : 1
                 })`,

@@ -22,10 +22,10 @@ const Timeline = ({index, sliderDatas,changeIndex}) => {
 
         {
         sliderDatas.map((data,i)=>(
-          <span onClick={()=>changeIndex(data.id - 1)}
-             style={(index+1 === Number(data.id)) ? active : {}}
+          <span onClick={()=>changeIndex(i+1   - 1)}
+             style={(index+1 === Number(i+1)) ? active : {}}
              className={styles.box}
-             >{data.id}</span>
+             >{i+1}</span>
         ))
       }
 

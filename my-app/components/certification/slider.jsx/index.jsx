@@ -11,16 +11,33 @@ import 'swiper/css/pagination';
 import styles from './styles.module.css';
 import {Infos} from '@/mocks/sliderFourth'
 import Spinner from '@/components/spinner';
+import useProductData from '@/hooks/api';
 
 
 
 const index = () => {
 
-  const [loading, setLoading] = useState(true);
+  const [loadingData, setLoadingData] = useState(true);
+
 
   const onImageLoad = () => {
-    setLoading(false);
+    setLoadingData(false);
   };
+
+    const { datas, loading, error } = useProductData("/about-slides");
+  
+    if (loading) {
+      return null; // or return loading indicator, message, etc.
+    }
+  
+    if (error) {
+      return null; // or return error message, try again button, etc.
+    }
+
+
+    const { data }  = datas || {}
+
+
 
 
 
@@ -51,23 +68,23 @@ const index = () => {
       >
            
            {
-            Infos.map((data,index)=>(
-             <SwiperSlide key={index}>
+            data.map((dat,index)=>(
+             <SwiperSlide key={dat.id}>
                 <div className={styles.sliderBox}>
                      <div style={{position:'relative', width:'100%', height:"480px"}}>
                         <Image 
-                          src={data.src}
+                          src={`http://195.201.238.29:8000/storage/${dat.image}`}
                           style={{borderRadius:'5px'}}
-                          alt={data.alt}
+                          alt='sliderImage'
                           loading='lazy'
                           onLoad={onImageLoad}
                           fill
                         />
-                        {loading ? <Spinner /> : null}
+                        {loadingData ? <Spinner /> : null}
                      </div>
                     <div style={{background:'transparent'}}>
-                      <div className='mt-4 mb-2'><p className={styles.title}>{data.title}</p></div>
-                      <div className='text-left'> <span className={styles.squared}></span><p className={styles.text}>{data.text}</p></div>
+                      <div className='mt-4 mb-2'><p className={styles.title}>{dat.title}</p></div>
+                      <div className='text-left'> <span className={styles.squared}></span><p className={styles.text}>{dat.description}</p></div>
                     </div>
                 </div>
            </SwiperSlide>

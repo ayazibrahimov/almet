@@ -11,7 +11,7 @@
 
 .container h1{
   font-weight: bold;
-  font-size: 90px;
+  font-size: 70px;
   text-transform: uppercase;
 }
 
@@ -50,7 +50,7 @@ animation: openclose1 1s ease-in-out ;
   width: 80%;
   background-color: white;
   height: 1px;
-  bottom: 10px;
+  bottom: 30px;
   overflow: hidden;
   left: 0;
   /* animation: openclose2 1.5s ease-in-out; */
@@ -63,10 +63,10 @@ animation: openclose1 1s ease-in-out ;
   position: absolute;
   display: inline-block;
   transform: rotate(-90deg);
-  bottom: -370px;
+  bottom: -400px;
   font-weight: bold;
   font-size: 24px;
-  left: -89px;
+  left: -50px;
   letter-spacing: 2px;
   animation: openclose3 .9s ease-in-out;
 }

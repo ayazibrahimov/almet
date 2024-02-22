@@ -10,3 +10,18 @@
   font-weight: 500;
   line-height: 22px;
 }
+
+.item {
+  color: #e1e8ee;
+  margin-top: 6px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  transition: color .3s;
+}
+
+.item:hover{
+  color: #828282;
+  cursor: pointer;
+}

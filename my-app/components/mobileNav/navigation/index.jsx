@@ -19,12 +19,30 @@ import {
   FaFacebookF,
   FaInstagram,
 } from "react-icons/fa6";
+import styles from './styles.module.css'
+import useProductData from '@/hooks/api'
+
 
 
 
 const index = () => {
 
     const [open, setOpen] = React.useState(false);
+
+    const { datas, loading, error } = useProductData("/static-texts");
+  
+    if (loading) {
+      return null; // or return loading indicator, message, etc.
+    }
+
+   if (error) {
+     return null; // or return error message, try again button, etc.
+   }
+
+   const { data } = datas || {};
+
+
+
 
     const pathname = usePathname()
 
@@ -33,6 +51,12 @@ const index = () => {
         setOpen(false); // Close the drawer when a link is clicked
     };
 
+
+    const handleClicked = (lang) =>{
+      localStorage.setItem('lang', lang);
+      window.location.reload()
+    }
+    
 
 
   return (
@@ -105,12 +129,32 @@ const index = () => {
           '& > div': { justifyContent: 'center' },
         }}
       >
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick}  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'> <ListItemButton>Home</ListItemButton> </Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'><ListItemButton>Products</ListItemButton></Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>Service</ListItemButton></Link> 
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'><ListItemButton>About</ListItemButton></Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'><ListItemButton>Contact</ListItemButton></Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick}  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'> <ListItemButton>{data.menu_home}</ListItemButton> </Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'><ListItemButton>{data.menu_products}</ListItemButton></Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>{data.menu_service}</ListItemButton></Link> 
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'><ListItemButton>{data.menu_about}</ListItemButton></Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'><ListItemButton>{data.menu_contact}</ListItemButton></Link>
       </List>
+
+
+      <div className="flex justify-center mt-10 gap-6">  
+        <button onClick={() => handleClicked('az')}> 
+           <span className={styles.firstLng}>
+             AZ
+            </span>
+        </button> 
+        <button onClick={() => handleClicked('en')}> 
+            <span className= {`${styles.secondLng}`} >
+              EN
+            </span> 
+        </button>
+        <button onClick={() => handleClicked('ru')}> 
+            <span className={styles.thirdLng}>
+              RU
+            </span> 
+        </button>
+      </div>
+
 
       <Box
         sx={{

@@ -16,8 +16,8 @@
 
 
 .circle {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: white;
     margin: 0 auto;
@@ -29,7 +29,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 30px; /* 214.286% */
-    text-transform: uppercase;
   }
   
 .heading {
@@ -37,7 +36,6 @@
     font-size: 84px;
     font-weight: 700;
     line-height: 120px; /* 83.333% */
-    text-transform: uppercase;
     width: 80%;
     margin: 0 auto;
   }
@@ -51,7 +49,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 26px; /* 130% */
-    text-transform: uppercase;
     transition: color .4s;
   }
   

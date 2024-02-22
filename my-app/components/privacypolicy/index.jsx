@@ -52,7 +52,6 @@ const index = ({slug}) => {
                  <p className= {roboto.className}>{datas.companyTitle1}</p>
                  <p className= {roboto.className}>{datas.companyTitle2}</p>
                 </div>
-
               )
              }
          </div>

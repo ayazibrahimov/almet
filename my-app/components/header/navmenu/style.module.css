@@ -69,12 +69,11 @@
 .list li {
   display: flex;
   color: #9c9c9c;
-  padding: 16px;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 142.857% */
-  text-transform: uppercase;
 }
 
 .list li:hover{

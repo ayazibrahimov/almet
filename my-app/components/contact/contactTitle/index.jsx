@@ -4,9 +4,25 @@ import styles from "./styles.module.css";
 import setting1 from "@/public/setting1.svg";
 import Image from "next/image";
 import {motion} from 'framer-motion'
+import useProductData from '@/hooks/api'
 
 
 const index = () => {
+
+  
+    const { datas, loading, error } = useProductData("/static-texts");
+  
+    if (loading) {
+      return null; // or return loading indicator, message, etc.
+    }
+  
+    if (error) {
+      return null; // or return error message, try again button, etc.
+    }
+  
+
+
+
   return (
     <div className={styles.container}>
       <motion.h2 
@@ -14,10 +30,11 @@ const index = () => {
         animate={{opacity:1, height:100 }} 
         transition={{ delay:1, duration:.2 }}
         className={styles.title}>
-        Let's start new projects 
-
+            {datas.data.contact_lets_start}
         <div>
-        <span className={styles.titleSpecial}> together</span>
+        <span className={styles.titleSpecial}>
+              {datas.data.contact_lets_start_together}
+          </span>
         
         <motion.div 
            animate={{opacity:1 }} 

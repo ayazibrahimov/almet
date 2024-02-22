@@ -9,6 +9,7 @@ import {
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa6";
+import useProductData from '@/hooks/api'
 
 
 
@@ -17,8 +18,24 @@ function Contact() {
 
     const [ icon, setIcon] = useState(null)
 
+    const { datas, loading, error } = useProductData("/contacts");
+  
+    if (loading) {
+      return null; // or return loading indicator, message, etc.
+    }
+  
+    if (error) {
+      return null; // or return error message, try again button, etc.
+    }
+  
+    const { data } = datas || {};
+  
 
-
+    const handleClicked = (lang) =>{
+      localStorage.setItem('lang', lang);
+      window.location.reload()
+    }
+    
 
 
   return (
@@ -27,21 +44,21 @@ function Contact() {
             
         </div>
       <div>
-        <Link href="tel:+994554788754">+994 51 270 75 75</Link>
+        <Link href={`tel:${data.phone_number}`}>{data.phone_number}</Link>
       </div>
 
       <div className="flex gap-6">  
-        <button> 
+        <button onClick={() => handleClicked('az')}> 
            <span className={styles.firstLng}>
              AZ
             </span>
         </button> 
-        <button> 
-            <span className= {`${styles.secondLng} active`} >
+        <button onClick={() => handleClicked('en')}> 
+            <span className= {`${styles.secondLng}`} >
               EN
             </span> 
         </button>
-        <button> 
+        <button onClick={() => handleClicked('ru')}> 
             <span className={styles.thirdLng}>
               RU
             </span> 
@@ -50,9 +67,9 @@ function Contact() {
 
       <div className="flex gap-2 socialIconsNavMenu">
       <ul className="flex gap-4 ps-2">
-          <li><Link target="_blank" href='https://www.linkedin.com/in/almet-baku-trading/'> <FaLinkedin className=' transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }} /></Link></li>
-          <li><Link target="_blank" href='https://www.instagram.com/almet.baku/'> <FaInstagram className='transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }}/></Link></li>
-          <li><Link target="_blank" href='https://www.facebook.com/almetbakuaz'> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }} /></Link></li>
+          <li><Link target="_blank" href={data.linkedin}> <FaLinkedin className=' transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }} /></Link></li>
+          <li><Link target="_blank" href={data.instagram}> <FaInstagram className='transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }}/></Link></li>
+          <li><Link target="_blank" href={data.facebook}> <FaFacebookF className='transition-colors duration-400 ease-in-out hover:text-[#4f4f4f]' style={{ fontSize: '20px' }} /></Link></li>
         </ul>
       </div>
     </div>
