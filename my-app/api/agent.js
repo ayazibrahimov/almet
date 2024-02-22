@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://195.201.238.29:8000/api/',
+  baseURL: 'https://195.201.238.29:8000/api/',
   headers: { 'Accept-Language': 'az' }
 });
 
