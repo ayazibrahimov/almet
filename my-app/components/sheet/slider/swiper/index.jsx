@@ -113,7 +113,7 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
         
            >
             <Image
-              src={`http://195.201.238.29:8000/storage/${data.image}`}
+              src={`https://admin.almetbaku.az/storage/${data.image}`}
               alt={data.alt}
               loading="eager"
               fill

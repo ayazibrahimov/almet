@@ -61,7 +61,7 @@ function Sliding({ myVideo }) {
         muted
       >
         <source
-          src={`http://195.201.238.29:8000/storage/${datas.data.home_video_file.download_link}`}
+          src={`https://admin.almetbaku.az/storage/${datas.data.home_video_file.download_link}`}
           type="video/mp4"
         />
         {/* Add more <source> elements for other video formats if needed */}

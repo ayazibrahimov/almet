@@ -80,7 +80,7 @@ const index = () => {
                       <DropFilter />
                       <Image
                        style={{borderRadius:'5px'}}
-                       src={`http://195.201.238.29:8000/storage/${metal.image}`}
+                       src={`https://admin.almetbaku.az/storage/${metal.image}`}
                        alt='image'
                        layout="fill" 
                        objectFit="cover"
