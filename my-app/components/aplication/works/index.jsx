@@ -21,8 +21,6 @@ const elementStyle = positionData === 'firstElement'
     
     <div className={styles.container}>
 
-         <Image />   
-
         <ul className={styles.list}>
             {
               application.map((data,index)=>(
