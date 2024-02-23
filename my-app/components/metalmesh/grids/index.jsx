@@ -8,7 +8,7 @@ function Grid({gridImage,myName=false}) {
 
      
            {
-            gridImage.map((data,index)=>(
+            gridImage?.map((data,index)=>(
              <Items data={data} myName={myName} index={index} />
             ))
            }
