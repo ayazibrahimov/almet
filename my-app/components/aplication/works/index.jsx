@@ -23,7 +23,7 @@ const elementStyle = positionData === 'firstElement'
 
         <ul className={styles.list}>
             {
-              application.map((data,index)=>(
+              application?.map((data,index)=>(
                 <li key={data.id}> <span style={{animationDuration:`${0+data.id}s` }}></span> {data.title}</li>
               ))
             }
