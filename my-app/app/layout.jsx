@@ -10,8 +10,8 @@ const opensans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title:{
-    default:'Home',
-    template:'%s | My title'
+    default:'Wire Mesh',
+    template:':'Wire Mesh | Home'
   },
   description: 'My site description...'
 }
