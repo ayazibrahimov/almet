@@ -131,7 +131,7 @@ const index = () => {
       >
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick}  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'> <ListItemButton>{data.menu_home}</ListItemButton> </Link>
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'><ListItemButton>{data.menu_products}</ListItemButton></Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>{data.menu_service}</ListItemButton></Link> 
+        {/* <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>{data.menu_service}</ListItemButton></Link>  */}
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'><ListItemButton>{data.menu_about}</ListItemButton></Link>
         <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'><ListItemButton>{data.menu_contact}</ListItemButton></Link>
       </List>

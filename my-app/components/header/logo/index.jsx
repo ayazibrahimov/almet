@@ -25,7 +25,7 @@ function index({statusInfo}) {
          <Link href='/'>
           <Image
            priority 
-           src={`http://195.201.238.29:8000/storage/${data.logo_header.download_link}`}
+           src={`https://admin.almetbaku.az/storage/${data.logo_header.download_link}`}
            alt="Logo"
            loading='eager'
            fill

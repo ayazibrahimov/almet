@@ -21,7 +21,7 @@ const ImageText = ({size,imgData}) => {
       <div style={size}>
         <Image
           style={{borderRadius:'5px'}}
-          src={`http://195.201.238.29:8000/storage/${imgData}`} 
+          src={`https://admin.almetbaku.az/storage/${imgData}`}
           alt='image' 
           loading='lazy'
             onLoad={onImageLoad}

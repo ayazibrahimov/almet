@@ -21,7 +21,7 @@ const index = () => {
         position:'absolute',
         width:'100%',
         height:'100%',
-        zIndex:'1111',
+        zIndex:'500',
         position:'absolute',
         backgroundColor:'#4c4c4c'
       }}

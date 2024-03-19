@@ -1,7 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 33px;
+  justify-content: center;
+  /* margin-top: 33px; */
   color: #fff;
   height: 100%;
   width: 300px;
@@ -19,7 +20,7 @@
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 10px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   width: 100%;
 }
 
@@ -30,6 +31,7 @@
   font-weight: 700;
   line-height: 18px;
   width: 100%;
+  display: none;
 }
 
 
@@ -43,6 +45,7 @@
     font-size: 30px;
     font-weight: 600;
     line-height: 32px;
+    margin-top: 50px;
   }
 
 
@@ -53,6 +56,9 @@
 @media screen and (max-width:577px){
   .container {
     width: 350px;
+  }
+  .title{
+    margin-top: 60px;
   }
 }
 

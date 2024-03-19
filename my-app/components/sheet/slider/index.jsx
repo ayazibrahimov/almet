@@ -26,7 +26,7 @@ const MajorSlider1 = ( {data} ) => {
        <div style={{position:'relative',width:'100%', height:'100%'}}>
             <DropFilter />
             <Image 
-               src={`http://195.201.238.29:8000/storage/${data?.[index]?.background_image ?? ''}`}
+               src={`https://admin.almetbaku.az/storage/${data?.[index]?.background_image ?? ''}`}
                alt="Slider cover images" 
                layout="fill" 
                objectFit="cover"
@@ -64,7 +64,7 @@ const MajorSlider2 = ({data}) => {
        <div style={{position:'relative',width:'100%', height:'100%'}}>
             <DropFilter />
             <Image 
-               src={`http://195.201.238.29:8000/storage/${data?.[index]?.background_image ?? ''}`}
+               src={`https://admin.almetbaku.az/storage/${data?.[index]?.background_image ?? ''}`}
                alt="Slider cover images" 
                layout="fill" 
                objectFit="cover"

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.css';
 import Spinner from '@/components/spinner';
+import DropFilter from '@/components/dropfilter';
 
 const Items = ({ index, data, myName }) => {
   const [loading, setLoading] = useState(true);
@@ -23,9 +24,10 @@ const Items = ({ index, data, myName }) => {
         {data.status === false && <div className={styles.dropfilter}></div>}
         {myName && <h4 className={`roboto ${styles.heading}`}>{data.title}</h4>}
         {/* {loading ? <div className={styles.placeholder}></div> : null} */}
+           { myName && <DropFilter/>}
           <Image
             className={styles.productImage}
-            src={`http://195.201.238.29:8000/storage/${data.background_image}`}
+            src={`https://admin.almetbaku.az/storage/${data.background_image}`}
             alt='image'
             loading='lazy'
             onLoad={onImageLoad}

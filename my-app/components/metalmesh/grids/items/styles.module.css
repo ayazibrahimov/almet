@@ -16,18 +16,18 @@
 
 .heading {
   position: absolute;
-  bottom: 10px;
-  left: 40px;
-  right: 40px;
+  bottom: 40px;
+  left: 10px;
+  right: 10px;
   margin: 0 auto;
   z-index: 222;
   text-align: center;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
-  line-height: 90px; /* 107.143% */
+  line-height: 70px; /* 107.143% */
   text-transform: uppercase;
-  font-size: 74px; /* Set your desired font size */
+  font-size: 30px; /* Set your desired font size */
   color: transparent; /* Yazı rengini şeffaf yapın */
   -webkit-text-stroke: 1px white; /* Beyaz kenarlık ekleyin */
   margin: 0;
@@ -51,7 +51,7 @@
 }
 .container:hover .heading {
   color: white;
-  font-size: 80px;
+  font-size: 32px;
   /* On hover, set opacity to 0 */
 }
 
@@ -78,17 +78,22 @@
   }
 
   .heading {
-    font-size: 56px;
-    line-height: 74px;
+    font-size: 28px;
+    /* line-height: 74px; */
+  }
+  .container:hover .heading {
+    color: white;
+    font-size: 29px;
+    /* On hover, set opacity to 0 */
   }
 }
 
-@media screen and (max-width: 769px) {
+/* @media screen and (max-width: 769px) {
   .heading {
     left: 10px;
     right: 10px;
   }
-}
+} */
 
 @media screen and (max-width: 577px) {
   .box1 {
@@ -101,12 +106,12 @@
   }
 
   .heading {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 40px;
   }
 
   .container:hover .heading {
-    font-size: 56px;
+    font-size: 26px;
     /* On hover, set opacity to 0 */
   }
   
