@@ -11,7 +11,11 @@ const opensans = Open_Sans({ subsets: ['latin'] })
 export const metadata = {
   title:{
     default:'Wire Mesh',
+<<<<<<< HEAD
     template:'Wire Mesh | Home'
+=======
+    template:':'Wire Mesh | Home'
+>>>>>>> 575e1924a2073e94255a9091f753bb012c2c9bc6
   },
   description: 'My site description...'
 }
