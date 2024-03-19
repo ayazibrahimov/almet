@@ -1,9 +1,9 @@
 'use client'
 import React,{useState, useEffect} from 'react'
-import Title from '@/components/title'
-import TitleAbove from '../titleabove'
-import Works from '@/components/aplication/works'
-import application from '@/mocks/application.json'
+// import Title from '@/components/title'
+// import TitleAbove from '../titleabove'
+// import Works from '@/components/aplication/works'
+// import application from '@/mocks/application.json'
 import Slider from './slider'
 import instance from '@/api/agent'
 
@@ -61,12 +61,12 @@ const Services = () => {
 
 
   return (
-    <section>
-        <div className='lg:container lg:mx-auto lg:py-16 lg:px-8 px-4 py-8'>
+    <section className='mt-16'>
+        {/* <div className='lg:container lg:mx-auto lg:py-16 lg:px-8 px-4 py-8'>
           <Title title={products2} />
           <TitleAbove text={subtitle}/>
           <Works positionData='secondElement' application={mydata.data} /> 
-        </div>
+        </div> */}
         <Slider />
     </section>
   )

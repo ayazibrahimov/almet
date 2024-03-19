@@ -63,7 +63,7 @@ function index({statusInfo,shown,setShown}) {
              <ul className={ `${styles.list} ${shown ? styles.indexData1 : styles.indexData2}` } >
               <li><Link  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'>{data.menu_home}</Link></li>
               <li> <Link  className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'>{data.menu_products}</Link></li>
-              <li> <Link  className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'>{data.menu_service}</Link> </li>
+              {/* <li> <Link  className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'>{data.menu_service}</Link> </li> */}
               <li> <Link  className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'>{data.menu_about}</Link> </li>
               <li> <Link  className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'>{data.menu_contact}</Link> </li>
             </ul>

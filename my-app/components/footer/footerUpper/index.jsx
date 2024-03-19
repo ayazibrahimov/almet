@@ -50,10 +50,10 @@ const Upper = () => {
 
   return (
       <div className={`lg:container lg:mx-auto py-32 lg:px-10 px-6 text-center ${styles.container}`}>
-        <div className={styles.circle}>{data.home_abt}</div>
+        {/* <div className={styles.circle}>{data.home_abt}</div> */}
         <div className="md:mt-20 md:mb-32 mt-10 mb-10">
           <h2 className={styles.heading}>
-            {data.home_lets} <span className={styles.underline}>{data.home_lets_create}</span>{data.home_lets_create_together}
+            {data.home_lets} <span>{data.home_lets_create}</span>{data.home_lets_create_together}
           </h2>
         </div>
 

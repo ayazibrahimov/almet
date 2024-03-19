@@ -1,7 +1,7 @@
 'use client'
 import React,{useState,useEffect} from 'react'
 import Title from '@/components/title'
-import TitleAbove from '../titleabove'
+// import TitleAbove from '../titleabove'
 import Grid from '../metalmesh/grids'
 import instance from '@/api/agent'
 
@@ -71,8 +71,10 @@ const Products = () => {
     <section>
       <div className='lg:container lg:mx-auto sm:py-16 sm:px-8 py-8 px-4'> 
         <Title title={products2} />
-        <TitleAbove text={acquainted} />
-        <Grid gridImage={myGrid} myName={true} />
+        {/* <TitleAbove text={acquainted} /> */}
+        <div className='mt-8'>
+          <Grid  gridImage={myGrid} myName={true} />
+        </div>
       </div>
     </section>
   )
