@@ -17,7 +17,7 @@ const Item = ({ dats,data }) => {
       {
       data.map((dat, index) => (
         <div key={dat.id}>
-          <h2 className={styles.title}>{dat.title}</h2>
+          <h2  className={styles.title}>{dat.title}</h2>
           <div className={styles.typeContainer}>            
           <Image 
               src={`https://admin.almetbaku.az/storage/${dat.image}`}

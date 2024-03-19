@@ -106,7 +106,7 @@ export default function OurProducts() {
   return (
     <>
       <div style={{ background: '#1A1A1A', overflowX: 'hidden' }}>
-        <div className='pb-20'>
+        <div>
           {/* <Sheet /> */}
           <ProductsInfo data={data} />
           <div>
@@ -129,19 +129,20 @@ export default function OurProducts() {
               fontWeight: '700',
               lineHeight: '42px', /* 116.667% */
               textTransform: 'uppercase',
-              padding: '0 40px'
+              padding: '0 40px',
             }}>{major2}</h3></div>
             <MajorSlider2 data={slider2} />
           </div>
-          <div>
+          <div style={{background:'#fff'}}>
             <div className='mt-20'><h3 style={{
-              color: '#fff',
+              color: '#4F4F4F',
               fontSize: '36px',
               fontStyle: 'normal',
               fontWeight: '700',
               lineHeight: '42px', /* 116.667% */
               textTransform: 'uppercase',
-              padding: '0 40px'
+              padding: '0 40px',
+              paddingTop: '100px'
             }}>{productCategoryTitle}</h3></div>
             <Types />
           </div>

@@ -24,6 +24,7 @@ const Items = ({ index, data, myName }) => {
         {data.status === false && <div className={styles.dropfilter}></div>}
         {myName && <h4 className={`roboto ${styles.heading}`}>{data.title}</h4>}
         {/* {loading ? <div className={styles.placeholder}></div> : null} */}
+        {/* deyisiklik */}
            { myName && <DropFilter/>}
           <Image
             className={styles.productImage}
