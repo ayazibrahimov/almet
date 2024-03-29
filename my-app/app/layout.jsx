@@ -1,8 +1,6 @@
-import { Open_Sans } from 'next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Tittle from '@/app/head'
-// import useProductData from '@/hooks/api'
 import '../styles/reset.css'
 import '../styles/global.css'
 import '../styles/tailwind.css'
