@@ -33,6 +33,8 @@ function Contact() {
 
     const handleClicked = (lang) =>{
       localStorage.setItem('lang', lang);
+
+      document.cookie = `lang=${lang}; expires=${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
       window.location.reload()
     }
     

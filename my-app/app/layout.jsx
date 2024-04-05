@@ -13,16 +13,6 @@ import '../styles/tailwind.css'
 
 
 
-export const metadata = {
-  title:{
-    default:'Wire Mesh',
-    template:'Wire Mesh | Home'
-  },
-  description: 'My site description...'
-}
-
-
-
 export default function RootLayout({ children }) {
 
   return (
