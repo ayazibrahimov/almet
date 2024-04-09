@@ -63,7 +63,6 @@ const Products = () => {
   const products2 = myTitle?.home_products;
   const acquainted = myTitle?.home_products_subtitle;
 
-  console.log(myGrid);
 
 
 

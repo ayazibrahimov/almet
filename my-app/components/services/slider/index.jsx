@@ -26,6 +26,7 @@ const index = () => {
    
 
    const [sliderMetal, setSliderMetal] = useState();
+   const [text,setText] = useState('')
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
  
@@ -42,10 +43,12 @@ const index = () => {
          setLoading(false);
        }
      }
- 
-     fetchData();
-   }, []);
-   
+      
+      fetchData();
+      
+    }, []);
+    
+  
 
    
   if (loading) {
@@ -59,6 +62,7 @@ const index = () => {
 
   const { data } = sliderMetal || {};
 
+  
 
 
 
@@ -73,10 +77,10 @@ const index = () => {
         className="mySwiper"
       >
          {
-            data.map((metal,index)=>(
+            data?.map((metal,index)=>(
                 <SwiperSlide key={data.id}>
                     <div className={styles.imageContainerSize} style={{position:'relative', width:'100%', height:'550px' }}> 
-                      <Content  metal={metal}/>  
+                      <Content metal={metal}/>  
                       <DropFilter />
                       <Image
                        style={{borderRadius:'5px'}}

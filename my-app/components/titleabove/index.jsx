@@ -16,9 +16,6 @@ const roboto2 = Roboto({
 
 const TitleAbove = ({text}) => {
 
-// {/* <span className={`${styles.leftAdd} roboto2`}>product</span> range */}
-// const infoText = text.slice(-1,1)
-// console.log(info);
 
   
   return (

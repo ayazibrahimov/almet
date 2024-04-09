@@ -6,11 +6,6 @@ import Image from 'next/image'
 
 
 
-
-// font-weight: 500;
-// line-height: 38px; /* 118.75% */
-// text-decoration-line: underline;
-
 const ToProducts = ({info}) => {
   return (
     <div className='flex justify-end  hover:opacity-50 w-2/5'>

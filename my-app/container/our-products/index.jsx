@@ -69,7 +69,6 @@ export default function OurProducts() {
       setLoading(false);
     }
 
-    console.log(type);
   }
 
 

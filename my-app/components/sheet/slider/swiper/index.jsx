@@ -40,7 +40,6 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
   function handleTouchStart(e){ 
          setTouchStartStart(e.touches[0].clientX)
          setStartPoint(e.touches[0].clientX)
-        console.log( e.touches[0].clientX);
 
   };
 
@@ -48,22 +47,13 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
       const lastTouch = e.changedTouches[0];
       const lastTouchX = lastTouch.clientX;
       setTouchStartEnd(lastTouchX);
-
-      // console.log(e.changedTouches[0].clientX);
-      // console.log('br');
-      // console.log(`${startPoint} - startPoint`);
-
       let deltaX  = touchStartStart - touchStartEnd;
 
       if ((deltaX > 0 || startPoint > 250) &&  index + 1 < materials.length) {
         swiperIndexPlus(1);
-        // console.log('Isledi-1');
-        // console.log(`delta-${deltaX}`);
-  
       }
        else if((deltaX < 0 || startPoint < 250) && index !== 0) {
         swiperIndexPlus(-1);
-        console.log('Isledi-2');
       }
 
   

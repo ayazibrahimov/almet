@@ -9,7 +9,7 @@ const fetchPost = async () => {
   try {
      const response = await fetch('https://admin.almetbaku.az/api/menus', {
      headers: {
-        'Accept-Language': cookieStore.get('lang')
+        'Accept-Language': cookieStore.get('lang') || 'en'
        }
      });
       const datas = await response.json();

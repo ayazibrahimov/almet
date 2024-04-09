@@ -1,18 +1,19 @@
 import React from 'react'
 import HomeContainer from '@/container/home'
-import { cookies } from 'next/headers'
+import { parseCookies } from 'nookies';
+
 
 
 
 
 const fetchPost = async () => {
   
-  const cookieStore = cookies()
+  const { lang } = parseCookies(); 
   
   try {
      const response = await fetch('https://admin.almetbaku.az/api/menus', {
      headers: {
-        'Accept-Language': cookieStore.get('lang') 
+        'Accept-Language': lang || 'en'
        }
      });
       const datas = await response.json();

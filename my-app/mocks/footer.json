@@ -5,6 +5,7 @@
       {
         "id":1,
         "title": "About the Company",
+        "link":"about",
         "items":[
             {"text":"Leading in the iron sector","href":""},
             {"text":"Innovative technologies", "href":""},
@@ -14,6 +15,7 @@
       {
         "id":2,
         "title": "Our Products",
+        "link":"products",
         "items":[
             {"text":"High-quality iron", "href":""},
             {"text":"Wide range of products", "href":""},
@@ -23,6 +25,7 @@
       {
         "id":3,
         "title": "Our Services",
+        "link":"service",
         "items":[
             {"text":"Customized production", "href":""},
             {"text":"Fast delivery", "href":""},

@@ -32,7 +32,6 @@ const Item = ({ majorInfo }) => {
 
   const { data } = datas || {};
 
-  console.log(data);
 
   return (
     <>
@@ -43,7 +42,7 @@ const Item = ({ majorInfo }) => {
               <p className={`${title.className} ${styles.title}`}>
                 {data.title}
               </p>
-              <List infos={data.items} />
+              <List link={data.link} infos={data.items} />
             </div>
           )
       )}
@@ -61,7 +60,7 @@ const Item = ({ majorInfo }) => {
                        <Link  href={`mailto:${data.email}`}>{data.email}</Link>
                     </li>
                     <li className={`${styles.item}`}>
-                        {data.address}
+                      <Link target="_blank" href={'https://www.google.com/maps/place/SDN+Biznes+Mərkəzi,+PSG+Kapital/@40.416411,49.8792873,15z/data=!4m6!3m5!1s0x403062a8914691f3:0xe936994ed9e8ac30!8m2!3d40.416411!4d49.8792873!16s%2Fg%2F11cm03nrcy?hl=az&entry=ttu'} > {data.address}</Link>
                     </li>
                 </ul>
             </div>  

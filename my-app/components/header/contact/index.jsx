@@ -10,6 +10,7 @@ import {
   FaInstagram,
 } from "react-icons/fa6";
 import useProductData from '@/hooks/api'
+import { setCookie } from 'nookies';
 
 
 
@@ -33,9 +34,16 @@ function Contact() {
 
     const handleClicked = (lang) =>{
       localStorage.setItem('lang', lang);
+ 
+      console.log(lang);
 
-      document.cookie = `lang=${lang}; expires=${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
+      setCookie(null, 'lang', lang, {
+        maxAge: 365 * 24 * 60 * 60, // 1 yıl
+        path: '/',
+      });
+
       window.location.reload()
+      // router.reload()
     }
     
 
