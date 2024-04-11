@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React,{useState} from "react";
 import styles from "./styles.module.css";
 import { Roboto } from "next/font/google";
 import solarLinear from "@/public/solarLinear1.png";
@@ -26,6 +26,9 @@ const roboto3 = Roboto({
 
 const index = () => {
 
+  const [name,setName] = useState('')
+  const [sureName,setSureName] = useState('')
+  const [text,setText] = useState('')
   
   
 const { datas: staticTextsData, loading: staticTextsLoading, error: staticTextsError } = useProductData("/static-texts");
@@ -39,6 +42,41 @@ if (staticTextsError) {
 }
 
 
+
+function handleDataSend(){
+
+
+  const bodyData = JSON.stringify({
+    name: name,
+    sureName: sureName,
+    text: text
+  });
+
+
+
+
+
+  fetch('https://admin.almetbaku.az/api/send-message',{
+    method:'POST',
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    body:bodyData
+  }).then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    console.log(response);
+    return response.json();
+  }).then(data => {
+    console.log('Message sent:', data);
+    // Do something with the response data
+  }).catch(error => {
+    console.error('Error sending message:', error);
+    // Handle the error as per your requirement
+  });
+}
 
 
 
@@ -92,6 +130,7 @@ if (staticTextsError) {
               <Input
                 placeholder={`${staticTextsData.data.contact_form_name}`}
                 variant="soft"
+                onChange={(e)=>setName(e.target.value)}
                 sx={{
                   "--Input-radius": "0px",
                   borderBottom: "1px solid",
@@ -120,6 +159,7 @@ if (staticTextsError) {
             <Stack spacing={2}>
               <Input
                 placeholder={`${staticTextsData.data.contact_form_emmail}`}
+                onChange={(e)=>setSureName(e.target.value)}
                 variant="soft"
                 sx={{
                   "--Input-radius": "0px",
@@ -152,6 +192,7 @@ if (staticTextsError) {
               <Input
                 placeholder={`${staticTextsData.data.contact_form_information}`}
                 variant="soft"
+                onChange={(e)=>setText(e.target.value)}
                 sx={{
                     height: '100%',
                   "--Input-radius": "0px",
@@ -182,7 +223,7 @@ if (staticTextsError) {
 
 
         <div className="mt-8 flex justify-end">
-            <button className={styles.sendBtn}>{staticTextsData.data.contact_form_send}</button>
+            <button onClick={handleDataSend} className={styles.sendBtn}>{staticTextsData.data.contact_form_send}</button>
         </div>
 
 

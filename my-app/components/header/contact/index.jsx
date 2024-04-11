@@ -3,10 +3,8 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import {
-  FaTwitter,
   FaLinkedin,
   FaFacebookF,
-  FaYoutube,
   FaInstagram,
 } from "react-icons/fa6";
 import useProductData from '@/hooks/api'
@@ -15,11 +13,14 @@ import { setCookie } from 'nookies';
 
 
 
+
 function Contact() {
 
+    
+    const { datas, loading, error } = useProductData("/contacts");
     const [ icon, setIcon] = useState(null)
 
-    const { datas, loading, error } = useProductData("/contacts");
+ 
   
     if (loading) {
       return null; // or return loading indicator, message, etc.
@@ -33,9 +34,6 @@ function Contact() {
   
 
     const handleClicked = (lang) =>{
-      localStorage.setItem('lang', lang);
- 
-      console.log(lang);
 
       setCookie(null, 'lang', lang, {
         maxAge: 365 * 24 * 60 * 60, // 1 yıl
@@ -43,7 +41,7 @@ function Contact() {
       });
 
       window.location.reload()
-      // router.reload()
+      // router.replace(router.asPath);
     }
     
 

@@ -2,14 +2,13 @@ import React from 'react'
 import OurProducts from '@/container/our-products'
 import { cookies } from 'next/headers'
 
-const fetchPost = async () => {
+const fetchPost = async (lang) => {
   
-  const cookieStore = cookies()
   
   try {
      const response = await fetch('https://admin.almetbaku.az/api/menus', {
      headers: {
-        'Accept-Language': cookieStore.get('lang') || 'en'
+        'Accept-Language': lang
        }
      });
       const datas = await response.json();
@@ -24,7 +23,12 @@ const fetchPost = async () => {
  }
 
 export async function generateMetadata(){
-  const postDatas = await fetchPost(); // Await the fetchPost function
+  const nextCookies = cookies();
+  const langCookie = nextCookies.get('lang');
+  const lang = langCookie ? langCookie.value : 'en';
+
+  const postDatas = await fetchPost(lang);
+// Await the fetchPost function
 
 
   

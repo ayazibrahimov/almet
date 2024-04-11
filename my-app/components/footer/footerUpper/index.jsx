@@ -43,11 +43,6 @@ const Upper = () => {
 
 
 
-
-
-
-
-
   return (
       <div className={`lg:container lg:mx-auto py-32 lg:px-10 px-6 text-center ${styles.container}`}>
         {/* <div className={styles.circle}>{data.home_abt}</div> */}

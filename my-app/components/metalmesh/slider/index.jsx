@@ -21,11 +21,11 @@ function Slider({data}) {
           <div className="flex justify-end my-2">
           <p className={`flex gap-x-2 ${styles.upperParagraph}`}>
              {data.home_slide_up_right_text}
-            <Image src={Flag} alt="Flag"></Image>
+            <span><Image src={Flag} alt="Flag" /></span>
           </p>
         </div>
             <Swiper />
-            <RoundedText />
+            <RoundedText data={data} />
           </div>
         </div>
       </div>

@@ -135,7 +135,7 @@ animation: openclose1 1s ease-in-out ;
 }
 
 .container h1:nth-child(2){
-  top: -73px;
+  top: -11px;
 }
 
 .container h1:nth-child(2)::after{
@@ -154,14 +154,30 @@ animation: openclose1 1s ease-in-out ;
 @media screen and (max-width: 577px){
    
   .container h1{
-    font-size: 46px;
+    font-size: 36px;
   }
 
-  .container h1:nth-child(2)::after{
-    width: 40%;
+  .container h1:nth-child(1){
+    top: -30px;
+    /* animation: openclose2 1.5s ease-in-out; */
+  }
+  .container h1:nth-child(2){
+    top: 12px;
     /* animation: openclose2 1.5s ease-in-out; */
   }
 
+
+
+  .container h1:nth-child(2)::after{
+    width: 40%;
+    bottom: 85px;
+    /* animation: openclose2 1.5s ease-in-out; */
+  }
+  
+
+  .container h4{
+    left: -62px;
+  }
 
 }
 

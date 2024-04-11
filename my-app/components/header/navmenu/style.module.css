@@ -79,3 +79,11 @@
 .list li:hover{
   color: #4F4F4F;
 }
+
+
+@media (max-width:1200px) {
+  .list li {
+    padding: 2px;
+
+  }
+}

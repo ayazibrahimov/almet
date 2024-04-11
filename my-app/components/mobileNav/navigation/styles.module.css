@@ -23,7 +23,7 @@
   .firstLng::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: -30px;
     background-color: #808080;
     height: 1px;
@@ -35,7 +35,7 @@
   .secondLng::after{
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     right: -19px;
     background-color: #808080;
     height: 1px;
@@ -47,7 +47,7 @@
   .secondLng::before{
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: -19px;
     background-color: #808080;
     height: 1px;
@@ -59,7 +59,7 @@
   .thirdLng::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     right: -30px;
     background-color: #808080;
     height: 1px;

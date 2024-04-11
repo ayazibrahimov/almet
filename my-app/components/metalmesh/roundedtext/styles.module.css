@@ -2,10 +2,23 @@
     position: absolute;
     z-index: 111;
     right: 5%;
-    bottom: -116px;
-    animation: rotate infinite 20s linear;
+    bottom: -125px;
+    /* animation: rotate infinite 20s linear; */
 }
  
+
+.curve{
+  fill: transparent;
+}
+
+.text{
+  fill: white;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-size: 20px;
+  transform-origin: 50% 50%;
+  animation: rotate 15s linear infinite;
+}
 
 
 @keyframes rotate {
