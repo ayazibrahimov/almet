@@ -44,13 +44,6 @@ body {
 }
 
 
-.active{
-  color: #4F4F4F;
-}
-
-
-
-
 .fade-in {
   animation: newAn .6s forwards;
 }
@@ -71,3 +64,15 @@ body {
 }
 
 
+.textHidden{
+  display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.active{
+  color: #4f4f4f;
+}

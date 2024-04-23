@@ -9,7 +9,7 @@ const fetchPost = async (lang) => {
   try {
      const response = await fetch('https://admin.almetbaku.az/api/menus', {
      headers: {
-        'Accept-Language': lang
+        'Accept-Language': lang ? lang : 'en'
        }
      });
       const datas = await response.json();
@@ -23,12 +23,10 @@ const fetchPost = async (lang) => {
   
  }
 
-export async function generateMetadata(){
-  const nextCookies = cookies();
-  const langCookie = nextCookies.get('lang');
-  const lang = langCookie ? langCookie.value : 'en';
+export async function generateMetadata({params:{locale}}){
 
-  const postDatas = await fetchPost(lang);
+
+  const postDatas = await fetchPost(locale);
 
 
   

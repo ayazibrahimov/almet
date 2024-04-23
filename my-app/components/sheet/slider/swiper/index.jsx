@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
@@ -100,9 +101,9 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
               height: `${
                 (i+1 - 1) * translateData - translateData * index === 0 && 280}px`,
             }}
-        
            >
-            <Image
+              <Link href={`/products/${data.id}`}> 
+              <Image
               src={`https://admin.almetbaku.az/storage/${data.image}`}
               alt={data.alt}
               loading="eager"
@@ -116,6 +117,7 @@ const Swiper = ({ index, materials,swiperIndexPlus, leftData, rightData }) => {
                 transition: "transform 0.5s",
               }}
             />
+              </Link>
           </div>
         </div>
       ))}

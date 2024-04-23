@@ -14,10 +14,11 @@
 .text{
   fill: white;
   text-transform: uppercase;
-  letter-spacing: 12px;
+  letter-spacing: 7px;
   font-size: 20px;
   transform-origin: 50% 50%;
   animation: rotate 15s linear infinite;
+  -webkit-animation: rotate 15s linear infinite;
 }
 
 

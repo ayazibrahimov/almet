@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React,{useState} from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -27,6 +27,7 @@ import useProductData from '@/hooks/api'
 
 const index = () => {
 
+  const [color,setColor] = useState(1)
     const [open, setOpen] = React.useState(false);
 
     const { datas, loading, error } = useProductData("/static-texts");
@@ -47,14 +48,14 @@ const index = () => {
     const pathname = usePathname()
 
 
-    const handleLinkClick = () => {
+    const handleLinkClick = (id) => {
         setOpen(false); // Close the drawer when a link is clicked
+        setColor(id)
     };
 
 
     const handleClicked = (lang) =>{
-      localStorage.setItem('lang', lang);
-      window.location.reload()
+      window.location.href = `/${lang}`
     }
     
 
@@ -129,11 +130,11 @@ const index = () => {
           '& > div': { justifyContent: 'center' },
         }}
       >
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick}  className={`link ${pathname === '/' ? 'active' : ''}`}  href='/'> <ListItemButton>{data.menu_home}</ListItemButton> </Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/products' ? 'active' : ''}`}  href='/products'><ListItemButton>{data.menu_products}</ListItemButton></Link>
-        {/* <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>{data.menu_service}</ListItemButton></Link>  */}
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/about' ? 'active' : ''}`}  href='/about'><ListItemButton>{data.menu_about}</ListItemButton></Link>
-        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick} className={`link ${pathname === '/contact' ? 'active' : ''}`}  href='/contact'><ListItemButton>{data.menu_contact}</ListItemButton></Link>
+        <Link  style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick.bind(null,1)}  className={ color == 1 ? 'active' : ''}    href='/'> <ListItemButton>{data.menu_home}</ListItemButton> </Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick.bind(null,2)}  className={ color == 2 ? 'active' : ''}   href='/products'><ListItemButton>{data.menu_products}</ListItemButton></Link>
+        {/* <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick.bind(null,1)} className={`link ${pathname === '/service' ? 'active' : ''}`}  href='/service'><ListItemButton>{data.menu_service}</ListItemButton></Link>  */}
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick.bind(null,3)}  className={ color == 3 ? 'active' : ''}  href='/about'><ListItemButton>{data.menu_about}</ListItemButton></Link>
+        <Link style={{display:'flex', justifyContent:'center'}} onClick={handleLinkClick.bind(null,4)}  className={ color == 4 ? 'active' : ''}  href='/contact'><ListItemButton>{data.menu_contact}</ListItemButton></Link>
       </List>
 
 

@@ -12,6 +12,10 @@
     height: 270px;
 }
 
+.images{
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:769px){
     .container{

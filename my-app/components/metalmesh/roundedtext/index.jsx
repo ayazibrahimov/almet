@@ -11,7 +11,7 @@ function RoundedText({data}) {
         <svg width={250} height={250}>
           <path className={styles.curve}
             id='curve'
-            d="M 25 125 A 95 95 0 1 1 25 127"
+            d="M 25 125 A 100 100 0 1 1 25 127"
            ></path>
            <text className={styles.text}>
                <textPath href='#curve'>{data.home_leader_in}</textPath> 

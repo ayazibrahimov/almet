@@ -1,12 +1,12 @@
 import React from 'react';
 import HomeContainer from '@/container/home';
-import { cookies } from 'next/headers';
+import { getTranslations } from 'next-intl/server';
 
 const fetchPost = async (lang) => {
   try {
     const response = await fetch('https://admin.almetbaku.az/api/menus', {
       headers: {
-        'Accept-Language': lang
+        'Accept-Language': lang ? lang : 'en'
       }
     });
     const datas = await response.json();
@@ -17,12 +17,8 @@ const fetchPost = async (lang) => {
   }
 }
 
-export async function generateMetadata() {
-  const nextCookies = cookies();
-  const langCookie = nextCookies.get('lang');
-  const lang = langCookie ? langCookie.value : 'en';
-
-  const postDatas = await fetchPost(lang);
+export async function generateMetadata({ params: { locale } }) {
+  const postDatas = await fetchPost(locale);
 
   return {
     title: postDatas ? postDatas.seo_title : "",

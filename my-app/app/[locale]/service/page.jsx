@@ -1,6 +1,9 @@
 import React from 'react'
-import ContactUs from '@/container/contact-us'
+import Services from '@/container/ourservices'
 import { cookies } from 'next/headers'
+
+
+
 
 const fetchPost = async (lang) => {
   
@@ -9,11 +12,11 @@ const fetchPost = async (lang) => {
   try {
      const response = await fetch('https://admin.almetbaku.az/api/menus', {
      headers: {
-        'Accept-Language': lang
+        'Accept-Language': lang ? lang : 'en'
        }
      });
       const datas = await response.json();
-      return datas.data[3];
+      return datas.data[0];
   } catch (error) {
       console.error('Error fetching data:', error);
       // Handle the error as per your requirement
@@ -23,13 +26,8 @@ const fetchPost = async (lang) => {
   
  }
 
-export async function generateMetadata(){
-  const nextCookies = cookies();
-  const langCookie = nextCookies.get('lang');
-  const lang = langCookie ? langCookie.value : 'en';
-
-  const postDatas = await fetchPost(lang);
-
+export async function generateMetadata({ params: { locale } }){
+  const postDatas = await fetchPost(locale); // Await the fetchPost function
 
 
   
@@ -40,11 +38,10 @@ export async function generateMetadata(){
   }
 }
 
-
 const page = () => {
   return (
     <div>
-        <ContactUs />
+       <Services />
     </div>
   )
 }

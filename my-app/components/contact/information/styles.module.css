@@ -116,9 +116,23 @@
   font-style: normal;
   font-weight: 500;
   line-height: 26px; /* 130% */
-  cursor: pointer;
   transition: ease-in-out 0.4s;
   cursor: pointer;
+}
+
+.disabled{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+  transition: ease-in-out 0.4s;
+  cursor: not-allowed;
+  background-color: #444343;
 }
 
 
@@ -177,3 +191,28 @@
     font-size: 16px;
   }
 }
+
+.success {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  opacity: 0;
+  animation: 8s showIn ;
+ }
+
+
+ @keyframes showIn { /* corrected from sliderInAnimation */
+  0% {
+    opacity: 0; /* Move the element outside the viewport */
+  }
+  33% {
+    opacity: 1; /* Move the element to the original position */
+  }
+  66%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
