@@ -25,7 +25,7 @@ const index = () => {
 
   return (
     <div className={styles.container}>
-      <motion.h2 
+       <motion.h2 
         initial={{opacity:0, height:0}}
         animate={{opacity:1, height:100 }} 
         transition={{ delay:1, duration:.2 }}

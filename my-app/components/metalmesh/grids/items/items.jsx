@@ -14,6 +14,7 @@ const Items = ({ index, data, myName }) => {
     setLoading(false);
   };
 
+
   return (
     <div key={index}>
       <div
@@ -24,7 +25,7 @@ const Items = ({ index, data, myName }) => {
       >
         {!myName && <p className={`roboto ${styles.para}`}>{data.title}</p>}
         {data.status === false && <div className={styles.dropfilter}></div>}
-        {myName &&  <Link href='/'> <h4 className={`roboto ${styles.heading}`}>{data.title}</h4> </Link> }
+        {myName &&  <Link href={`/products/${data.id}`}> <h4 className={`roboto ${styles.heading}`}>{data.title}</h4> </Link> }
         {/* {loading ? <div className={styles.placeholder}></div> : null} */}
         {/* deyisiklik */}
            { myName && <DropFilter/>}

@@ -96,14 +96,14 @@
 .message > h4 {
   color: #1a1a1a;
   text-align: start;
-  font-size: 49.306px;
+  font-size: 40px;
   font-style: normal;
-  line-height: 56.702px;
+  line-height: 50px;
 }
 
-.message > h4:nth-child(1) {
+/* .message > h4:nth-child(1) {
   padding-left: 48px;
-}
+} */
 
 .sendBtn {
   display: inline-block;

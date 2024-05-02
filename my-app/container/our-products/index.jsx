@@ -100,14 +100,12 @@ export default function OurProducts() {
 
 
 
-
-
   return (
     <>
       <div style={{ background: '#1A1A1A', overflowX: 'hidden' }}>
         <div>
           {/* <Sheet /> */}
-          <ProductsInfo data={data} />
+          <ProductsInfo title={type} data={data} />
           <div>
             <div className='mt-20'><h3 style={{
               color: '#fff',

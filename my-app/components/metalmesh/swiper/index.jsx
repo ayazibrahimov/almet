@@ -52,7 +52,7 @@ function Sliding({ myVideo }) {
   return (
     <div style={{ position: 'relative' }}>
       <DropFilter />
-      <video
+       <video
         preload="auto"
         ref={videoRef}
         controls={false}
@@ -65,7 +65,7 @@ function Sliding({ myVideo }) {
           type="video/mp4"
         />
         {/* Add more <source> elements for other video formats if needed */}
-      </video>
+       </video>
     </div>
   );
 }
