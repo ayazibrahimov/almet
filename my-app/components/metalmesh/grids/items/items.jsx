@@ -22,7 +22,7 @@ const Items = ({ index, data, myName }) => {
           !myName ? styles.box1 : styles.box2
         } ${styles.container} ${data.status ? 'shadowed' : ''}`}
         style={!myName ? { position: 'relative', width: '100%' } : { position: 'relative', width: '100%' }}
-      >
+       >
         {!myName && <p className={`roboto ${styles.para}`}>{data.title}</p>}
         {data.status === false && <div className={styles.dropfilter}></div>}
         {myName &&  <Link href={`/products/${data.id}`}> <h4 className={`roboto ${styles.heading}`}>{data.title}</h4> </Link> }

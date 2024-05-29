@@ -76,3 +76,20 @@ body {
 .active{
   color: #4f4f4f;
 }
+
+
+.masonry {
+  column-count: 2; /* Default number of columns */
+  column-gap: 1rem; /* Gap between columns */
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 4; /* Number of columns for medium screens and above */
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem; /* Gap between items */
+}
