@@ -42,10 +42,10 @@ const getTitle = async (lang) => {
   const cards = await getData(lang);
   const title = await getTitle(lang)
 
-  const infos =  cards.find((product) => product.id == id);
+  const infos = cards.find((product) => product.id == id);
 
-  const images = JSON.parse(infos?.images)
 
+  // console.log(infos.images);
  
 
   
@@ -72,7 +72,7 @@ const getTitle = async (lang) => {
               
              
               {
-                images?.map((image,index)=>(
+                infos?.images?.map((image,index)=>(
                   <div key={index}  className="mt-2">
                      <a
                       style={{display:'block',height:'100%'}}
