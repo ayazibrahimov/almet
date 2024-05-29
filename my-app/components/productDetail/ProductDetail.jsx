@@ -46,7 +46,10 @@ const getTitle = async (lang) => {
   
   // const images = infos.images ?? "[]"
 
-
+  console.log(infos);
+  console.log(cards);
+  console.log(id);
+  console.log(infos.images ?? []); 
 
   return (
 
