@@ -44,7 +44,7 @@ const getTitle = async (lang) => {
 
   const infos =  cards.find((product) => product.id == id);
 
-  const images = JSON.parse(infos?.images)
+  const images = JSON.parse(infos?.images ?? "[]")
 
  
 
