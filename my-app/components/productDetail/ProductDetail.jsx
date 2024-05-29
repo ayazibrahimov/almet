@@ -42,7 +42,7 @@ const getTitle = async (lang) => {
   const cards = await getData(lang);
   const title = await getTitle(lang)
 
-  const infos = await cards.find((product) => product.id == id);
+  const infos =  cards.find((product) => product.id == id);
 
   const images = JSON.parse(infos?.images)
 
