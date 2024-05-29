@@ -43,13 +43,10 @@ const getTitle = async (lang) => {
   const title = await getTitle(lang)
 
   const infos = cards.find((product) => product.id == id);
-
- 
-
-  // console.log(infos.images);
- 
-
   
+  // const images = infos.images ?? "[]"
+
+
 
   return (
 
@@ -73,7 +70,7 @@ const getTitle = async (lang) => {
               
              
               {
-                infos?.images?.map((image,index)=>(
+                (infos.images ?? []).map((image,index)=>(
                   <div key={index}  className="mt-2">
                      <a
                       style={{display:'block',height:'100%'}}
