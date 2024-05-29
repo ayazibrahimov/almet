@@ -44,6 +44,7 @@ const getTitle = async (lang) => {
 
   const infos = cards.find((product) => product.id == id);
 
+ 
 
   // console.log(infos.images);
  
