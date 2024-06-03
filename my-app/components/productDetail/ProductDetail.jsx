@@ -46,7 +46,16 @@ const getTitle = async (lang) => {
 
   const infos = cards.find((product) => product.id == id);
   
+<<<<<<< HEAD
 
+=======
+  // const images = infos.images ?? "[]"
+
+  console.log(infos);
+  console.log(cards);
+  console.log(id);
+  console.log(infos.images ?? []); 
+>>>>>>> f9957effa4e5db4329e736d74dada6aa7ad83e65
 
   return (
 
