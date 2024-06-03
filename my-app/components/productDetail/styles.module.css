@@ -30,6 +30,10 @@
     height: 500px;
 }
 
+.container{
+    height: 250px;
+}
+
 @media (max-width:1025px){
     .imageBox{
         height: 350px;
@@ -49,5 +53,9 @@
         position: absolute;
         left: -16px;
         top: 28%;
+    }
+
+    .container{
+        height: 180px;
     }
 }

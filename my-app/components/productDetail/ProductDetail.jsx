@@ -12,6 +12,7 @@ const getData = async (lang) => {
       headers: {
         "Accept-Language": lang,
       },
+      cache: 'no-store'
     });
     const datas = await response.json();
     return datas.data;
@@ -28,6 +29,7 @@ const getTitle = async (lang) => {
       headers: {
         "Accept-Language": lang,
       },
+      cache: 'no-store'
     });
     const datas = await response.json();
     return datas.data;
@@ -44,8 +46,6 @@ const getTitle = async (lang) => {
 
   const infos = cards.find((product) => product.id == id);
   
-  // const images = infos.images ?? "[]"
-
 
 
   return (
@@ -57,6 +57,9 @@ const getTitle = async (lang) => {
         </h2>
 
        
+        <div className="px-0 sm:px-5 md:px-10 mt-10">
+          <p className="text-[#1a1a1a] text-3xl font-bold">{infos.title}</p> 
+        </div>
    
         <Fancybox
           options={{
@@ -65,19 +68,19 @@ const getTitle = async (lang) => {
             },
           }}
         >
-          <div className="p-5 md:p-10 mt-4">
+          <div className="p-0 sm:p-5 md:p-10">
             <div class="grid md:grid-cols-4 grid-cols-2 gap-2">
               
              
               {
                 (infos.images ?? []).map((image,index)=>(
-                  <div key={index}  className="mt-2">
+                  <div key={index}   className={`${styles.container} mt-2`} >
                      <a
-                      style={{display:'block',height:'100%'}}
+                      style={{display:'block',width:'100%', height:'100%'}}
                      href={`https://admin.almetbaku.az/storage/${image}`}
                     data-fancybox="gallery"
                   > 
-                    <img style={{height:'100%', objectFit:"cover"}} src={`https://admin.almetbaku.az/storage/${image}`} alt="" />
+                    <img style={{height:'100%',width:'100%', objectFit:"cover"}} src={`https://admin.almetbaku.az/storage/${image}`} alt="" />
                   </a>
                   </div>
                 ))
