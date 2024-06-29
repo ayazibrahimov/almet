@@ -2,9 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import ImageText from "../imagetext";
-import img1 from "@/public/Rectangle 53.jpg";
-import img2 from "@/public/Rectangle 42.jpg";
-import img3 from "@/public/Rectangle 43.jpg";
+import Link from 'next/link'
 import application from "@/mocks/application.json";
 import { motion } from "framer-motion";
 import SettingCircle from "@/components/settingCircle";
@@ -103,7 +101,6 @@ const index = () => {
   
   let dataMajor = renderData1();
   let dataImage = renderData2();
-  
 
 
   return (
@@ -169,6 +166,12 @@ const index = () => {
           <div className={`lg:w-7/12 w-full lg:pe-10 ${styles.infoText}`}>
             {/* İkinci div için başka bir metin veya içerik ekleyebilirsiniz */}
             <p className={roboto.className}> {dataMajor?.about_big_text2} </p>
+           <div className="mt-10">
+           <a href="/audit.pdf" target="_blank" className="text-blue-600 text-lg" rel="noopener noreferrer">
+                {dataMajor?.about_audit_opinion}
+            </a>
+
+            </div>
           </div>
         </div>
       </div>

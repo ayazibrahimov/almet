@@ -47,7 +47,6 @@ const getTitle = async (lang) => {
   const infos = cards.find((product) => product.id == id);
   
 
-
   return (
 
     <div className="bg-[#F5F5F5]">
