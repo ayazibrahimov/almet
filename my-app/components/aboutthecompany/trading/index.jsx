@@ -110,6 +110,11 @@ const index = () => {
         {" "}
         <span>{dataMajor?.about_about_the_company_subtitle}</span>{" "}
       </div>
+      <div className="text-center mt-5 mb-8">
+      <a href="/audit.pdf" target="_blank" className="text-blue-600 text-3xl" rel="noopener noreferrer">
+                {dataMajor?.about_audit_opinion}
+            </a>
+      </div>
       <div className={styles.mainTitle}>
         <motion.h2
           initial={{ opacity: 0, y: -1 }}
@@ -166,12 +171,12 @@ const index = () => {
           <div className={`lg:w-7/12 w-full lg:pe-10 ${styles.infoText}`}>
             {/* İkinci div için başka bir metin veya içerik ekleyebilirsiniz */}
             <p className={roboto.className}> {dataMajor?.about_big_text2} </p>
-           <div className="mt-10">
+           {/* <div className="mt-10">
            <a href="/audit.pdf" target="_blank" className="text-blue-600 text-lg" rel="noopener noreferrer">
                 {dataMajor?.about_audit_opinion}
             </a>
 
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
