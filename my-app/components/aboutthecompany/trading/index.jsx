@@ -103,8 +103,6 @@ const index = () => {
   let dataImage = renderData2();
 
 
-  console.log(dataMajor);
-
   return (
     <div className="pb-20">
       <h2 className={styles.title}>{dataMajor?.about_about_the_company}</h2>
@@ -113,9 +111,16 @@ const index = () => {
         <span>{dataMajor?.about_about_the_company_subtitle}</span>{" "}
       </div>
       <div className="text-center mt-5 mb-8">
+      <p className="my-2">
       <a href="/Audit-reyi-2024.pdf" target="_blank" className="text-blue-600 text-3xl" rel="noopener noreferrer">
                 {dataMajor?.about_audit_opinion2024}
             </a>
+      </p>
+      <p className="my-2">
+      <a href="/Audit-reyi-2023.pdf" target="_blank" className="text-blue-600 text-3xl " rel="noopener noreferrer">
+                {dataMajor?.about_audit_opinion}
+            </a>
+      </p>
       </div>
       <div className={styles.mainTitle}>
         <motion.h2
